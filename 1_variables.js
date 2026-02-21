@@ -63,3 +63,12 @@ let myPets = {
 }  // creates an object that defines a set of pets and thier names
 console.log(myPets.names); // prints the names of the pets
 
+// Enums provide a set of choices for a given option. this is to improve the speed of development and limit options
+// define a colours enum
+const eColours = {
+    "RED": 1,
+    "BLUE": 2,
+    "WHITE": 3
+}
+
+console.log(eColours.BLUE); // prints 2
