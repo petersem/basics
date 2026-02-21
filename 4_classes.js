@@ -1,4 +1,5 @@
-// Classes - are reusable objects which you can have many copies of. 
+// Classes - are reusable template object which you can make many copies of. 
+//     (Think of a rubber stamp as a class, and imprints are the instances you create from the stamp.)
 //     They are similar to objects but can also contain methods, which
 //     are operations specific to the class
 
@@ -27,7 +28,7 @@ class Dog{
 }
 
 // instantiate (create) 2 new instances of the dog class and give them different properties. Then call bark()
-let yourDog = new Dog("Pumkin",4.9);
+let yourDog = new Dog("Pumpkin",4.9);
 console.log(yourDog.bark());  // Ruff
 
 let myDog = new Dog("Stalone",32);
@@ -39,7 +40,7 @@ console.log(myDog.bark());  // Woof!
 class MechanicalDog extends Dog {
     // only take a single parameter for constructor
     constructor(dogName){
-        super(dogName, 100);  // every mech dog is 100kg
+        super(dogName, 100);  // Call the parent dog creation function (called a contructor) Every mech dog is 100kg
     }
 
     // override the base dog bark method
