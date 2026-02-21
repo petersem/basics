@@ -32,3 +32,22 @@ console.log(yourDog.bark());  // Ruff
 
 let myDog = new Dog("Stalone",32);
 console.log(myDog.bark());  // Woof!
+
+// inheriting a class - allows you to make a new class, based upon another
+
+// Create a RoboDog class that is based on the Dog class, but is a little different. use Extend to base on another class
+class MechanicalDog extends Dog {
+    // only take a single parameter for constructor
+    constructor(dogName){
+        super(dogName, 100);  // every mech dog is 100kg
+    }
+
+    // override the base dog bark method
+    bark(){
+        return "Does not compute";
+    }
+}
+
+let mechDog = new MechanicalDog("K9");
+console.log(mechDog.name + " says: " + mechDog.bark());  // Does not compute!
+
