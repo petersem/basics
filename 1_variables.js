@@ -51,11 +51,11 @@ console.log(popValue);  // prints 'there';
 let sampleArray = ["cat", "dog", "cat", "dog", "cat", "dog", "dog", "dog"];
 console.log(sampleArray.filter((item) => { return item == "dog" }).length);  // returns the length of a new array, being 5
 
-// array.map retruns a new array of items which match certain criteria.
+// array.map retruns a new array of changed items.
 let numArray = ["cat", "dog", "cat", "dog", "cat", "dog", "dog", "dog"];
 console.log(sampleArray.map((item) => { return "bird" }));  // returns an array of birds
 
-// objects - a complex type which can multiple other types
+// objects - a complex type which can include multiple other types
 let myPets = {
     aninmal: "cat",
     pets: 5,
