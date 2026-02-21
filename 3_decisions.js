@@ -1,4 +1,4 @@
-// Choices: There are two main ways to evaluate criteria and choose what to do. 
+// Decisions: There are two main ways to evaluate criteria and choose what to do. 
 // If-then-else and switch statements
 // being that you dont want to assign a new value to your test variable, use the double == which is a comparison operator
 

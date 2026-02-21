@@ -5,7 +5,7 @@
 ```
 node 1_variables.js
 node 2_functions.js
-node 3_choices.js
+node 3_decisions.js
 node 4_classes.js
 ```
 
