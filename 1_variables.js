@@ -68,7 +68,8 @@ console.log(myPets.names); // prints the names of the pets
 const eColours = {
     "RED": 1,
     "BLUE": 2,
-    "WHITE": 3
+    "WHITE": 3,
+    "PINK": "Ohhh!"
 }
 
 console.log(eColours.BLUE); // prints 2
