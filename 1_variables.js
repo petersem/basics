@@ -41,9 +41,9 @@ let newArray = []; // the square brackets indicate this is an array. Nothing ins
 console.log(newArray.length);  // returns 0
 let populatedArray = [1,2,3,"a","b","C"];  //creates a variable and assigns a populated array
 console.log(populatedArray.length);  // returns 6
-newArray.push("hello");  // push adds a value to then of an array
+newArray.push("hello");  // push adds a value to the end of an array
 console.log(newArray.length);  // returns 1
-newArray.push("there");  // push adds a value to then of an array
+newArray.push("there");  // push adds a value to the end of an array
 let popValue = newArray.pop();  // removes and returns the last value in an array
 console.log(popValue);  // prints 'there';
 
@@ -51,7 +51,7 @@ console.log(popValue);  // prints 'there';
 let sampleArray = ["cat", "dog", "cat", "dog", "cat", "dog", "dog", "dog"];
 console.log(sampleArray.filter((item) => { return item == "dog" }).length);  // returns the length of a new array, being 5
 
-// array.map retruns a new array of changed items.
+// array.map retruns a new array of changed items. could be selective or everything
 let numArray = ["cat", "dog", "cat", "dog", "cat", "dog", "dog", "dog"];
 console.log(sampleArray.map((item) => { return "bird" }));  // returns an array of birds
 
