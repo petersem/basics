@@ -78,6 +78,40 @@ console.log(getDaySuffix(day));   // For today
 
 // ---------------------------------------------------------------------------
 
+import crypto from 'crypto';
+
+/**
+ * Get a Unique Identifier value
+ * @returns 
+ */
+function generateUUID() {
+    return crypto.randomUUID();
+}
+
+// Example usage
+console.log("Generated UUID:", generateUUID());
+
+// ---------------------------------------------------------------------------
+
+// Read environment variables from .env file, but only if not in production mode.
+import dotenv from 'dotenv';
+// Load dotenv only if not in production
+if (process.env.NODE_ENV !== 'production') {
+    // load environment variables from a file
+    dotenv.config();
+}
+
+// Set environment values in your .env file, then read them into your code at run time
+// if production, these values will be set at the OS. 
+// try it! npm run dev    and    npm run prod
+// prod will have undefined output as not set on the OS for GREETING and SECRET_PSW
+console.log(`Reading from Environment variables: 
+    ${process.env.GREETING}
+    ${process.env.SECRET_PSW}
+    ${process.env.NODE_ENV}
+`);
+// ---------------------------------------------------------------------------
+
 // Reading and writing to files
 // 
 import fs from 'fs';
