@@ -1,0 +1,23 @@
+{
+  "name": "basics",
+  "version": "1.0.0",
+  "description": "What's learnt in the front-end web dev diploma",
+  "homepage": "https://github.com/petersem/basics#readme",
+  "bugs": {
+    "url": "https://github.com/petersem/basics/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petersem/basics.git"
+  },
+  "license": "ISC",
+  "author": "Matt Petersen",
+  "type": "module",
+  "main": "1_variables.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
+}
