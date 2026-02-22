@@ -102,7 +102,7 @@ fs.writeFile('new.txt', 'Hello Node.js!', (err) => {
 // in miliseconds - 1 second = 1000 miliseconds
 
 // Runs once after a certain time
-setTimeout(() => console.log('Runs after 2 seconds'), 2000);
+setTimeout(() => console.log('Runs after 2 seconds'), 2000); // After 2 seconds
 
 // Runs every time period (in this case only 3 times)
 let counter = 0;
@@ -110,6 +110,7 @@ const intervalId = setInterval(() => {
     counter++;
     console.log('Runs every 4 second');
     if (counter >= 3) {
+        // stop if run 3 times
         clearInterval(intervalId);
         console.log('Interval stopped');
     }
