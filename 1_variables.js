@@ -8,10 +8,11 @@
 //    Object - a complex data type which can include multiple primitive values (as above)
 //    Array - a collection of items, which can be the same or different types
 
-// Defiining and initialising variables
+// Defining and initialising variables
 let a;    // assigns the variable a, but not yet setting a value (will be 'undefined')
 let b = 1;   // assigns a variable and sets it value to the number 2
 let c = "hello world";  // assigns a variable c and sets it value to a string
+const MY_CONST = "My Constant Value"; // defines and initialises a variable which cannot be changed
 
 // Typeof - Returns the type of data being stored in a variable 
 console.log(typeof c);  // prints 'string' to the console.
@@ -46,6 +47,8 @@ console.log(newArray.length);  // returns 1
 newArray.push("there");  // push adds a value to the end of an array
 let popValue = newArray.pop();  // removes and returns the last value in an array
 console.log(popValue);  // prints 'there';
+// array.reverse() - Reverses the items in an array
+console.log(populatedArray.reverse()); // prints [ 'C', 'b', 'a', 3, 2, 1 ]
 
 // array.filter retruns a new array of items which match certain criteria.
 let sampleArray = ["cat", "dog", "cat", "dog", "cat", "dog", "dog", "dog"];
@@ -73,3 +76,44 @@ const eColours = {
 }
 
 console.log(eColours.BLUE); // prints 2
+
+// Casting - Turning a variable from one type to another.
+// Explicit casting
+let myVariable = "5";   
+myVariable = Number(myVariable); // Explicitly change a string to number "5" to 5
+console.log(myVariable + 2);  // prints the number 7
+
+// implicit casting
+let myNumber = 5;
+myNumber = myNumber + "1";  // the addition of a string and a number converts the number into a string, the concatenates the strings
+console.log(myNumber);  // prints the string "51"
+
+// array.sort - sorts an array
+// With no parameters for the sort function, each array element is converted to a string, then compared alphbetically.
+
+// sorting numbers - does not work as you expect
+let numbersArray = [155,21,3,4,5,15,1,2, 15];
+console.log(numbersArray.sort());  // Returns [1, 15, 15, 155, 2, 21,  3, 4, 5 ]
+
+// sorting string - works as expected
+let fruits = ["Banana", "Orange", "Apple", "Mango", "Advocado"];
+console.log(fruits.sort());  // Returns [ 'Advocado', 'Apple', 'Banana', 'Mango', 'Orange' ]
+
+// sorting, using a function takes two values, a and b (the first value, and second value to compare)
+//     It a negative result if a should come before b, and a positive result if a should come after b. 
+//     A zero or NaN result indicates a and b are considered equal. 
+
+// sort numbers function
+function compareNum(a, b) {
+    if ( a < b ) {
+        return -1;
+    }
+    else if ( a > b ) {
+        return 1;
+    }
+
+    // a and b must be equal
+    return 0;
+}
+// sort our numbers array using our new compareNum function
+console.log(numbersArray.sort(compareNum));  // prints as logically expected [1, 2, 3, 4, 5, 15, 15, 21, 155]
