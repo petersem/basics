@@ -128,3 +128,15 @@ for (let f in fruits){
 fruits.forEach(f => {
     console.log(f);
 });
+
+
+// serialise and deserialise objects
+// Serialise - Turn into a structured string
+let serialFruit = JSON.stringify(fruits);
+console.log(`String: 
+${serialFruit}`);
+// De-Serialise - Turn into an object
+let deSerialFruit = JSON.parse(serialFruit);
+console.log('Object:');
+console.log(deSerialFruit);
+
