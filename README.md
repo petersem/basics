@@ -8,9 +8,10 @@ node 2_functions.js
 node 3_decisions.js
 node 4_classes.js
 node 5_math.js
+node hottipes.js
 ```
 
-> It is best to understand and use GIT with this repository. That way you will see any changes as they are made. 
+> It is best to understand and use GIT with this repository. That way you will see any changes as they are made.
 
 ## Star History
 
