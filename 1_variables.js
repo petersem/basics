@@ -117,3 +117,14 @@ function compareNum(a, b) {
 }
 // sort our numbers array using our new compareNum function
 console.log(numbersArray.sort(compareNum));  // prints as logically expected [1, 2, 3, 4, 5, 15, 15, 21, 155]
+
+// moving through arrays
+// FOR IN - itterates by index
+for (let f in fruits){
+    console.log(fruits[f]);
+}
+
+// for each - itterates by element in array
+fruits.forEach(f => {
+    console.log(f);
+});
