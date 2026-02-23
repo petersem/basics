@@ -131,6 +131,36 @@ fs.writeFile('new.txt', 'Hello Node.js!', (err) => {
 
 // ---------------------------------------------------------------------------
 
+// Get someones age from birthdate
+
+function getAge(birthDateString) {
+    let today = new Date();
+    let birthDate = new Date(birthDateString);
+
+    // Difference in milliseconds
+    const diffMs = today.getTime() - birthDate.getTime();
+
+    // Convert to other units
+    const diffSeconds = Math.trunc(diffMs / 1000);
+    const diffMinutes = Math.trunc(diffSeconds / 60);
+    const diffHours = Math.trunc(diffMinutes / 60);
+    const diffDays = Math.trunc(diffHours / 24);
+    const diffYears = Math.trunc(diffDays / 365);
+
+    return {
+        years: diffYears,
+        days: diffDays,
+        hours: diffHours,
+        minutes: diffMinutes,
+        seconds: diffSeconds,
+        milliseconds: diffMs
+    };
+}
+
+console.log(getAge("1998-08-13")); // get age
+
+// ---------------------------------------------------------------------------
+
 // Timers
 //
 // in miliseconds - 1 second = 1000 miliseconds
@@ -164,3 +194,13 @@ setTimeout(() => emitter.emit('greet', 'Fred'), 14000);
 
 // ---------------------------------------------------------------------------
 
+// Console Formatting - https://nodejs.org/api/util.html#customizing-utilinspect-colors
+
+import { styleText } from 'node:util';
+const logError = styleText(['yellow', 'bgRed', 'bold'], 'Error!');
+const logInfo = styleText(['white', 'bgBlue', 'bold'], 'Information');
+const logWarning = styleText(['yellow', 'bgBlack', 'bold'], 'Warning');
+
+console.log(logError,'oops');
+console.log(logWarning,'uh oh');
+console.log(logInfo,'Well then..');
