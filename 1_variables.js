@@ -23,8 +23,12 @@ console.log(c.length);  // prints 11
 // array.includes - reurns a boolean if a given string is present in another
 console.log(c.includes("world"));   // returns true
 
-// string.split - splits a tring into an array, delimetered by a given string
+// string.split - splits a string into an array, delimetered by a given string
 console.log(c.split(" "));   // prints ["Hello", "world"]
+
+// array.join(delimeter) - Moves the elements in a array into a delimetered string
+let petArray = ['Dog', 'Cat', 'Bird'];
+console.log(petArray.join());   // prints a string "Dog,Cat,Bird"
 
 // array[n] - returns an array value at a given position (The first position in an array is 0)
 var myArray = [1,2,3,4,5];   // define a variable and initialise it with an array
