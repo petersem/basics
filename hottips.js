@@ -19,6 +19,7 @@ function getWeekDay(forDate) {
 
 console.log(getWeekDay("2026-02-20"));  // get the day for a given date
 console.log(getWeekDay(new Date()));  // get todays day
+console.log();
 
 // ---------------------------------------------------------------------------
 
@@ -36,6 +37,7 @@ function clamp(num, min, max) {
 console.log(clamp(10, 0, 5)); // outside range. closest value is 5
 console.log(clamp(-10, 0, 5)); // outside range. closest value is 0
 console.log(clamp(3, 0, 5)); // in range. Just return 3
+console.log();
 
 // ---------------------------------------------------------------------------
 
@@ -75,6 +77,7 @@ console.log(getDaySuffix(4));   // "4th"
 const d = new Date();
 const day = d.getDate();  // gets day of the month
 console.log(getDaySuffix(day));   // For today
+console.log();
 
 // ---------------------------------------------------------------------------
 
@@ -90,6 +93,7 @@ function generateUUID() {
 
 // Example usage
 console.log("Generated UUID:", generateUUID());
+console.log();
 
 // ---------------------------------------------------------------------------
 
@@ -110,22 +114,25 @@ console.log(`Reading from Environment variables:
     ${process.env.SECRET_PSW}
     ${process.env.NODE_ENV}
 `);
+console.log();
+
 // ---------------------------------------------------------------------------
 
 // Reading and writing to files
 // 
 import fs from 'fs';
-import { clearInterval } from 'timers';
 
 // Read a file (asynchronous)
 fs.readFile('simple.txt', 'utf8', (err, data) => {
     if (err) return console.error('Error reading file:', err);
-    console.log('File contents:', data);
+    console.log();
+    console.log('File contents read:', data);
 });
 
 // Write to a file
 fs.writeFile('new.txt', 'Hello Node.js!', (err) => {
     if (err) return console.error('Error writing file:', err);
+    console.log();
     console.log('File written successfully.');
 });
 
@@ -158,6 +165,7 @@ function getAge(birthDateString) {
 }
 
 console.log(getAge("1998-08-13")); // get age
+console.log();
 
 // ---------------------------------------------------------------------------
 
