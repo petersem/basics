@@ -140,3 +140,11 @@ let deSerialFruit = JSON.parse(serialFruit);
 console.log('Object:');
 console.log(deSerialFruit);
 
+// Optional Chaining - return 'undefined' if a higher-level object is not present, rather than error
+//
+let person = {
+    name: 'Fred',
+    email: 'fred.flintstone@quarry.com'
+}
+
+console.log(person.avatar?.url);  // Use '?' If the avatar property not there, dont get the url, just return undefined
