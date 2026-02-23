@@ -19,7 +19,6 @@ function getWeekDay(forDate) {
 
 console.log(getWeekDay("2026-02-20"));  // get the day for a given date
 console.log(getWeekDay(new Date()));  // get todays day
-console.log();
 
 // ---------------------------------------------------------------------------
 
