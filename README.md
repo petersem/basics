@@ -8,6 +8,7 @@ node 2_functions.js
 node 3_decisions.js
 node 4_classes.js
 node 5_math.js
+node 6_arrays.js
 node hottips.js
 ```
 
