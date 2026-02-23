@@ -211,3 +211,36 @@ const logWarning = styleText(['yellow', 'bgBlack', 'bold'], 'Warning');
 console.log(logError,'oops');
 console.log(logWarning,'uh oh');
 console.log(logInfo,'Well then..');
+
+// ---------------------------------------------------------------------------
+
+// Creating an object, serialising it, saving it to a file, then reading it back in
+//
+
+// create setting object
+let mySettings = {
+    user: "baggz",
+    firstName: "Fred",
+    surname: "Flintstone",
+    darkMode: true,
+    age: 57
+}
+
+// serialise setting object and write to file
+fs.writeFile('settings.json',JSON.stringify(mySettings), (err) => {
+    if (err) return console.error('Error writing file:', err);
+    console.log();
+    console.log('Settings written successfully to settings.json.');
+});
+
+// Read the settings file, then deserialise it into a new object
+let mySettings2 = {};
+// Read a file (asynchronous)
+fs.readFile('settings.json', 'utf8', (err, data) => {
+    if (err) return console.error('Error reading file:', err);
+    console.log();
+    mySettings2 = JSON.parse(data);
+    console.log('Setting file contents read into object');
+    console.log('Test object read: ' + mySettings2.age);
+    console.log();
+});
