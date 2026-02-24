@@ -7,14 +7,17 @@
 
 ## Just a few things taught in class
 
+**To run the code files**
+
 ```console
-node 1_variables.mjs
-node 2_functions.mjs
-node 3_decisions.mjs
-node 4_classes.mjs
-node 5_math.mjs
-node 6_arrays.mjs
-hottips.mjs - Run the following command: 'npm run dev'      
+npm run var
+npm run func
+npm run dec
+npm run class
+npm run math
+npm run arr
+npm run err
+npm run tips
 ```
 
 > The hottips.js file includes references to external packages. Before this will work, ensure you run the following install command from a terminal open to the project folder. *(this is not needed more than once)*
