@@ -229,13 +229,6 @@ let mySettings = {
     age: 57
 }
 
-// serialise setting object and write to file
-fs.writeFile('settings.json',JSON.stringify(mySettings), (err) => {
-    if (err) return console.error('Error writing file:', err);
-    console.log();
-    console.log('Settings written successfully to settings.json.');
-});
-
 // Read the settings file, then deserialise it into a new object
 let mySettings2 = {};
 // Read a file (asynchronous)
@@ -247,5 +240,14 @@ fs.readFile('settings.json', 'utf8', (err, data) => {
     console.log();
 });
 
-console.log('console.table(object)')
+// serialise setting object and write to file
+fs.writeFile('settings.json',JSON.stringify(mySettings), (err) => {
+    if (err) return console.error('Error writing file:', err);
+    console.log();
+    console.log('Settings written successfully to settings.json.');
+});
+
+
+
+console.log('Output for: console.table(object)')
 console.table(mySettings);
