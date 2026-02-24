@@ -25,6 +25,15 @@ class Dog{
         }
         else { return "Meow"; }
     }
+
+    // a static function can be called without instantiating a class (...new Class)
+    static mysteryNoise() {
+        // returns a random animal noise
+        let noises = ["neigh","squark","meow","woof","tweet","roar","ribbit","chirp","sqweak"];
+        // get a random noise (index 0 to array.length-1)
+        let randomIndex = Math.floor(Math.random() * (noises.length -1));
+        return noises[randomIndex];
+    }
 }
 
 // instantiate (create) 2 new instances of the dog class and give them different properties. Then call bark()
@@ -49,6 +58,9 @@ class MechanicalDog extends Dog {
     }
 }
 
+// instantiate MechanicalDog class
 let mechDog = new MechanicalDog("K9");
 console.log(mechDog.name + " says: " + mechDog.bark());  // Does not compute!
 
+// call a static method on the class directly. No need to instantiate it
+console.log(Dog.mysteryNoise());
