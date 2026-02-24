@@ -24,6 +24,6 @@ hottips.mjs - Run the following command: 'npm run dev'
 
 ## Star History
 
-[![][Star History Chart](https://api.star-history.com/svg?repos=petersem/basics&Date)]
+[![Star History Chart](https://api.star-history.com/svg?repos=petersem/basics&type=date&legend=top-left)](https://www.star-history.com/#petersem/basics&type=date&legend=top-left)
 
 > Create a GitHub account, then add a watch for this project to be notified of updates.
