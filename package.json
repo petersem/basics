@@ -15,9 +15,14 @@
   "type": "module",
   "main": "1_variables.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cross-env NODE_ENV=dev node hottips.mjs",
-    "prod": "cross-env NODE_ENV=production node hottips.mjs"
+    "var": "node 1_variables.mjs",
+    "func": "node 2_functions.mjs",
+    "dec": "node 3_decisions.mjs",
+    "class": "node 4_classes.mjs",
+    "math": "node 5_math.mjs",
+    "arr": "node 6_arrays.mjs",
+    "err": "node 7_errors.mjs",
+    "tips": "cross-env NODE_ENV=dev node hottips.mjs"
   },
   "dependencies": {
     "cross-env": "^10.1.0",
