@@ -75,4 +75,4 @@ console.log(person.avatar?.url);  // Use '?' If the avatar property not there, d
 // Ternary operator - if true do this, else that.
 let age = 19;
 let text = (age < 18) ? "Minor" : "Adult";
-console.log("Ternary: " + text);
+console.log("Ternary: " + text);  // Will return 'Ternary: Adult'
