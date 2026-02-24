@@ -1,7 +1,6 @@
 # Basic JS Stuff
 
 ![GitHub Stars](https://img.shields.io/github/stars/petersem/basics?style=flat)
-<!-- ![Version](https://img.shields.io/github/package-json/v/petersem/basics?logoColor=blue) -->
 ![GitHub last commit](https://img.shields.io/github/last-commit/petersem/basics)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/petersem/basics)
 ![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/petersem/basics)
