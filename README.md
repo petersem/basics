@@ -9,7 +9,7 @@ node 3_decisions.js
 node 4_classes.js
 node 5_math.js
 node 6_arrays.js
-node hottips.js
+'npm run dev'      hottips.js
 ```
 
 > The hottips.js file includes references to external packages. Before this will work, ensure you run the following install command from a terminal open to the project. *(this is not needed more than once)*

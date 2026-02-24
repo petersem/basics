@@ -205,8 +205,9 @@ setTimeout(() => emitter.emit('greet', 'Fred'), 14000);
 
 import { styleText } from 'node:util';
 const logError = styleText(['yellow', 'bgRed', 'bold'], 'Error!');
-const logInfo = styleText(['white', 'bgBlue', 'bold'], 'Information');
 const logWarning = styleText(['yellow', 'bgBlack', 'bold'], 'Warning');
+const logInfo = styleText(['white', 'bgBlue', 'bold'], 'Information');
+
 
 console.log(logError,'oops');
 console.log(logWarning,'uh oh');
@@ -238,9 +239,10 @@ let mySettings2 = {};
 // Read a file (asynchronous)
 fs.readFile('settings.json', 'utf8', (err, data) => {
     if (err) return console.error('Error reading file:', err);
-    console.log();
     mySettings2 = JSON.parse(data);
     console.log('Setting file contents read into object');
     console.log('Test object read: ' + mySettings2.age);
     console.log();
 });
+
+console.table(mySettings);
