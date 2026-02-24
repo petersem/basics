@@ -213,6 +213,7 @@ const logInfo = styleText(['white', 'bgBlue', 'bold'], 'Information');
 console.log(logError,'oops');
 console.log(logWarning,'uh oh');
 console.log(logInfo,'Well then..');
+console.log();
 
 // ---------------------------------------------------------------------------
 
@@ -246,4 +247,5 @@ fs.readFile('settings.json', 'utf8', (err, data) => {
     console.log();
 });
 
+console.log('console.table(object)')
 console.table(mySettings);

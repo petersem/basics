@@ -13,11 +13,11 @@
   "license": "ISC",
   "author": "Matt Petersen",
   "type": "module",
-  "main": "1_variables.js",
+  "main": "1_variables.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cross-env NODE_ENV=dev node hottips.js",
-    "prod": "cross-env NODE_ENV=production node hottips.js"
+    "dev": "cross-env NODE_ENV=dev node hottips.mjs",
+    "prod": "cross-env NODE_ENV=production node hottips.mjs"
   },
   "dependencies": {
     "cross-env": "^10.1.0",
