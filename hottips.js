@@ -204,6 +204,7 @@ setTimeout(() => emitter.emit('greet', 'Fred'), 14000);
 // Console Formatting - https://nodejs.org/api/util.html#customizing-utilinspect-colors
 
 import { styleText } from 'node:util';
+import { errorMonitor } from 'node:events';
 const logError = styleText(['yellow', 'bgRed', 'bold'], 'Error!');
 const logWarning = styleText(['yellow', 'bgBlack', 'bold'], 'Warning');
 const logInfo = styleText(['white', 'bgBlue', 'bold'], 'Information');

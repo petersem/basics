@@ -2,12 +2,18 @@
 let newArray = []; // the square brackets indicate this is an array. Nothing inside means an empty array
 console.log(newArray.length);  // returns 0
 let populatedArray = [1,2,3,"a","b","C"];  //creates a variable and assigns a populated array
-console.log(populatedArray.length);  // returns 6
+console.log(populatedArray.length);  // returns // array[n] - returns an array value at a given position (The first position in an array is 0)
+
+var myArray = [1,2,3,4,5];   // define a variable and initialise it with an array
+console.log(myArray[3]);   // returns the 4th value in the array, which is 46
+
 newArray.push("hello");  // push adds a value to the end of an array
 console.log(newArray.length);  // returns 1
+
 newArray.push("there");  // push adds a value to the end of an array
 let popValue = newArray.pop();  // removes and returns the last value in an array
 console.log(popValue);  // prints 'there';
+
 // array.reverse() - Reverses the items in an array
 console.log(populatedArray.reverse()); // prints [ 'C', 'b', 'a', 3, 2, 1 ]
 
@@ -42,7 +48,6 @@ function compareNum(a, b) {
     else if ( a > b ) {
         return 1;
     }
-
     // a and b must be equal
     return 0;
 }
@@ -74,6 +79,3 @@ console.log(deSerialFruit);
 let petArray = ['Dog', 'Cat', 'Bird'];
 console.log(petArray.join());   // prints a string "Dog,Cat,Bird"
 
-// array[n] - returns an array value at a given position (The first position in an array is 0)
-var myArray = [1,2,3,4,5];   // define a variable and initialise it with an array
-console.log(myArray[3]);   // returns the 4th value in the array, which is 4
