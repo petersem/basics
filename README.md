@@ -26,7 +26,7 @@ Look in the `package.json` to see examples of creating multiple script options, 
 >
 > `npm i`
 
-[Tips and tricks]("https://github.com/petersem/basics/blob/main/tips.md")
+[Tips and tricks](https://github.com/petersem/basics/blob/main/tips.md) for various random things.
 
 ## Star History
 

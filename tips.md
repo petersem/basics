@@ -7,4 +7,4 @@ Various tips and information, in no particular order.
 **GitHub Pull Requests**
 For integrating Git version control into VSCode.
 
-[Return to Home]("https://github.com/petersem/basics")
+[Return to Home](https://github.com/petersem/basics)
