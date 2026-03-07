@@ -30,6 +30,8 @@ For metrics, insights, and time tracking automatically generated from your progr
 Provides comprehensive YAML Language support
 - **Prettier - Code formatter**
 Is an opinionated code formatter
+- **ESLint**
+Integrates ESLint JavaScript into VS Code
 
 ### Things you should learn about
 

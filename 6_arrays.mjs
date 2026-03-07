@@ -79,3 +79,5 @@ console.log(deSerialFruit);
 let petArray = ['Dog', 'Cat', 'Bird'];
 console.log(petArray.join());   // prints a string "Dog,Cat,Bird"
 
+// arry.issArray(yourArray) - Tests if yourArray is an array. Dont use TypeOf() for arrays as this would return an Object
+console.log(Array.isArray(petArray));  // returns true
