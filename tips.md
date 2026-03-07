@@ -32,6 +32,7 @@ Provides comprehensive YAML Language support
 Is an opinionated code formatter
 
 ### Things you should learn about
+
 - Docker
 - Deploying Node JS projects
 - Git and GitHub
