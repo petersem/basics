@@ -18,6 +18,7 @@ npm run math
 npm run arr
 npm run err
 npm run tips
+npm run reg
 ```
 
 Look in the `package.json` to see examples of creating multiple script options, as per the above.
@@ -25,6 +26,8 @@ Look in the `package.json` to see examples of creating multiple script options, 
 > The hottips.js file includes references to external packages. Before this will work, ensure you run the following install command from a terminal open to the project folder. *(this is not needed more than once)*
 >
 > `npm i`
+
+## Other Tips
 
 [Tips and tricks](https://github.com/petersem/basics/blob/main/tips.md) for various random things.
 

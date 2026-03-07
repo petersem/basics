@@ -23,6 +23,7 @@
     "arr": "node 6_arrays.mjs",
     "err": "node 7_errors.mjs",
     "reg": "node 8_regex.mjs",
+    "prom": "node 9_promises.mjs",
     "tips": "cross-env NODE_ENV=dev node hottips.mjs"
   },
   "dependencies": {

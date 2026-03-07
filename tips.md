@@ -39,6 +39,13 @@ Is an opinionated code formatter
 - Markdown
 
 ### VSCode
-`ctrl-a-k-s` Will select all the code in your editor window and then reformat it nicely
+
+- `ctrl-a-k-s` Will select all the code in your editor window and then reformat it nicely
+- ``ctrl-` `` Opens a terminal window to your project folder
+- Typing `code .` from a terminal, opens VSCode to that folder
+
+### Coding
+
+- Don't be afraid to refactor. When you see something a bit *smelly*, and you have time, redo it. 
 
 [Return to Home](https://github.com/petersem/basics)
