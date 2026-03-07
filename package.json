@@ -22,6 +22,7 @@
     "math": "node 5_math.mjs",
     "arr": "node 6_arrays.mjs",
     "err": "node 7_errors.mjs",
+    "reg": "node 8_regex.mjs",
     "tips": "cross-env NODE_ENV=dev node hottips.mjs"
   },
   "dependencies": {
