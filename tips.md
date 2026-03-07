@@ -39,6 +39,6 @@ Is an opinionated code formatter
 - Markdown
 
 ### VSCode
-`ctrl-a-k-2s` Will select all the code in your editor window and then reformat it nicely
+`ctrl-a-k-s` Will select all the code in your editor window and then reformat it nicely
 
 [Return to Home](https://github.com/petersem/basics)
