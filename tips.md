@@ -39,6 +39,8 @@ Integrates ESLint JavaScript into VS Code
 - Deploying Node JS projects
 - Git and GitHub
 - Markdown
+- Typescript
+- Dev Containers
 
 ### VSCode
 
@@ -48,6 +50,6 @@ Integrates ESLint JavaScript into VS Code
 
 ### Coding
 
-- Don't be afraid to refactor. When you see something a bit *smelly*, and you have time, redo it. 
+- Don't be afraid to refactor. When you see something a bit *smelly*, and you have time, redo it.
 
 [Return to Home](https://github.com/petersem/basics)
