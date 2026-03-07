@@ -1,5 +1,5 @@
 // Regular Expressions
-// patern/modifier
+// (patern/modifier)
 
 // used often with text.search|replace|match()  
 
