@@ -33,9 +33,12 @@ Is an opinionated code formatter
 
 ### Things you should learn about
 
-- Docker
+- Docker - deploying containers and building Docker images
 - Deploying Node JS projects
 - Git and GitHub
 - Markdown
+
+### VSCode
+`ctrl-a-k-2s` Will select all the code in your editor window and then reformat it nicely
 
 [Return to Home](https://github.com/petersem/basics)
