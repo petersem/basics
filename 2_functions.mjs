@@ -25,4 +25,4 @@ function hello(firstName, lastName = 'you lamer!') {
 
 console.log(hello("Matt", "P"));  // prints Hello Matt P
 
-console.log(hello("Matt"));  // prints Hello you lamer
+console.log(hello("Matt"));  // prints Hello Matt you lamer
