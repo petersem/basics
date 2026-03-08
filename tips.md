@@ -41,15 +41,37 @@ Integrates ESLint JavaScript into VS Code
 - Markdown
 - Typescript
 - Dev Containers
+- VSCode shortcut keys
 
 ### VSCode
 
-- `ctrl-a-k-s` Will select all the code in your editor window and then reformat it nicely
-- ``ctrl-` `` Opens a terminal window to your project folder
-- Typing `code .` from a terminal, opens VSCode to that folder
+- `ctrl a k s` Will select all the code in your editor window and then reformat it nicely
+- ``ctrl ` `` Opens a terminal window to your project folder
+- `code .` from a terminal, opens VSCode to that folder
+- `ctrl shift p` for VSCode command palette
+- `ctrl =` zoom in
+- `ctrl -` zoom out
+- `shift alt` for block select with mouse
+- `ctrl space` for intellisense
+- `ctrl /` to comment / uncomment
+- `f2` rename symbol
 
 ### Coding
 
 - Don't be afraid to refactor. When you see something a bit *smelly*, and you have time, redo it.
+- `npm init -y` initialises a node project and auto answers all questions *yes*. (Omit -y to go through questions)
+- Express JS is used to handle HTTP logic
+- Express middleware is a function which runs between the request and response.
+
+### HTTP Methods
+| Method | Code | Purpose                |
+| ------ | ---- | ---------------------- |
+| GET    | 200  | Fetch data             |
+| POST   | 201  | Create data            |
+| PUT    | 200  | Update record          |
+| PATCH  | 204  | Update partial record  |
+| DELETE | 204  | Deleted record         |
+| ERROR  | 40x  | Signifies client error |
+| ERROR  | 500  | Signifies server error |
 
 [Return to Home](https://github.com/petersem/basics)

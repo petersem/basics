@@ -27,3 +27,11 @@ switch (myChoice) {
         console.log("You chose something weird");
         break;
 }
+
+// Ternary operator - if true do this, else that.
+let age = 19;
+let text = (age < 18) ? "Minor" : "Adult";
+console.log("Ternary: " + text);  // Will return 'Ternary: Adult'
+
+
+

@@ -72,7 +72,21 @@ let person = {
 
 console.log(person.avatar?.url);  // Use '?' If the avatar property not there, dont get the url, just return undefined
 
-// Ternary operator - if true do this, else that.
-let age = 19;
-let text = (age < 18) ? "Minor" : "Adult";
-console.log("Ternary: " + text);  // Will return 'Ternary: Adult'
+// ++ increment before and after evaluation
+let i = 1;
+console.log(i++);  // prints 1, then increments a to 2
+
+let j = 1;
+console.log(++j); // increments j to 2, then prints 2
+
+// same logic for -- to decrement a number
+
+// Structuring and destructuring variables
+let m = 1;
+let p = 10;
+
+console.log([m,p]);  // prints [1, 10]
+
+[m,p] = [p,m]
+
+console.log([m,p]);  // prints [10,1]

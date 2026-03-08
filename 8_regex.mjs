@@ -18,3 +18,4 @@ console.log(result);  // returns "Visit W3Schools"
 let text3 = "Visit W3schools";
 let n2 = text3.match(/W3schools/);  
 console.log(n2); // retruns ['W3Schools', index: 6, input: 'Visit W3Schools']
+
