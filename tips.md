@@ -60,6 +60,7 @@ Integrates ESLint JavaScript into VS Code
 
 - Don't be afraid to refactor. When you see something a bit *smelly*, and you have time, redo it.
 - `npm i -y` initialises a node project and auto answers all questions *yes*. (Omit -y to go through questions)
+- `npm i` will install any packages defined in the packages.json file
 - `npm i packagename` to install a package from npm.com
 - `npm i packagename --save-dev` to install a package as a development dependency only
 - `npm uninstall packagename` to uninstall a package
