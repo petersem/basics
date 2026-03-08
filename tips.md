@@ -70,6 +70,8 @@ Integrates ESLint JavaScript into VS Code
 - Express JS is used to handle HTTP logic
 - Express middleware is a function which runs between the request and response.
 - Practice coding by doing a simple app. Put it in GitHub and learn as you code. Start small!
+- Don't use `let`, as this is for old browsers
+- Use `const` unless you plan to change a variable, in which case use `let`
 
 ### HTTP Methods
 | Method | Code | Purpose                |
