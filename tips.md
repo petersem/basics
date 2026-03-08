@@ -59,7 +59,11 @@ Integrates ESLint JavaScript into VS Code
 ### Coding
 
 - Don't be afraid to refactor. When you see something a bit *smelly*, and you have time, redo it.
-- `npm init -y` initialises a node project and auto answers all questions *yes*. (Omit -y to go through questions)
+- `npm i -y` initialises a node project and auto answers all questions *yes*. (Omit -y to go through questions)
+- `npm i packagename` to install a package from npm.com
+- `npm i packagename --save-dev` to install a package as a development dependency only
+- `npm uninstall packagename` to uninstall a package
+- `npm upgrade` to update packages
 - Express JS is used to handle HTTP logic
 - Express middleware is a function which runs between the request and response.
 
