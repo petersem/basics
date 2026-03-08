@@ -38,7 +38,7 @@ Integrates ESLint JavaScript into VS Code
 - Docker - deploying containers and building Docker images
 - Deploying Node JS projects
 - Git and GitHub
-- Markdown
+- Markdown - [Cheatsheet here](https://www.markdownguide.org/cheat-sheet/)
 - Typescript
 - Dev Containers
 - VSCode shortcut keys
