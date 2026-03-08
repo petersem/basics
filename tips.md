@@ -55,6 +55,8 @@ Integrates ESLint JavaScript into VS Code
 - `ctrl space` for intellisense
 - `ctrl /` to comment / uncomment
 - `f2` rename symbol
+- `ctrl ,` opens VSCode settings
+- Open settings and search for autosave in the search bar. Set autosave to `afterDelay` and autosavedelay to `3000`. (Saves files after 3 seconds of inactivitiy)
 
 ### Coding
 
@@ -67,6 +69,7 @@ Integrates ESLint JavaScript into VS Code
 - `npm upgrade` to update packages
 - Express JS is used to handle HTTP logic
 - Express middleware is a function which runs between the request and response.
+- Practice coding by doing a simple app. Put it in GitHub and learn as you code. Start small!
 
 ### HTTP Methods
 | Method | Code | Purpose                |
