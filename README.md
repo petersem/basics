@@ -31,6 +31,8 @@ Look in the `package.json` to see examples of creating multiple script options, 
 
 [Tips and tricks](https://github.com/petersem/basics/blob/main/tips.md) for various random things.
 
+> Look under the `client_code` folder for examples of client-side task adding, and dynamic notifications.
+
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=petersem/basics&type=date&legend=top-left)](https://www.star-history.com/#petersem/basics&type=date&legend=top-left)

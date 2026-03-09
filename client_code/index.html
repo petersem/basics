@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,24 @@
     <script defer src="script/script.js"></script>
     <!-- Call the sample notification script -->
     <script defer src="script/notifications.js"></script>
+    <!-- Call the sample add tasks script -->
+    <script defer src="script/addtasks.js"></script>
 </head>
+
 <body>
-    <input type="button" onclick="notify('title','This is a notification','https://picsum.photos/150','https://picsum.photos')" value="Notfiy ME!">
+    <!-- for the notification script -->
+    <input type="button" id="notification-button"
+        onclick="notify('title','This is a notification','https://picsum.photos/150','https://picsum.photos')"
+        value="Notfiy ME!">
+
+    <!-- for adding tasks demo -->
+    <section>
+        <input type="text" id="task-text">
+        <input type="button" value="New" id="new-button">
+    </section>
+    <ul id="task-list">
+    </ul>
+    </section>
 </body>
+
 </html>
