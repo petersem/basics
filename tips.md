@@ -46,6 +46,7 @@ Integrates ESLint JavaScript into VS Code
 - JS Promises and Async/Await
 - Nodemon
 - Using environment variables
+- Learn a few regular expression basics - [regex testing](https://regex101.com/)
 
 ### VSCode
 
