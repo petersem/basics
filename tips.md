@@ -77,7 +77,7 @@ Integrates ESLint JavaScript into VS Code
 - Don't use `let`, as this is for old browsers
 - Use `const` unless you plan to change a variable, in which case use `let`
 - JS file naming, use `.mjs` for module-based ES6 JS. If you use `JS` then you will have to set your package to use modules `type: module`
-- Use the `AXIOS` library for HTTP calls from the server, and the JS built-in `FETCH` library for client side JS. (Axios has )
+- Use the `AXIOS` library for HTTP calls from the server, and the JS built-in `FETCH` library for client side JS. (Axios has more features)
 
 ### HTTP Methods
 
