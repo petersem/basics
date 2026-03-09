@@ -44,6 +44,8 @@ Integrates ESLint JavaScript into VS Code
 - VSCode shortcut keys
 - JS Classes
 - JS Promises and Async/Await
+- Nodemon
+- Using environment variables
 
 ### VSCode
 
@@ -78,6 +80,7 @@ Integrates ESLint JavaScript into VS Code
 - Use the `AXIOS` library for HTTP calls from the server, and the JS built-in `FETCH` library for client side JS. (Axios has )
 
 ### HTTP Methods
+
 | Method | Code | Purpose                |
 | ------ | ---- | ---------------------- |
 | GET    | 200  | Fetch data             |
@@ -87,5 +90,22 @@ Integrates ESLint JavaScript into VS Code
 | DELETE | 204  | Deleted record         |
 | ERROR  | 40x  | Signifies client error |
 | ERROR  | 500  | Signifies server error |
+
+### Static Folders for HTML Projects
+
+css
+: stylesheet folder
+
+img
+: images folder
+
+scripts
+: Client-side javascript folder
+
+fonts
+: fonts folder
+
+html
+: html files, other than main index.html
 
 [Return to Home](https://github.com/petersem/basics)

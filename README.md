@@ -7,7 +7,7 @@
 
 ## Just a few things taught in class
 
-**To run the code files**
+**To run the code examples**
 
 ```console
 npm run var
