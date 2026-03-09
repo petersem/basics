@@ -72,7 +72,7 @@ function checkPswComplexity(password) {
     let hasLowerCase = /[a-z]/.test(password);
     let hasNumbers = /\d/.test(password);
     let hasNonalphas = /\W/.test(password);
-    if (password.length >= 8 && hasUpperCase && hasLowerCase && hasNumbers && hasNonalphas < 3) {
+    if (password.length >= 8 && hasUpperCase && hasLowerCase && hasNumbers && hasNonalphas) {
         console.log("Good password");
     } else {
         console.log("Bad password");
