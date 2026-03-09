@@ -39,7 +39,7 @@ console.log(regString.match(/\d/g));  // prints ['1', '2', '3' ....]
 let srcStr = "123abc#";
 console.log(srcStr.match(/\D/g));  // prints ['a', 'b', 'c']
 
-// /\w/g matches non-word characters like spaces and symbols
+// /\w/g matches only word and digits characters, no spaces and symbols
 console.log(srcStr.match(/\w/g));  // prints ['1', '2', '3', 'a', 'b', 'c']
 
 // /\W/g matches non-word characters like spaces and symbols
