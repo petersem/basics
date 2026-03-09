@@ -109,4 +109,18 @@ fonts
 html
 : html files, other than main index.html
 
+### Model - View - Controller (MVC) Pattern
+Can be server or client, or both.
+
+**Model**
+: Data that is required to populate a page or control (partial)
+
+**View**
+: The page, or partial page, which will display the information. (Often EJS)
+
+**Controller**
+: Needed to render model data to a view, or partial. Which handles any API calls for CRUD or to external sites, and for managing any dynamic functionality on the web page.
+
+
+
 [Return to Home](https://github.com/petersem/basics)
