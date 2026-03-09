@@ -63,16 +63,19 @@ ausPhoneNumbers.forEach(num => {
 });
 
 
+// use RegExp.test to return a boolean if matched
+console.log(/[a-z]/g.test("ABCa")); // matches on lower case a and returns true
+
 let password = "Abcd123!";
 
 checkPswComplexity(password);
 
 function checkPswComplexity(password) {
-    let hasUpperCase = /[A-Z]/.test(password);
-    let hasLowerCase = /[a-z]/.test(password);
-    let hasNumbers = /\d/.test(password);
-    let hasNonalphas = /\W/.test(password);
-    if (password.length >= 8 && hasUpperCase && hasLowerCase && hasNumbers && hasNonalphas) {
+    let hasUpperCase = /[A-Z]/.test(password);  // upper case
+    let hasLowerCase = /[a-z]/.test(password);  // lower case
+    let hasNumbers = /\d/.test(password);  // has numbers
+    let hasNonalphas = /\W/.test(password);  // has symbols
+    if (password.length >= 8 && hasUpperCase && hasLowerCase && hasNumbers && hasNonalphas) { // check all true
         console.log("Good password");
     } else {
         console.log("Bad password");
