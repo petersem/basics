@@ -143,6 +143,6 @@ services:
     ports:
       - 3306:3306
     restart: unless-stopped
-    ```
+```
 
 [Return to Home](https://github.com/petersem/basics)
