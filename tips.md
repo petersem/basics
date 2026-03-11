@@ -32,6 +32,8 @@ Provides comprehensive YAML Language support
 Is an opinionated code formatter
 - **ESLint**
 Integrates ESLint JavaScript into VS Code
+- *Thunder Client** (But, I prefer stand-alone Postman)
+Rest API tester
 
 ### Things you should learn about
 
@@ -44,9 +46,15 @@ Integrates ESLint JavaScript into VS Code
 - VSCode shortcut keys
 - JS Classes
 - JS Promises and Async/Await
-- Nodemon
+- Nodemon - dev node restarts
+- Jest - unit testing
 - Using environment variables
 - Learn a few regular expression basics - [regex testing](https://regex101.com/)
+- Font Awesome
+- [S.O.L.I.D](https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design) Design principles for better software architecture
+- AXIOS
+- Secure Coding Practices
+- SCRUM and Kanban Agile methodologies
 
 ### VSCode
 
@@ -62,6 +70,26 @@ Integrates ESLint JavaScript into VS Code
 - `f2` rename symbol
 - `ctrl ,` opens VSCode settings
 - Open settings and search for autosave in the search bar. Set autosave to `afterDelay` and autosavedelay to `3000`. (Saves files after 3 seconds of inactivitiy)
+
+### Useful Books
+
+- The Pragmatic Programmer: From Journeyman to Master
+- Design Patterns
+- Clean Code: A Handbook of Agile Software Craftsmanship
+- The Clean Coder: A Code of Conduct for Professional Programmers
+- Clean Architecture
+- Software Estimation - Demystifying the black art
+- Agile Software Development, Principles, Patterns, and Practices
+
+### Useful links
+
+- Google Javascript [style guide](https://google.github.io/styleguide/jsguide.html)
+- Mozilla Development Network [JavaScript Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [TLDR](https://tldr.tech/)
+- [Draw.IO](https://draw.io) general purpose diagram tool
+- [Wireframe.cc](https://wireframe.cc) wireframe tool
+- [OWASP Top 10](https://owasp.org/Top10/2025/)
+- 
 
 ### Coding
 
