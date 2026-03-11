@@ -251,3 +251,14 @@ fs.writeFile('settings.json',JSON.stringify(mySettings), (err) => {
 
 console.log('Output for: console.table(object)')
 console.table(mySettings);
+
+import he from "he";
+const badInput = "<script>alert('Youv'e been hacked!');<script>";
+console.log(badInput);
+// encodes input
+console.log(he.encode(badInput));
+// parses output for html safe display
+console.log(he.escape(badInput));
+
+
+
