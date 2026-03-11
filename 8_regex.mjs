@@ -48,6 +48,18 @@ console.log(srcStr.match(/\W/g));  // prints ['#']
 // /\s/g matches spaces and newlines
 console.log(text.match(/\s/g));  // prints [' ']
 
+let names = [
+    "Matt",
+    "Ava",
+    "Susan",
+    "Billy-Bob",
+    "Avo Cardo"
+];
+
+names.forEach(name => {
+    console.log(name, name.match(/^[A-Z]{1}[a-zA-Z\-\ ]{1,40}$/gm))
+});
+
 // match phone number format (AUS)
 let ausPhoneNumbers = [
     "8217 5530",
