@@ -114,7 +114,7 @@ Rest API tester (But, I prefer stand-alone Postman)
 - Use the `AXIOS` library for HTTP calls from the server, and the JS built-in `FETCH` library for client side JS. (Axios has more features)
 - Check input data accuracy by validating inputs (eg. regular expression or other checks) This is checking the integrity of data, not checking for security issues. 
 - Return appropriate status codes and error message for API calls
-- Use the `HE` (NPM JS) library for encoding inputes and escaping output
+- Use the `HE` (NPM JS) library for encoding inputs and escaping output
 
 #### Express
 
