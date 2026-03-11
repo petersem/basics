@@ -32,8 +32,8 @@ Provides comprehensive YAML Language support
 Is an opinionated code formatter
 - **ESLint**
 Integrates ESLint JavaScript into VS Code
-- *Thunder Client** (But, I prefer stand-alone Postman)
-Rest API tester
+- **Thunder Client**
+Rest API tester (But, I prefer stand-alone Postman)
 
 ### Things you should learn about
 
@@ -51,7 +51,8 @@ Rest API tester
 - Using environment variables
 - Learn a few regular expression basics - [regex testing](https://regex101.com/)
 - Font Awesome
-- [S.O.L.I.D](https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design) Design principles for better software architecture
+- [Idempotence](https://developer.mozilla.org/en-US/docs/Glossary/Idempotent)
+-  [S.O.L.I.D](https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design) Design principles for better software architecture
 - AXIOS
 - Secure Coding Practices
 - SCRUM and Kanban Agile methodologies
@@ -89,24 +90,55 @@ Rest API tester
 - [Draw.IO](https://draw.io) general purpose diagram tool
 - [Wireframe.cc](https://wireframe.cc) wireframe tool
 - [OWASP Top 10](https://owasp.org/Top10/2025/)
-- 
+- [Regular Expressions 101](https://regex101.com/)
+- [Database naming standards](https://dev.to/ovid/database-naming-standards-2061)
+- [W3Schools](https://www.w3schools.com/w3css/) CSS reference
+- [NPM Package Library](https://www.npmjs.com/)
 
-### Coding
+### NPM
 
-- Don't be afraid to refactor. When you see something a bit *smelly*, and you have time, redo it.
 - `npm i -y` initialises a node project and auto answers all questions *yes*. (Omit -y to go through questions)
 - `npm i` will install any packages defined in the packages.json file
 - `npm i packagename` to install a package from npm.com
 - `npm i packagename --save-dev` to install a package as a development dependency only
 - `npm uninstall packagename` to uninstall a package
 - `npm upgrade` to update packages
-- Express JS is used to handle HTTP logic
-- Express middleware is a function which runs between the request and response.
-- Practice coding by doing a simple app. Put it in GitHub and learn as you code. Start small!
+
+### Coding
+
+#### General
+
+- Don't be afraid to refactor. When you see something a bit *smelly*, and you have time, redo it.
 - Don't use `let`, as this is for old browsers
 - Use `const` unless you plan to change a variable, in which case use `let`
 - JS file naming, use `.mjs` for module-based ES6 JS. If you use `JS` then you will have to set your package to use modules `type: module`
 - Use the `AXIOS` library for HTTP calls from the server, and the JS built-in `FETCH` library for client side JS. (Axios has more features)
+- Practice coding by doing a simple app. Put it in GitHub and learn as you code. Start small!
+- Check input data by validating inputs (eg. regular expression or other checks)
+- Return appropriate status codes and error message for API calls
+
+#### Express
+
+- Express JS is used to handle HTTP logic
+- Express middleware is a function which runs between the request and response.
+
+#### Secure Coding
+
+- *Always* sanitise inputs at the server and client
+- *Always* parse outputs. This includes reads and writes from databases and external services, too.
+- *Try* to log important operations fopr security and debugging
+- *Never* output a stack trace in production
+
+
+#### Practices
+
+- Are your functions doing only one thing? If not, seperate concerns and refactor
+- Every database table should have a primary key
+- Always implement appropriate error handling (try-catch) for any operation with a posibility of failure.
+- Write unit tests *FIRST*, before you write your code
+- Document code appropriately. Classes, functions, and then anything that is worth explaining. Don't add comments for the sake of commenting
+- If you have to code a manual operation more than once in your code, put it in a seperate function of class
+- 
 
 ### HTTP Methods
 
