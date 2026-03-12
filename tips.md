@@ -39,7 +39,7 @@ Rest API tester (But, I prefer stand-alone Postman)
 
 - Docker - deploying containers and building Docker images
 - Deploying Node JS projects
-- Git and GitHub - [Presentation](https://github.com/petersem/basics/raw/refs/heads/main/misc/version-control.pptx)
+- Git and GitHub - [Presentation](https://github.com/petersem/basics/raw/refs/heads/main/misc/Version-Control.pptx)
 - Markdown - [Cheatsheet here](https://www.markdownguide.org/cheat-sheet/)
 - Typescript
 - Dev Containers
