@@ -74,6 +74,21 @@ ausPhoneNumbers.forEach(num => {
     console.log(num, num.match(/^(\s\+?\(61\)|\(\+?61\)|\+?61|\(0[1-9]\)|0[1-9])?( ?-?[0-9]){7,9}$/gm));
 });
 
+let emails = [
+    "austin_powers@hmss.gov.co",
+    "doctor.evil@secret.lair.com",
+    "ron.burgandy@news.com",
+    "bad_actor@@oonka-woonka",
+    "matt.p.8675309@gmail.com",
+    "elbo.pm@dick.wad.au",
+    "please-explain@right.now.au"
+];
+
+// test email validity
+emails.forEach(email => {
+    console.log(email, /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z0-9]{2,}$/.test(email));
+});
+
 
 // use RegExp.test to return a boolean if matched
 console.log(/[a-z]/g.test("ABCa")); // matches on lower case a and returns true
