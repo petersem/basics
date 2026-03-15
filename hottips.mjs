@@ -261,4 +261,21 @@ console.log(he.encode(badInput));
 console.log(he.escape(badInput));
 
 
+// itterate through all properties of an object
+
+// create a fake body object
+const fakeBody = { 
+    jigery: "pokery",
+    title: "my title",
+    age: 180,
+    badData: "<script>alert('KaKow');</script>"
+    };
+
+// Get all the keys for the object, then test the values if unusafe
+for (const [key, value] of Object.entries(fakeBody)) {
+    // safe = false, unsafe = true
+    console.log(fakeBody[key], /[$&+,:;=?@#|'<>.^*()%!-]/g.test(fakeBody[key]));
+}
+console.log('----------------------');
+
 

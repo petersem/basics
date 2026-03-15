@@ -90,6 +90,12 @@ emails.forEach(email => {
 });
 
 
+// If any web unsafe characters are present, then replace with an empty string
+let badText = "<script>alert('malicious js payload');</script>";
+console.log(badText);
+badText = badText.replace(/[$&+,:;=?@#|'<>.^*()%!-]/g,"");
+console.log(badText);
+
 // use RegExp.test to return a boolean if matched
 console.log(/[a-z]/g.test("ABCa")); // matches on lower case a and returns true
 
