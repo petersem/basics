@@ -164,7 +164,7 @@ Rest API tester (But, I prefer stand-alone Postman)
 > | 204  | Record deleted (No content returned)                 |
 > | 400  | Rejected API call - missing required header          |
 > | 409  | Rejected API call - Operation in progress            |
-> | 422  | Rejected API call - Invalid header used              |
+> | 422  | Rejected API call - Invalid header/data sent         |
 > | 404  | Record not found                                     |
 > | 500  | Internal server error                                |
 > | 202  | Request received for processing, but not completed   |
