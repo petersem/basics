@@ -150,8 +150,27 @@ Rest API tester (But, I prefer stand-alone Postman)
 | PUT    | 200  | Update record          |
 | PATCH  | 204  | Update partial record  |
 | DELETE | 204  | Deleted record         |
-| ERROR  | 40x  | Signifies client error |
+| ERROR  | 400  | Bad request            |
 | ERROR  | 500  | Signifies server error |
+
+> #### Examlples
+>
+> | Code | Implementation                                       |
+> | ---  | ---                                                  |
+> | 200  | Get record or record                                 |
+> | 200  | Full record updated                                  |
+> | 201  | Record added                                         |
+> | 204  | Partial record update completed (No content returned)|
+> | 204  | Record deleted (No content returned)                 |
+> | 400  | Rejected API call - missing required header          |
+> | 409  | Rejected API call - Operation in progress            |
+> | 422  | Rejected API call - Invalid header used              |
+> | 404  | Record not found                                     |
+> | 500  | Internal server error                                |
+> | 202  | Request received for processing, but not completed   |
+> | 401  | Unauthorised request                                 |
+> | 408  | Request timeout                                      |
+> | 503  | Service / Server unavailable (e.g maintenance)       |
 
 ### Static Folders for HTML Projects
 
