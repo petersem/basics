@@ -97,7 +97,7 @@ Rest API tester (But, I prefer stand-alone Postman)
 
 ### NPM
 
-- `npm i -y` initialises a node project and auto answers all questions *yes*. (Omit -y to go through questions)
+- `npm init -y` initialises a node project and auto answers all questions *yes*. (Omit -y to go through questions)
 - `npm i` will install any packages defined in the packages.json file
 - `npm i packagename` to install a package from npm.com
 - `npm i packagename --save-dev` to install a package as a development dependency only
