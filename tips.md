@@ -174,21 +174,7 @@ Rest API tester (But, I prefer stand-alone Postman)
 
 ### Static Folders for HTML Projects
 
-![Tux, the Linux mascot](/misc/foldersjpg)
-css
-: stylesheet folder
-
-img
-: images folder
-
-scripts
-: Client-side javascript folder
-
-fonts
-: fonts folder
-
-html
-: html files, other than main index.html
+![Folder breakdown](https://raw.githubusercontent.com/petersem/basics/refs/heads/main/misc/folders.jpeg)
 
 ### Model - View - Controller (MVC) Pattern
 Can be server or client, or both.
