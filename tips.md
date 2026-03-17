@@ -174,6 +174,7 @@ Rest API tester (But, I prefer stand-alone Postman)
 
 ### Static Folders for HTML Projects
 
+![Tux, the Linux mascot](/misc/foldersjpg)
 css
 : stylesheet folder
 
