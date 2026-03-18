@@ -23,4 +23,32 @@ spreadFunction({
     d: 17
 });  // Prints defaults with overriden options - { a: 'cat', b: [ 'bird' ], c: 86400000, d: 17 }]
 
-// call with option/
+
+// create a class that can only be instantiated once
+// eg for a database or api that only allows one connection
+class Singleton {
+    static #instanceOf;
+    static #createKey;
+    testNumber = 0;
+    
+    constructor() {
+        if (!Singleton.#instanceOf && !Singleton.#createKey) {
+            Singleton.#createKey = "created";
+            Singleton.#instanceOf = new Singleton();
+        }
+        return Singleton.#instanceOf;
+    }
+
+    test() {
+        console.log(this.testNumber);
+    }
+}
+
+// creates the class instance
+let c = new Singleton();
+c.testNumber = 5; // sets a value for instance
+c.test(); 
+
+// returns the previously instantiated class
+var d = new Singleton();
+d.test(); // usually would be 0, but is 5 as from the existing class instance
