@@ -90,3 +90,13 @@ console.log([m,p]);  // prints [1, 10]
 [m,p] = [p,m]
 
 console.log([m,p]);  // prints [10,1]
+
+// nullish coalesence
+let r;
+const q = "cat";
+
+console.log( r ?? "dog"); // prints dog because r is null or undefined
+console.log( q ?? "dog"); // prints cat as variable already initialised
+
+
+

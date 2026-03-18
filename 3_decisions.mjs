@@ -28,10 +28,18 @@ switch (myChoice) {
         break;
 }
 
-// Ternary operator - if true do this, else that.
+// Ternary operator - if true do this, else that. (three parts) - condition ? true part : false part
 let age = 19;
 let text = (age < 18) ? "Minor" : "Adult";
 console.log("Ternary: " + text);  // Will return 'Ternary: Adult'
 
+// logical OR (return true bit or false bit)
+let firstPort;
+let secondPort = 9999;
+let port;
 
+port = firstPort || 3000;
+console.log(port); // defaults to 3000 as firstPort is not initialised
 
+port = secondPort || 3000;
+console.log(port); // uses 9999 as secondPort value initialised.
