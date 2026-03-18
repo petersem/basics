@@ -27,6 +27,7 @@ console.log(hello("Matt", "P"));  // prints Hello Matt P
 
 console.log(hello("Matt"));  // prints Hello Matt you lamer
 
+// set some default options which can be overriden with second function param
 const defaultOptions = {
     a: 'dog',
     b: ['bird'],
@@ -39,7 +40,7 @@ function spreadFunction(options = {}) {
     const config = { ...defaultOptions, ...options };
     console.log(config);
 }
-// call with nothing but defaults
+// call with nothing. Uses defaults
 spreadFunction();
 
 // call with option overrides 
