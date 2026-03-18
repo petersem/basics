@@ -19,6 +19,7 @@ npm run arr
 npm run err
 npm run tips
 npm run reg
+npm run patt
 ```
 
 Look in the `package.json` to see examples of creating multiple script options, as per the above.

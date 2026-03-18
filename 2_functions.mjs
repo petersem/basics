@@ -27,25 +27,15 @@ console.log(hello("Matt", "P"));  // prints Hello Matt P
 
 console.log(hello("Matt"));  // prints Hello Matt you lamer
 
-// set some default options which can be overriden with second function param
-const defaultOptions = {
-    a: 'dog',
-    b: ['bird'],
-    c: (24 * 60 * 60 * 1000),
-    d: 5
-}
 
-// ... Spread operator - spreads an input object as parameters. Second input overrides anything from first
+// spread function - passes object as parameters to function
 function spreadFunction(options = {}) {
-    const config = { ...defaultOptions, ...options };
-    console.log(config);
+    const config = { ...options };
+    console.log(config); // prints object - { a: 'cat', b: 17 }
 }
-// call with nothing. Uses defaults
-spreadFunction();
 
-// call with option overrides 
+// call with object
 spreadFunction({
     a: 'cat',
-    d: 17
+    b: 17
 });
-

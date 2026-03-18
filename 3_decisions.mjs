@@ -43,3 +43,10 @@ console.log(port); // defaults to 3000 as firstPort is not initialised
 
 port = secondPort || 3000;
 console.log(port); // uses 9999 as secondPort value initialised.
+
+// nullish coalesence - if var null or undefined, return something, otherwise return var
+let r;
+const q = "cat";
+
+console.log( r ?? "dog"); // prints dog because r is null or undefined
+console.log( q ?? "dog"); // prints cat as variable already initialised
