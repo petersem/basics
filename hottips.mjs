@@ -97,12 +97,7 @@ console.log();
 // ---------------------------------------------------------------------------
 
 // Read environment variables from .env file, but only if not in production mode.
-import dotenv from 'dotenv';
-// Load dotenv only if not in production
-if (process.env.NODE_ENV !== 'production') {
-    // load environment variables from a file
-    dotenv.config();
-}
+// must use `node --env-file=.env xxx.mjs`
 
 // Set environment values in your .env file, then read them into your code at run time
 // if production, these values will be set at the OS. 
@@ -168,27 +163,6 @@ console.log();
 
 // ---------------------------------------------------------------------------
 
-// Timers
-//
-// in miliseconds - 1 second = 1000 miliseconds
-
-// Runs once after a certain time
-setTimeout(() => console.log('Runs after 2 seconds'), 2000); // After 2 seconds
-
-// Runs every time period (in this case only 3 times)
-let counter = 0;
-const intervalId = setInterval(() => {
-    counter++;
-    console.log('Runs every 4 second');
-    if (counter >= 3) {
-        // stop if run 3 times
-        clearInterval(intervalId);
-        console.log('Interval stopped');
-    }
-}, 4000);
-
-// ---------------------------------------------------------------------------
-
 // Events emitter
 //
 import EventEmitter from 'events';
@@ -248,17 +222,10 @@ fs.writeFile('settings.json',JSON.stringify(mySettings), (err) => {
 });
 
 
-
+// console.table() - prints objects and arrays in a table format
 console.log('Output for: console.table(object)')
 console.table(mySettings);
 
-import he from "he";
-const badInput = "<script>alert('Youv'e been hacked!');<script>";
-console.log(badInput);
-// encodes input
-console.log(he.encode(badInput));
-// parses output for html safe display
-console.log(he.escape(badInput));
 
 
 // itterate through all properties of an object
@@ -278,4 +245,14 @@ for (const [key, value] of Object.entries(fakeBody)) {
 }
 console.log('----------------------');
 
+// group content auto-indented under group heading
+console.group("User Info");
+console.log("Name: Matt");
+console.log("Age: 57");
+console.groupEnd
 
+console.time("5sec");
+setTimeout(() => {
+    console.log('Timer is complete');
+    console.timeEnd("5sec");
+}, 5000);

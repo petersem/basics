@@ -24,8 +24,8 @@
     "err": "node 7_errors.mjs",
     "reg": "node 8_regex.mjs",
     "prom": "node 9_promises.mjs",
-    "tips": "cross-env NODE_ENV=dev node hottips.mjs",
-    "patt": "node patterns.mjs"
+    "tips": "node --env-file=.env hottips.mjs",
+    "patt": "node 10-patterns.mjs"
   },
   "dependencies": {
     "cross-env": "^10.1.0",
