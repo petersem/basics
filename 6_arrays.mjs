@@ -86,3 +86,26 @@ console.log(Array.isArray(petArray));  // returns true
 petArray.length = 0;
 console.log(petArray);  // returns []
 
+// concatenate arrays
+let arr1 = [1,2,3];
+let arr2 = [4,5,6];
+console.log(arr1.concat(arr2)); // merges arr2 into arr1 and prints [ 1, 2, 3, 4, 5, 6 ]
+
+// The Map object holds key-value pairs 
+let mm = new Map()
+// can add any value type
+mm.set("matt",1);
+mm.set("lance", "potato");
+mm.set("joe",{safeWord: 'pineapple', fruit: 'apple', implement: 'pen'})
+// check for a key
+console.log(mm.has("perpendicular"));  // returns false as doesnt exist in Map
+// iiterable
+mm.forEach(m => console.log(m));
+// get size
+console.log(mm.size);
+// get value
+console.log(mm.get("lance"));
+// delete key
+console.log(mm.has("lance"));  // true
+mm.delete("lance");
+console.log(mm.has("lance"));   // false
