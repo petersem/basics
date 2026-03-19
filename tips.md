@@ -235,7 +235,7 @@ services:
 | Pre-meeting question sys    | Habbit logger       | Kanban Board        |
 | Spotify now playing display | docker packaging    | Automate CI build   |
 | Password strength checker   | image hosting       |                     |
-|                             | Idempotency manager |                     |
+| Pastebin clone              | Idempotency manager |                     |
 
 ### Handy APIs
 
