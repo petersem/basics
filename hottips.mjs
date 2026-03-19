@@ -256,3 +256,19 @@ setTimeout(() => {
     console.log('Timer is complete');
     console.timeEnd("5sec");
 }, 5000);
+
+
+// hash an object to compare if it has changed
+function hashRequest(thing) {
+  const content = JSON.stringify(thing) || '';
+  return crypto.createHash('sha256').update(content).digest('hex');
+}
+
+let poop = "cat";
+let fir = hashRequest(poop);
+poop = "dog";
+let sec = hashRequest(poop);
+let thi = hashRequest("dog");
+console.log("------" + fir);
+console.log("------" + sec); // has changes
+console.log("------" + thi); // same as changed object
