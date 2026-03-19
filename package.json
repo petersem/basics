@@ -29,9 +29,7 @@
     "time": "node 11_timers.mjs"
   },
   "dependencies": {
-    "cross-env": "^10.1.0",
-    "crypto": "^1.0.1",
-    "he": "^1.2.0"
+    "crypto": "^1.0.1"
   },
   "devDependencies": {
     "dotenv": "^17.3.1",
