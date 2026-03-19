@@ -153,7 +153,7 @@ Rest API tester (But, I prefer stand-alone Postman)
 | ERROR  | 400  | Bad request            |
 | ERROR  | 500  | Signifies server error |
 
-> #### Examlples
+> #### Examples
 >
 > | Code | Implementation                                       |
 > | ---  | ---                                                  |
