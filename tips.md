@@ -238,6 +238,7 @@ services:
 | Pastebin clone              | Idempotency manager |                     |
 | Magic 8 Ball game           | Cheap fuel searcher |                     |
 | Mortgage repayment calc     |                     |                     |
+| create github repo for node |                     |                     |
 
 ### Handy APIs
 
