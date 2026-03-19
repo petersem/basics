@@ -25,7 +25,8 @@
     "reg": "node 8_regex.mjs",
     "prom": "node 9_promises.mjs",
     "tips": "node --env-file=.env hottips.mjs",
-    "patt": "node 10-patterns.mjs"
+    "patt": "node 10-patterns.mjs",
+    "time": "node 11_timers.mjs"
   },
   "dependencies": {
     "cross-env": "^10.1.0",
