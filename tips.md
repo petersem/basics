@@ -236,10 +236,11 @@ services:
 | Spotify now playing display | docker packaging    | Automate CI build   |
 | Password strength checker   | image hosting       |                     |
 | Pastebin clone              | Idempotency manager |                     |
+| Magic 8 Ball game           |                     |                     |
 
 ### Handy APIs
 
-- [Spoonacular](https://spoonacular.com/food-api) (Food, recipe, and nutrition API)
-- [Open Trivia Database](https://opentdb.com/api_config.php)
+- [Spoonacular](https://spoonacular.com/food-api) Food, recipe, and nutrition API
+- [Open Trivia Database](https://opentdb.com/api_config.php) Free triva questions
 
 [Return to Home](https://github.com/petersem/basics)
