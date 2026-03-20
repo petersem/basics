@@ -109,3 +109,14 @@ console.log(mm.get("lance"));
 console.log(mm.has("lance"));  // true
 mm.delete("lance");
 console.log(mm.has("lance"));   // false
+
+let person = {
+    surname: "bloggs", 
+    age: 58,
+    carModel: "Holden"
+};
+
+// intterates by key, whereas foreach is by keyvalue
+for (let key in person) {
+    console.log(key, person[key]);
+}
