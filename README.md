@@ -20,7 +20,7 @@ Look in the `package.json` to see examples of creating multiple script options, 
 >
 > `npm i`
 
-## Other Tips
+## Other Tips - VIEW THIS!
 
 [Tips and tricks](https://github.com/petersem/basics/blob/main/tips.md) for various random things.
 
