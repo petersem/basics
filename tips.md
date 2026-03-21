@@ -282,7 +282,7 @@ services:
 - Pkg
 - Awesome-Notifications
 - Swagger
-- Chart
+- Chart.js
 - He
 
 [Return to Home](https://github.com/petersem/basics)
