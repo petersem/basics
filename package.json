@@ -17,18 +17,21 @@
   "scripts": {
     "var": "node 0_variables.mjs",
     "ops": "node 1_operators.mjs",
-    "func": "node 2_functions.mjs",
+    "str": "node 2_strings.mjs",
     "dec": "node 3_decisions.mjs",
-    "class": "node 4_classes.mjs",
-    "math": "node 5_math.mjs",
+    "func": "node 4_functions.mjs",
+    "class": "node 5_classes.mjs",
     "arr": "node 6_arrays.mjs",
-    "err": "node 7_errors.mjs",
-    "reg": "node 8_regex.mjs",
+    "math": "node 7_math.mjs",
+    "err": "node 8_errors.mjs",
     "prom": "node 9_promises.mjs",
+    "reg": "node 10_regex.mjs",
+    "patt": "node 11-patterns.mjs",
+    "date": "node 12_dates.mjs",
+    "time": "node 13_timers.mjs",
     "tips": "node --env-file=.env hottips.mjs",
-    "patt": "node 10-patterns.mjs",
-    "time": "node 11_timers.mjs",
-    "date": "node 12_dates.mjs"
+    "cha": "node chart.mjs"
+
   },
   "dependencies": {
     "chart.js": "^4.5.1",
