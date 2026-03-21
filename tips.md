@@ -56,7 +56,8 @@ Rest API tester (But, I prefer stand-alone Postman)
 - AXIOS
 - Secure Coding Practices
 - SCRUM and Kanban Agile methodologies
-- Swagger
+- Swagger (API Documenter)
+- SQL, MariaDB/MySQL, MySQL Workbench
 
 ## VSCode
 
@@ -97,6 +98,7 @@ Rest API tester (But, I prefer stand-alone Postman)
 - [NPM Package Library](https://www.npmjs.com/)
 
 ## Symantic Versioning
+
 Uses 3 numbers, seperated by a period. e.g. 1.2.4
 
 > Breaking changes . New features . Bug fixes
