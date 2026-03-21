@@ -11,7 +11,7 @@
 
 ```console
 npm run // to see all the scripts
-npm run _scriptname_
+npm run scriptnam
 ```
 
 Look in the `package.json` to see examples of creating multiple script options, as per the above.
