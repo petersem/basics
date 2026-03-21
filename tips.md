@@ -135,10 +135,11 @@ Uses 3 numbers, seperated by a period. e.g. 1.2.4
 - Express JS is used to handle HTTP logic
 - Express middleware is a function which runs between the request and response.
 - Express-Validators validates routes according to business rules
+- EJS is a templating engine for injecting data into View files
 
 ### Secure Coding
 
-- *Always* sanitise inputs at the server and client
+- *Always* sanitise inputs at server and client input interfaces
 - *Always* parse outputs. This includes reads and writes from databases and external services, too.
 - *Try* to log important operations fopr security and debugging
 - *Never* output a stack trace in production
@@ -283,6 +284,10 @@ services:
 - Awesome-Notifications
 - Swagger
 - Chart.js
-- He
+
+## SQL Commands
+
+![Commands](https://raw.githubusercontent.com/petersem/basics/refs/heads/main/misc/sqlcommand.jpp)
+
 
 [Return to Home](https://github.com/petersem/basics)
