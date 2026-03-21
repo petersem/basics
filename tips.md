@@ -103,7 +103,6 @@ Uses 3 numbers, seperated by a period. e.g. 1.2.4
 
 > Breaking changes . New features . Bug fixes
 
-
 ## NPM
 
 - `npm init -y` initialises a node project and auto answers all questions *yes*. (Omit -y to go through questions)
@@ -290,6 +289,83 @@ services:
 ## SQL Commands
 
 ![Commands](https://raw.githubusercontent.com/petersem/basics/refs/heads/main/misc/sqlcommand.jpg)
+
+## API Terms
+
+### Definition
+
+- Enables communications between software systems
+- Defines structured rules for integration
+
+### Endpoint
+
+- Represents specific API functionality path
+- Unique URL for accessing resources
+
+### HTTP API Methods
+
+- Enable standardised CRUD operation handling
+- Define action performed on resources
+
+### Request
+
+- Client sends structured data payload
+- Includes headers, parameters, and body
+
+### Response
+
+- Server returns processed result data
+- Contains status code, and payload
+
+### Status Codes
+
+- Indicate outcome of API request
+- Help identify errors and success
+
+### Authentication
+
+- Verifies identity of requesting entity
+- Uses token keys or credentials
+
+### Parameters
+
+- Transfers additional data within requests
+- Support filtering, sorting, and pagination
+
+### Headers
+
+- Carry metadata about HTTP requests
+- Specify content type and authorisation
+
+### Authorisation
+
+- Determines user access permission levels
+- Enforces role-based access control (RBAC)
+
+### Rate Limiting
+
+- Restricts the number of allowed requests
+- Prevents abuse and server overload
+
+### API Key
+
+- Unique identifier for client access
+- Used for simple authentication mechanisms
+
+### JSON
+
+- Lightweight structured data exchange format
+- Commonly used in REST APIs
+
+### Webhook
+
+- Sends automated event triggered callbacks to a URL
+- Enables real-time system updates
+
+### oAuth
+
+- Secure delegated access authorisation framework
+- Issues tokens for controlled access
 
 
 [Return to Home](https://github.com/petersem/basics)
