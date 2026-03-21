@@ -104,12 +104,13 @@ Rest API tester (But, I prefer stand-alone Postman)
 - `npm i packagename --save-dev` to install a package as a development dependency only
 - `npm uninstall packagename` to uninstall a package
 - `npm upgrade` to update packages
+- `npm install --production` will not install any dev dependencies, only production ones
 
 ## Coding
 
 ### General
 
-- Don't use `let`, as this is for old browsers
+- Don't use `var`, as this is for old browsers
 - Use `const` unless you plan to change a variable, in which case use `let`
 - JS file naming, use `.mjs` for module-based ES6 JS. If you use `JS` then you will have to set your package to use modules `type: module`
 - Use the `AXIOS` library for HTTP calls from the server, and the JS built-in `FETCH` library for client side JS. (Axios has more features)
