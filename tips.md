@@ -96,6 +96,12 @@ Rest API tester (But, I prefer stand-alone Postman)
 - [W3Schools](https://www.w3schools.com/w3css/) CSS reference
 - [NPM Package Library](https://www.npmjs.com/)
 
+## Symantic Versioning
+Uses 3 numbers, seperated by a period. e.g. 1.2.4
+
+> Breaking changes . New features . Bug fixes
+
+
 ## NPM
 
 - `npm init -y` initialises a node project and auto answers all questions *yes*. (Omit -y to go through questions)
@@ -105,6 +111,12 @@ Rest API tester (But, I prefer stand-alone Postman)
 - `npm uninstall packagename` to uninstall a package
 - `npm upgrade` to update packages
 - `npm install --production` will not install any dev dependencies, only production ones
+
+> The package.json file is updated with dependancies for installed packages, and their versions
+> 
+> You can add ^ and ~ before numbers to enforce update policies
+> - `^` Allows minor and patch updates
+> - `~` Allows only patch updates
 
 ## Coding
 
