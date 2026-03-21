@@ -162,16 +162,19 @@ Rest API tester (But, I prefer stand-alone Postman)
 > | 200  | Get record or record                                 |
 > | 200  | Full record updated                                  |
 > | 201  | Record added                                         |
+> | 202  | Request received for processing, but not completed   |
 > | 204  | Partial record update completed (No content returned)|
 > | 204  | Record deleted (No content returned)                 |
+> | 206  | Partial content                                      |
+> | 300  | Redirect                                             |
 > | 400  | Rejected API call - missing required header          |
+> | 401  | Unauthorised request                                 |
+> | 403  | Forbidden                                            |
+> | 404  | Record not found                                     |
+> | 408  | Request timeout                                      |
 > | 409  | Rejected API call - Operation in progress            |
 > | 422  | Rejected API call - Invalid header/data sent         |
-> | 404  | Record not found                                     |
 > | 500  | Internal server error                                |
-> | 202  | Request received for processing, but not completed   |
-> | 401  | Unauthorised request                                 |
-> | 408  | Request timeout                                      |
 > | 503  | Service / Server unavailable (e.g maintenance)       |
 
 ## Static Folders for HTML Projects
@@ -240,8 +243,13 @@ services:
 | Password strength checker   | image hosting       |                     |
 | Pastebin clone              | Idempotency manager |                     |
 | Magic 8 Ball game           | Cheap fuel searcher |                     |
-| Mortgage repayment calc     |                     |                     |
-| create github repo for node |                     |                     |
+| Mortgage repayment calc     | Interactive quiz    |                     |
+| create github repo for node | Expense tracker     |                     |
+| Random colour palette gen.  | Bookmark saver app  |                     |
+| Currency converter          |                     |                     |
+| Random colour palette gen.  |                     |                     |
+| Custom 404 Page Not Found   |                     |                     |
+| Countdown timer             |                     |                     |
 
 ## Handy APIs
 
