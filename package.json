@@ -31,7 +31,9 @@
     "date": "node 12_dates.mjs"
   },
   "dependencies": {
-    "crypto": "^1.0.1"
+    "chart.js": "^4.5.1",
+    "crypto": "^1.0.1",
+    "skia-canvas": "^3.0.8"
   },
   "devDependencies": {
     "dotenv": "^17.3.1",

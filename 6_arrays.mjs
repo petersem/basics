@@ -1,4 +1,7 @@
 // Arrays
+
+console.log(`
+-------------- define and initialise array`)
 let newArray = []; // the square brackets indicate this is an array. Nothing inside means an empty array
 console.log(newArray.length);  // returns 0
 let populatedArray = [1,2,3,"a","b","C"];  //creates a variable and assigns a populated array
@@ -7,6 +10,8 @@ console.log(populatedArray.length);  // returns // array[n] - returns an array v
 var myArray = [1,2,3,4,5];   // define a variable and initialise it with an array
 console.log(myArray[3]);   // returns the 4th value in the array, which is 46
 
+console.log(`
+-------------- array push / pop`)
 newArray.push("hello");  // push adds a value to the end of an array
 console.log(newArray.length);  // returns 1
 
@@ -14,17 +19,25 @@ newArray.push("there");  // push adds a value to the end of an array
 let popValue = newArray.pop();  // removes and returns the last value in an array
 console.log(popValue);  // prints 'there';
 
+console.log(`
+-------------- array reverse`)
 // array.reverse() - Reverses the items in an array
 console.log(populatedArray.reverse()); // prints [ 'C', 'b', 'a', 3, 2, 1 ]
 
+console.log(`
+-------------- filter to return a new subset array`)
 // array.filter retruns a new array of items which match certain criteria.
 let sampleArray = ["cat", "dog", "cat", "dog", "cat", "dog", "dog", "dog"];
 console.log(sampleArray.filter((item) => { return item == "dog" }).length);  // returns the length of a new array, being 5
 
+console.log(`
+-------------- Map to mutate all elements`)
 // array.map retruns a new array of changed items. could be selective or everything
 let numArray = ["cat", "dog", "cat", "dog", "cat", "dog", "dog", "dog"];
 console.log(sampleArray.map((item) => { return "bird" }));  // returns an array of birds
 
+console.log(`
+-------------- Array sorts`)
 // array.sort - sorts an array
 // With no parameters for the sort function, each array element is converted to a string, then compared alphbetically.
 
@@ -54,17 +67,15 @@ function compareNum(a, b) {
 // sort our numbers array using our new compareNum function
 console.log(numbersArray.sort(compareNum));  // prints as logically expected [1, 2, 3, 4, 5, 15, 15, 21, 155]
 
-// moving through arrays
-// FOR IN - itterates by index
-for (let f in fruits){
-    console.log(fruits[f]);
-}
-
+console.log(`
+-------------- itterate array values with foreach`)
 // for each - itterates by element in array
 fruits.forEach(f => {
     console.log(f);
 });
 
+console.log(`
+-------------- serialise/deseriale array`)
 // serialise and deserialise objects
 // Serialise - Turn into a structured string
 let serialFruit = JSON.stringify(fruits);
@@ -75,21 +86,33 @@ let deSerialFruit = JSON.parse(serialFruit);
 console.log('Object:');
 console.log(deSerialFruit);
 
+console.log(`
+-------------- array to string with join`)
 // array.join(delimeter) - Moves the elements in a array into a delimetered string
 let petArray = ['Dog', 'Cat', 'Bird'];
 console.log(petArray.join());   // prints a string "Dog,Cat,Bird"
 
-// arry.issArray(yourArray) - Tests if yourArray is an array. Dont use TypeOf() for arrays as this would return an Object
+console.log(`
+-------------- test if array`)
+// arry.isArray(yourArray) - Tests if yourArray is an array. Dont use TypeOf() for arrays as this would return an Object
 console.log(Array.isArray(petArray));  // returns true
 
+console.log(`
+-------------- emptyt array with length=0`)
 // arrayname.length = 0 - Empties an array
 petArray.length = 0;
 console.log(petArray);  // returns []
+
+console.log(`
+-------------- array concatenate`)
 
 // concatenate arrays
 let arr1 = [1,2,3];
 let arr2 = [4,5,6];
 console.log(arr1.concat(arr2)); // merges arr2 into arr1 and prints [ 1, 2, 3, 4, 5, 6 ]
+
+console.log(`
+-------------- Map object`)
 
 // The Map object holds key-value pairs 
 let mm = new Map()
@@ -97,7 +120,7 @@ let mm = new Map()
 mm.set("matt",1);
 mm.set("lance", "potato");
 mm.set("joe",{safeWord: 'pineapple', fruit: 'apple', implement: 'pen'})
-// check for a key
+// check for a key with 'has'
 console.log(mm.has("perpendicular"));  // returns false as doesnt exist in Map
 // iiterable
 mm.forEach(m => console.log(m));
@@ -109,6 +132,10 @@ console.log(mm.get("lance"));
 console.log(mm.has("lance"));  // true
 mm.delete("lance");
 console.log(mm.has("lance"));   // false
+
+
+console.log(`
+-------------- For-In`)
 
 let person = {
     surname: "bloggs", 
