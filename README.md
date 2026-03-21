@@ -5,7 +5,7 @@
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/petersem/basics)
 ![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/petersem/basics)
 
-## Just a few things taught in class
+## Just a few things I know, and also taught in the Tafe QLD Web Dev class
 
 **To run the code examples**
 
