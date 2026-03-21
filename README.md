@@ -10,16 +10,8 @@
 **To run the code examples**
 
 ```console
-npm run var
-npm run func
-npm run dec
-npm run class
-npm run math
-npm run arr
-npm run err
-npm run tips
-npm run reg
-npm run patt
+npm run // to see all the scripts
+npm run _scriptname_
 ```
 
 Look in the `package.json` to see examples of creating multiple script options, as per the above.

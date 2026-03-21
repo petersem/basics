@@ -30,7 +30,8 @@
     "date": "node 12_dates.mjs",
     "time": "node 13_timers.mjs",
     "tips": "node --env-file=.env hottips.mjs",
-    "cha": "node chart.mjs"
+    "cha": "node chart.mjs",
+    "all": "npm run var, ops"
 
   },
   "dependencies": {
