@@ -33,7 +33,7 @@ Look in the `package.json` to see examples of creating multiple script options, 
 - [Docker](https://github.com/petersem/basics/blob/main/docker.md) information, commands, and useful YAML.
 - [Database](https://github.com/petersem/basics/blob/main/database.md) learnings.
 - [Architecture](https://github.com/petersem/basics/blob/main/architecture.md) patterns, practices, and recommendations.
-- 
+
 > Look under the `client_code` folder for examples of client-side task adding, and dynamic notifications.
 
 ## Star History
