@@ -34,3 +34,8 @@ phrase = "     This is a new phrase       ";
 console.log(phrase);
 console.log(phrase.trim());
 
+console.log(`
+-------------- slice returns a string from position x [to postition y]`);
+const aString = "She came from planet Claire. I know she came from there";
+console.log(aString.slice(14,27));
+console.log(aString.slice(29)); // or from a position to the end of the string

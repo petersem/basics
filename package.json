@@ -26,7 +26,7 @@
     "err": "node 8_errors.mjs",
     "prom": "node 9_promises.mjs",
     "reg": "node 10_regex.mjs",
-    "patt": "node 11-patterns.mjs",
+    "patt": "node 11_patterns.mjs",
     "date": "node 12_dates.mjs",
     "time": "node 13_timers.mjs",
     "tips": "node --env-file=.env hottips.mjs",
