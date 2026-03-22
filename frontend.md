@@ -8,6 +8,6 @@ Various front-end information
 
 ## CSS Cheatsheet
 
-![Cheatsheet](https://raw.githubusercontent.com/petersem/basics/refs/heads/main/misc/csscheatsheet.jpeg)
+![Cheatsheet](https://raw.githubusercontent.com/petersem/basics/refs/heads/main/misc/csscheatsheet.jpg)
 
 [Return to Home](https://github.com/petersem/basics)
