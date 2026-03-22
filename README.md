@@ -5,10 +5,11 @@
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/petersem/basics)
 ![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/petersem/basics)
 
-
-**To run the code examples**
+## Code examples
 
 > Code snippets all start with a number
+
+**To run the code examples**
 
 ```console
 npm run // to see all the scripts
@@ -21,7 +22,7 @@ Look in the `package.json` to see examples of creating multiple script options, 
 >
 > `npm i`
 
-## Other Tips - VIEW THIS!
+## Other information
 
 - [VSCode](https://github.com/petersem/basics/blob/main/vscode.md) extensions, shortcuts and tips.
 - [Learning](https://github.com/petersem/basics/blob/main/learning.md) suggestions and ideas.
