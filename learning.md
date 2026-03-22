@@ -51,36 +51,36 @@ Various suggesttions and references
 
 ## Project ideas for learning
 
-| Beginner                    | Intermnediate       | Advanced            |
-| ---                         | ---                 | ---                 |
-| User login/signup API       | Blog platform       | Real-time Chat App  |
-| To-Do list                  | Event booking API   | Analytics dash      |
-| URL Shortener               | Expense tracker API | Resume parser       |
-| Weather data fetcher        | Image resizer       | AI Chatbot          |
-| BMI Calculator              | Chat server (s.io)  | AI Resume scorer    |
-| Daily quotes                | Newsletter subs     | Subscription mgr    |
-| Daily Joke                  | Movie info search   | Audio transcribe    |
-| Email verification API      | Notification system | Deliver App         |
-| Poll/Voting API             | Webhook receiver    | Twitter Clone       |
-| Basic Auth System           | Code snippit mgr    | Whatsapp clone      |
-| File uploader               | Weather notifier    | Recipe sharing      |
-| Feedback collector          | Class attendance    | Menu system         |
-| Dice roll API               | Fitness tracker API | Fitness tracker app |
-| Progressive web app         | Multiplay TicTacToe | Travel planner      |
-| Movie watchlist             | News aggregator     | Blackjack game      |
-| Implement unit tests (jest) | Meme generator      | Wiki System         |
-| Pre-meeting question sys    | Habbit logger       | Kanban Board        |
-| Spotify now playing display | docker packaging    | Automate CI build   |
-| Password strength checker   | image hosting       |                     |
-| Pastebin clone              | Idempotency manager |                     |
-| Magic 8 Ball game           | Cheap fuel searcher |                     |
-| Mortgage repayment calc     | Interactive quiz    |                     |
-| create github repo for node | Expense tracker     |                     |
-| Random colour palette gen.  | Bookmark saver app  |                     |
-| Currency converter          |                     |                     |
-| Random colour palette gen.  |                     |                     |
-| Custom 404 Page Not Found   |                     |                     |
-| Countdown timer             |                     |                     |
+| Beginner                    | Intermnediate            | Advanced            |
+| ---                         | ---                      | ---                 |
+| User login/signup API       | Blog platform            | Real-time Chat App  |
+| To-Do list                  | Event booking API        | Analytics dash      |
+| URL Shortener               | Expense tracker API      | Resume parser       |
+| Weather data fetcher        | Image resizer            | AI Chatbot          |
+| BMI Calculator              | Chat server (s.io)       | AI Resume scorer    |
+| Daily quotes                | Newsletter subs          | Subscription mgr    |
+| Daily Joke                  | Movie info search        | Audio transcribe    |
+| Email verification API      | Notification system      | Deliver App         |
+| Poll/Voting API             | Webhook receiver         | Twitter Clone       |
+| Basic Auth System           | Code snippit mgr         | Whatsapp clone      |
+| File uploader               | Weather notifier         | Recipe sharing      |
+| Feedback collector          | Class attendance         | Menu system         |
+| Dice roll API               | Fitness tracker API      | Fitness tracker app |
+| Progressive web app         | Multiplay TicTacToe      | Travel planner      |
+| Movie watchlist             | News aggregator          | Blackjack game      |
+| Implement unit tests (jest) | Meme generator           | Wiki System         |
+| Pre-meeting question sys    | Habbit logger            | Kanban Board        |
+| Spotify now playing display | docker packaging         | Automate CI build   |
+| Password strength checker   | image hosting            |                     |
+| Pastebin clone              | Idempotency manager      |                     |
+| Magic 8 Ball game           | Cheap fuel searcher      |                     |
+| Mortgage repayment calc     | Interactive quiz         |                     |
+| create github repo for node | Expense tracker          |                     |
+| Random colour palette gen.  | Bookmark saver app       |                     |
+| Currency converter          | Manage long-running APIs |                     |
+| Random colour palette gen.  |                          |                     |
+| Custom 404 Page Not Found   |                          |                     |
+| Countdown timer             |                          |                     |
 
 ## Handy APIs
 

@@ -46,6 +46,7 @@ Rest API tester (But, I prefer stand-alone Postman)
 - `ctrl /` to comment / uncomment
 - `f2` rename symbol
 - `ctrl ,` opens VSCode settings
+- `alt-shift` allows selecting multiple lines within the editor to simultaneously change
 - Open settings and search for autosave in the search bar. Set autosave to `afterDelay` and autosavedelay to `3000`. (Saves files after 3 seconds of inactivitiy)
 
 [Return to Home](https://github.com/petersem/basics)
