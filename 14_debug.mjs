@@ -2,8 +2,8 @@
 
 // Coloured output
 //
-console.log(`
--------------- Console formatting`)
+console.log('');
+console.log(`------------- Console formatting`)
 // Console Formatting - https://nodejs.org/api/util.html#customizing-utilinspect-colors
 import { styleText } from 'node:util';
 import { errorMonitor } from 'node:events';
@@ -19,8 +19,8 @@ console.log();
 
 // Output in table
 //
-console.log(`
--------------- Print object as a table`);
+console.log('');
+console.log(`------------- Print object as a table`);
 const mySettings = {
     timeOutValueMS: 5000,
     isDebug: true,
@@ -32,8 +32,8 @@ console.table(mySettings);
 
 // Output in group
 //
-console.log(`
--------------- Output messages as a group`);
+console.log('');
+console.log(`------------- Output messages as a group`);
 // group content auto-indented under group heading
 console.group("My Settings");
 console.log(mySettings.timeOutValueMS);
@@ -44,8 +44,8 @@ console.groupEnd();
 
 // Output timer
 //
-console.log(`
--------------- Output timer`);
+console.log('');
+console.log(`------------- Output timer`);
 // group content auto-indented under group heading
 console.time("step-1");  // start timer
 console.timeLog("step-1");  // current progress of timer

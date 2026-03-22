@@ -78,9 +78,10 @@ Various suggesttions and references
 | create github repo for node | Expense tracker          |                     |
 | Random colour palette gen.  | Bookmark saver app       |                     |
 | Currency converter          | Manage long-running APIs |                     |
-| Random colour palette gen.  |                          |                     |
+| Random colour palette gen.  | Movie Search App         |                     |
 | Custom 404 Page Not Found   |                          |                     |
 | Countdown timer             |                          |                     |
+| Digital clock               |                          |                     |
 
 ## Handy APIs
 

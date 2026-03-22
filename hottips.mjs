@@ -1,5 +1,5 @@
-console.log(`
--------------- Get weekday for a given date`)
+console.log('');
+console.log(`------------- Get weekday for a given date`)
 
 function getWeekDay(forDate) {
     const days = [
@@ -18,8 +18,8 @@ function getWeekDay(forDate) {
 console.log(getWeekDay("2026-02-20"));  // get the day for a given date
 console.log(getWeekDay(new Date()));  // get todays day
 
-console.log(`
--------------- Returns a number within a range`)
+console.log('');
+console.log(`------------- Returns a number within a range`)
 /**
  * Retuns a number within a defined min/max range
  * @param {number} num - input number
@@ -36,8 +36,8 @@ console.log(clamp(-10, 0, 5)); // outside range. closest value is 0
 console.log(clamp(3, 0, 5)); // in range. Just return 3
 console.log();
 
-console.log(`
--------------- Get ordinal descriptor for a given day of the month`)
+console.log('');
+console.log(`------------- Get ordinal descriptor for a given day of the month`)
 /**
  * Returns the ordinal descriptor for a given day number.
  * Examples: 1 -> "1st", 2 -> "2nd", 3 -> "3rd", 4 -> "4th"
@@ -76,9 +76,8 @@ const day = d.getDate();  // gets day of the month
 console.log(getDaySuffix(day));   // For today
 console.log();
 
-
-console.log(`
--------------- Get a random UUID`)
+console.log('');
+console.log(`------------- Get a random UUID`)
 import crypto from 'crypto';
 
 /**
@@ -93,8 +92,8 @@ function generateUUID() {
 console.log("Generated UUID:", generateUUID());
 console.log();
 
-console.log(`
--------------- Reading environment variables`)
+console.log('');
+console.log(`------------- Reading environment variables`)
 // Read environment variables from .env file, but only if not in production mode.
 // must use `node --env-file=.env xxx.mjs`
 
@@ -113,21 +112,21 @@ import fs from 'fs';
 // Read a file (asynchronous)
 fs.readFile('simple.txt', 'utf8', (err, data) => {
     if (err) return console.error('Error reading file:', err);
-    console.log(`
--------------- Reading files`)
+    console.log('');
+console.log(`------------- Reading files`)
     console.log('File contents read:', data);
 });
 
 // Write to a file
 fs.writeFile('new.txt', 'Hello Node.js!', (err) => {
     if (err) return console.error('Error writing file:', err);
-    console.log(`
--------------- Writing files`)
+    console.log('');
+console.log(`------------- Writing files`)
     console.log('File written successfully.');
 });
 
-console.log(`
--------------- Getting age from birthday`)
+console.log('');
+console.log(`------------- Getting age from birthday`)
 // Get someones age from birthdate
 
 function getAge(birthDateString) {
@@ -163,8 +162,8 @@ import EventEmitter from 'events';
 const emitter = new EventEmitter();
 
 emitter.on('greet', (name) => {
-    console.log(`
--------------- Events and event emitters`)// Events emitter
+    console.log('');
+console.log(`------------- Events and event emitters`)// Events emitter
     console.log(`Hello, ${name}!`)
 });
 
@@ -191,8 +190,8 @@ let mySettings2 = {};
 fs.readFile('settings.json', 'utf8', (err, data) => {
     if (err) return console.error('Error reading file:', err);
     mySettings2 = JSON.parse(data);
-console.log(`
--------------- Reading file contents into an object`);
+console.log('');
+console.log(`------------- Reading file contents into an object`);
     console.log('Setting file contents read into object');
     console.log('Test object read: ' + mySettings2.age);
     console.log();
@@ -201,14 +200,14 @@ console.log(`
 // serialise setting object and write to file
 fs.writeFile('settings.json',JSON.stringify(mySettings), (err) => {
     if (err) return console.error('Error writing file:', err);
-    console.log(`
--------------- Write object to a file`);
+    console.log('');
+console.log(`------------- Write object to a file`);
     console.log('Settings written successfully to settings.json.');
 });
 
 
-console.log(`
--------------- Itterate through properties of an object`);
+console.log('');
+console.log(`------------- Itterate through properties of an object`);
 // itterate through all properties of an object
 // create a fake body object
 const fakeBody = { 
@@ -225,8 +224,8 @@ for (const [key, value] of Object.entries(fakeBody)) {
 }
 
 
-console.log(`
--------------- Hash strings to compare for changes`);
+console.log('');
+console.log(`------------- Hash strings to compare for changes`);
 // hash an object to compare if it has changed
 function hashRequest(thing) {
   const content = JSON.stringify(thing) || '';
@@ -242,8 +241,8 @@ console.log(fir);
 console.log(sec); // has changes
 console.log(thi); // same as changed object
 
-console.log(`
--------------- Doing a bubble sort`);
+console.log('');
+console.log(`------------- Doing a bubble sort`);
 // Doing a bubble sort - compare-swap-repeat
 const sortArr = [12,1,3,3,6,13,8,5,3,5];
 
@@ -268,8 +267,8 @@ const bubbleSort = (arr) => {
 console.log(sortArr); // pre-sort
 console.log(bubbleSort(sortArr)); // post-sort
 
-console.log(`
--------------- capitalise the first letter of each word, with the remaining letters lower case`);
+console.log('');
+console.log(`------------- capitalise the first letter of each word, with the remaining letters lower case`);
 
 // capitalise the first letter of each word, with the rest lower case
 const haiku = "My code fAiLs I do not knoW why My code works I do not know wHy.";

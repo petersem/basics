@@ -1,8 +1,8 @@
 
 // OVERRIDE DEFAULT PARAMETERS
 //
-console.log(`
--------------- Overridable, default options`);
+console.log('');
+console.log(`------------- Overridable, default options`);
 // ** Call a function or method with default options, and optional overrides.
 // set some default options which can be overriden with second function param
 const defaultOptions = {
@@ -30,8 +30,8 @@ spreadFunction({
 
 // SINGLETON PATTERN
 //
-console.log(`
--------------- Signleton pattern`);
+console.log('');
+console.log(`------------- Signleton pattern`);
 // create a class that can only be instantiated once
 // eg for a database or api that only allows one connection
 class Singleton {
@@ -65,8 +65,8 @@ d.test(); // usually would be 0, but is 5 as from the existing class instance
 
 // ABSTRACT FACTORY PATTERN
 //
-console.log(`
--------------- Abstract factory pattern`);
+console.log('');
+console.log(`------------- Abstract factory pattern`);
 // concrete class
 class Alien {
     constructor (name, phrase) {
@@ -113,8 +113,8 @@ dave.move();
 
 // BUILDER PATTERN
 //
-console.log(`
--------------- Builder pattern`);
+console.log('');
+console.log(`------------- Builder pattern`);
 // base class
 class Bug {
     name;
