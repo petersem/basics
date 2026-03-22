@@ -24,7 +24,7 @@ Is used to create objects in "steps". Normally we will have functions or methods
 
 The cool thing about this pattern is that we separate the creation of properties and methods into different entities.
 
-## Architectural Design Solutions
+## Design Solutions
 
 ### Fast key:value storage
 

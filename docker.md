@@ -5,7 +5,8 @@ Various information on Docker
 ## Practices
 
 - use a .dockerignore file to implicity include or exclude files from the docker image build
-```
+
+``` .ignore
 **/.dockerignore
 **/.env
 **/.git
@@ -29,11 +30,29 @@ README.md
 
 !keep
 ```
+
 - In VSCode, use `git create tag` with your version number, then `git push with tag` so that built docker images include tag (version) labelling.
   
 ## Commands
 
-to be advised
+- Create container: `docker compose up --no-start`
+- Docker system disk free/reclaimable: `docker system df`
+- Delete container: `docker rm container_name` *(must be stopped first)*
+- Stop and remove container(s) in a compose.yaml file: `docker compose down -v [service_name]`
+- Inspect a container: `docker inspect container_name`
+- List all containers: `docker ps`
+- List containers in formatted view: `docker ps -a --format "table {{.Names}}\t{{.ID}}\t{{.Status}}"`
+- View container logs: `docker logs -f container_name`
+- Clean all docker unused images and volumes `prune='docker system prune -a --volumes` (including stopped containers)
+- Pull down new images, defined in a compose file: `docker compose pull [container_name]`
+- Start a stopped container: `docker start`
+- Start all stopped containers: `docker start $(docker ps -a -q)`
+- Stop a container: `docker stop container_name`
+- Stop all containers: `docker stop $(docker ps -a -q)`
+- Create and start container(s) in a compose YAML file: `docker compose up -d service_name]`
+- Pull a Docker image from registry: `docker pull repo/imagename[:tag]`
+
+
 
 ## Yaml examples
 

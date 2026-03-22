@@ -10,8 +10,7 @@
 
 // Defining and initialising variables
 let a;    // assigns the variable a, but not yet setting a value (will be 'undefined')
-let b = 1;   // assigns a variable and sets it value to the number 2
-let c = "hello world";  // assigns a variable c and sets it value to a string
+let b = 1;   // assigns a variable and sets it value (initialises) to the number 2
 const MY_CONST = "My Constant Value"; // defines and initialises a variable which cannot be changed
 
 // Typeof - Returns the type of data being stored in a variable 
