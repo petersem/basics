@@ -2,6 +2,39 @@
 
 Various information on Docker
 
+## Practices
+
+- use a .dockerignore file to implicity include or exclude files from the docker image build
+```
+**/.dockerignore
+**/.env
+**/.git
+**/.gitignore
+**/.settings
+**/.vs
+**/.vscode
+**/*.*proj.user
+**/docker-compose*
+**/compose*
+**/Dockerfile*
+**/node_modules
+**/npm-debug.log
+**/obj
+**/secrets.dev.yaml
+**/values.dev.yaml
+README.md
+/public/custom/pictures/**
+**/custom.css
+/scripts/**
+
+!keep
+```
+- In VSCode, use `git create tag` with your version number, then `git push with tag` so that built docker images include tag (version) labelling.
+  
+## Commands
+
+to be advised
+
 ## Yaml examples
 
 ### MariaDB (MySQL Equivalent DB)

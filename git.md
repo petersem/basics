@@ -2,7 +2,7 @@
 
 Git practices and commands
 
-## Commands
+## Practices
 
 - use a .gitignore file to implicity include or exclude files from Git
 ```

@@ -31,4 +31,8 @@ Recommendations and practices.
 - If you have to code a manual operation more than once in your code, put it in a seperate function of class
 - Optimised code is great for efficiency, but can be bad for readability. Be efficient, but also keep things simple when it makes sense.
 
+## Deployment
+
+- Everything is in containers today, so create a Dockerfile and package into an image. If you are using GitHub, you can build simple automations to build Docker images and deploy these to Docker Hub.
+
 [Return to Home](https://github.com/petersem/basics)
