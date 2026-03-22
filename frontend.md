@@ -6,4 +6,8 @@ Various front-end information
 
 ![Folder breakdown](https://raw.githubusercontent.com/petersem/basics/refs/heads/main/misc/folders.jpeg)
 
+## CSS Cheatsheet
+
+![Cheatsheet](https://raw.githubusercontent.com/petersem/basics/refs/heads/main/misc/csscheatsheet.jpeg)
+
 [Return to Home](https://github.com/petersem/basics)

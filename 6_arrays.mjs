@@ -114,7 +114,7 @@ console.log(arr1.concat(arr2)); // merges arr2 into arr1 and prints [ 1, 2, 3, 4
 console.log(`
 -------------- Map object`)
 
-// The Map object holds key-value pairs 
+// The Map object holds in-memory key-value pairs 
 let mm = new Map()
 // can add any value type
 mm.set("matt",1);
