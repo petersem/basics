@@ -32,6 +32,8 @@ Is an opinionated code formatter
 Integrates ESLint JavaScript into VS Code
 - **Thunder Client**
 Rest API tester (But, I prefer stand-alone Postman)
+- **Filetree Pro**
+Generate project file trees in markdown
 
 ## Shortcut keys
 
