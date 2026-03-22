@@ -24,6 +24,15 @@ Look in the `package.json` to see examples of creating multiple script options, 
 
 [Tips and tricks](https://github.com/petersem/basics/blob/main/tips.md) for various random things.
 
+[VSCode](https://github.com/petersem/basics/blob/main/vscode.md) extensions, shortcuts and tips.
+[Learning](https://github.com/petersem/basics/blob/main/learning.md) suggestions and ideas.
+[NPN](https://github.com/petersem/basics/blob/main/npm.md) commands and packages.
+[Coding](https://github.com/petersem/basics/blob/main/coding.md) recommendations and practices.
+[Reference](https://github.com/petersem/basics/blob/main/references.md) information.
+[Front-end](https://github.com/petersem/basics/blob/main/frontend.md) HMTL, CSS, and recomendations.
+[Docker](https://github.com/petersem/basics/blob/main/docker.md) information, commands, and useful YAML.
+[Database](https://github.com/petersem/basics/blob/main/database.md) learnings.
+
 > Look under the `client_code` folder for examples of client-side task adding, and dynamic notifications.
 
 ## Star History
