@@ -6,18 +6,19 @@ Git practices and commands
 
 - use a .gitignore file to implicity include or exclude files from Git
 ```
-# ignore the following folders and files
+# Exclude the following folders and files from git
 /node_modules
 /config/*.json
 /dist
+/public/custom/pictures
+/public/custom
+
+# include this specifically
+!/public/custom/custom.css
 
 # Empty folders with only a .keep file are included.
 !.keep
 
-# exclude specific folders and files
-!/public/custom/pictures
-!/public/custom/pictures/readme.txt
-!/public/custom/custom.css
 ```
 
 ## Commands
