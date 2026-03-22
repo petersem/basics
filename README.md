@@ -1,17 +1,17 @@
-# Basic JS Stuff
+# Javascript, Node, and general coding thoughts
 
 ![GitHub Stars](https://img.shields.io/github/stars/petersem/basics?style=flat)
 ![GitHub last commit](https://img.shields.io/github/last-commit/petersem/basics)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/petersem/basics)
 ![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/petersem/basics)
 
-## Just a few things I know, and also taught in the Tafe QLD Web Dev class
 
 **To run the code examples**
 
+
 ```console
 npm run // to see all the scripts
-npm run scriptnam
+npm run scriptname
 ```
 
 Look in the `package.json` to see examples of creating multiple script options, as per the above.
