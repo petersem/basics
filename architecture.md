@@ -2,7 +2,7 @@
 
 Patterns, practices, and suggestions.
 
-## Design Patterns
+## Design Patterns (see `11_patterns.mjs`)
 
 ### Singleton
 
