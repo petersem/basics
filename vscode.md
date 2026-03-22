@@ -51,4 +51,19 @@ Generate project file trees in markdown
 - `alt-shift` allows selecting multiple lines within the editor to simultaneously change
 - Open settings and search for autosave in the search bar. Set autosave to `afterDelay` and autosavedelay to `3000`. (Saves files after 3 seconds of inactivitiy)
 
+## Issues
+
+### Mouse pointer almost dissapears in coding widows, using dark-mode themes, and when using AMD GPUs
+
+- `ctrl-shift-p` to open the VSCode command palette
+- Type in `Preferences: Configure Runtime Arguments
+- Disable hardware accelleration
+  
+```
+// fix for dark cursor in editor on AMD GPUs
+"disable-hardware-acceleration": true
+```
+
+- save file and restart VSCode
+
 [Return to Home](https://github.com/petersem/basics)
