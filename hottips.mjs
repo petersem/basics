@@ -172,23 +172,6 @@ emitter.on('greet', (name) => {
 setTimeout(() => emitter.emit('greet', 'Fred'), 14000);
 
 
-console.log(`
--------------- Console formatting`)
-// Console Formatting - https://nodejs.org/api/util.html#customizing-utilinspect-colors
-
-import { styleText } from 'node:util';
-import { errorMonitor } from 'node:events';
-const logError = styleText(['yellow', 'bgRed', 'bold'], 'Error!');
-const logWarning = styleText(['yellow', 'bgBlack', 'bold'], 'Warning');
-const logInfo = styleText(['white', 'bgBlue', 'bold'], 'Information');
-
-
-console.log(logError,'oops');
-console.log(logWarning,'uh oh');
-console.log(logInfo,'Well then..');
-console.log();
-
-
 // -------------------------------------
 // Creating an object, serialising it, saving it to a file, then reading it back in
 //
@@ -225,13 +208,6 @@ fs.writeFile('settings.json',JSON.stringify(mySettings), (err) => {
 
 
 console.log(`
--------------- Print object as a table`);
-// console.table() - prints objects and arrays in a table format
-console.log('Output for: console.table(object)')
-console.table(mySettings);
-
-
-console.log(`
 -------------- Itterate through properties of an object`);
 // itterate through all properties of an object
 // create a fake body object
@@ -248,19 +224,6 @@ for (const [key, value] of Object.entries(fakeBody)) {
     console.log(fakeBody[key], /[$&+,:;=?@#|'<>.^*()%!-]/g.test(fakeBody[key]));
 }
 
-console.log(`
--------------- Output messages as a group`);
-// group content auto-indented under group heading
-console.group("User Info");
-console.log("Name: Matt");
-console.log("Age: 57");
-console.groupEnd
-
-console.time("5sec");
-setTimeout(() => {
-    console.log('Timer is complete');
-    console.timeEnd("5sec");
-}, 5000);
 
 console.log(`
 -------------- Hash strings to compare for changes`);

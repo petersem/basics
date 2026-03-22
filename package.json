@@ -30,6 +30,7 @@
     "date": "node 12_dates.mjs",
     "time": "node 13_timers.mjs",
     "tips": "node --env-file=.env hottips.mjs",
+    "deb": "node 14_debug.mjs",
     "cha": "node chart.mjs"
   },
   "dependencies": {

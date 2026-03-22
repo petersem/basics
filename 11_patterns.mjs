@@ -1,4 +1,6 @@
 
+// OVERRIDE DEFAULT PARAMETERS
+//
 console.log(`
 -------------- Overridable, default options`);
 // ** Call a function or method with default options, and optional overrides.
@@ -26,6 +28,8 @@ spreadFunction({
 });  // Prints defaults with overriden options - { a: 'cat', b: [ 'bird' ], c: 86400000, d: 17 }]
 
 
+// SINGLETON PATTERN
+//
 console.log(`
 -------------- Signleton pattern`);
 // create a class that can only be instantiated once
@@ -59,6 +63,8 @@ var d = new Singleton();
 console.log('Class instance d test with no value');
 d.test(); // usually would be 0, but is 5 as from the existing class instance
 
+// ABSTRACT FACTORY PATTERN
+//
 console.log(`
 -------------- Abstract factory pattern`);
 // concrete class
@@ -68,7 +74,7 @@ class Alien {
         this.phrase = phrase
         this.species = "alien"
     }
-    move = () => console.log("Swish!")
+    move = () => console.log(this.species, "Swish!")
     sayPhrase = () => console.log(this.phrase)
 }
 
@@ -79,7 +85,7 @@ class Human {
         this.phrase = phrase
         this.species = "human"
     }
-    move = () => console.log("step step step")
+    move = () => console.log(this.species, "step step step")
     sayPhrase = () => console.log(this.phrase)
 }
 
@@ -105,7 +111,8 @@ const dave = speciesFactory.createEntity("human")
 ali.move();
 dave.move();
 
-
+// BUILDER PATTERN
+//
 console.log(`
 -------------- Builder pattern`);
 // base class
@@ -125,14 +132,16 @@ const bug2 = new Bug("Lance Buggio", "Can't touch this! Na na na na...");
 
 // These functions take an object as parameter and add a method to them
 const addFlyingAbility = obj => {
-    obj.fly = () => console.log(`Now ${obj.name} can fly!`)
+    console.log('Now ' + obj.name + ' can fly');
+    obj.fly = () => console.log(`${obj.name} goes zoom zoom!`)
 }
 
 const addSpeechAbility = obj => {
-    obj.saySmthg = () => console.log(`${obj.name} walks the walk and talks the talk!`)
+    console.log('Now ' + obj.name + ' talks the talk, and walks the walk');
+    obj.saySmthg = () => console.log(`${obj.name} says... A bug walks into a bar..and walks out with all the girls`)
 }
 
-// Give the objects abilities
+// Give the bugs new abilities
 console.log('Before ability added to bug1', Object.getOwnPropertyNames(bug1));
 addFlyingAbility(bug1)
 console.log('After ability added to bug1', Object.getOwnPropertyNames(bug1));
