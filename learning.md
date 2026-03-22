@@ -49,12 +49,6 @@ Various suggesttions and references
 - [W3Schools](https://www.w3schools.com/w3css/) CSS reference
 - [NPM Package Library](https://www.npmjs.com/)
 
-## Symantic Versioning
-
-Uses 3 numbers, seperated by a period. e.g. 1.2.4
-
-> Breaking changes . New features . Bug fixes
-
 ## Project ideas for learning
 
 | Beginner                    | Intermnediate       | Advanced            |

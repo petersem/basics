@@ -2,7 +2,7 @@
 
 Various information on Docker
 
-## Docker
+## Yaml examples
 
 ### MariaDB (MySQL Equivalent DB)
 

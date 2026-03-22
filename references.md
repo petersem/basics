@@ -8,7 +8,7 @@ Uses 3 numbers, seperated by a period. e.g. 1.2.4
 
 > Breaking changes . New features . Bug fixes
 
-### Express
+## Express
 
 - Express JS is used to handle HTTP logic
 - Express middleware is a function which runs between the request and response.

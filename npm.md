@@ -2,7 +2,7 @@
 
 Commands and packackes.
 
-## NPM
+## Commands
 
 - `npm init -y` initialises a node project and auto answers all questions *yes*. (Omit -y to go through questions)
 - `npm i` will install any packages defined in the packages.json file
