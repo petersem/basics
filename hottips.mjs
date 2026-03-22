@@ -304,3 +304,18 @@ const bubbleSort = (arr) => {
 
 console.log(sortArr); // pre-sort
 console.log(bubbleSort(sortArr)); // post-sort
+
+console.log(`
+-------------- capitalise the first letter of each word, with the remaining letters lower case`);
+
+// capitalise the first letter of each word, with the rest lower case
+const haiku = "My code fAiLs I do not knoW why My code works I do not know wHy.";
+console.log(haiku);
+
+const capped = haiku
+    .toLowerCase()
+    .split(' ')
+    .map(word => word[0].toUpperCase() + word.slice(1))
+    .join(' ');
+
+console.log(capped);
