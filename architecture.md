@@ -24,6 +24,10 @@ Is used to create objects in "steps". Normally we will have functions or methods
 
 The cool thing about this pattern is that we separate the creation of properties and methods into different entities.
 
+### Prototype Pattern
+
+The Prototype pattern allows you to create an object using another object as a blueprint, inheriting its properties and methods.
+
 ## Design Solutions
 
 ### Fast key:value storage

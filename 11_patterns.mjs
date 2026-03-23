@@ -150,3 +150,32 @@ console.log('Before ability added to bug2', Object.getOwnPropertyNames(bug2));
 addSpeechAbility(bug2)
 console.log('After ability added to bug2', Object.getOwnPropertyNames(bug2));
 bug2.saySmthg() // output: "Lance walks the walk and talks the talk!"
+
+
+// PROTOTYPE PATTERN
+//
+logger('Prototype pattern');
+
+// We declare our prototype object with two methods
+const enemy = {
+    attack: () => console.log("Zip Zap Zoop.. you're covered in poop!"),
+    flyAway: () => console.log("Flyyyy like an eagle!")
+}
+
+// We declare another object that will inherit from our prototype
+const weekling = {
+    name: "Buggy McFly",
+    phrase: "Your debugger doesn't work with me!",
+    sayMyName: () => console.log("I'm Bugsinberg!")
+}
+
+// With setPrototypeOf we set the prototype of our object
+Object.setPrototypeOf(weekling, enemy)
+
+// With getPrototypeOf we read the prototype and confirm the previous call has worked
+console.log('Post set', Object.getPrototypeOf(weekling)) // { attack: [Function: attack], flyAway: [Function: flyAway] }
+
+console.log(weekling.phrase) // Your debugger doesn't work with me!
+weekling.attack(); // Zip zap zoop..
+weekling.flyAway(); // Flyyyy like an eagle!
+weekling.sayMyName(); // Original function still present
