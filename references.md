@@ -10,10 +10,21 @@ Uses 3 numbers, seperated by a period. e.g. 1.2.4
 
 ## Express
 
+### Definitions
+
 - Express JS is used to handle HTTP logic
 - Express middleware is a function which runs between the request and response.
 - Express-Validators validates routes according to business rules
 - EJS is a templating engine for injecting data into View files
+
+### Express Middleware
+
+- Express.json(): (Built-in) Parses incoming requests with JSON payloads
+- Express.urlencoded(): (Built-in) Parses incoming requests with URL-encoded payloads
+- Express.static(): (Built-in) Serves static files
+- Morgan: HTTP request logger
+- Cors: Enables cross-origin resource sharing
+- Helmet: Secdures express apps by setting HTTP headers
 
 ## HTTP Methods
 
