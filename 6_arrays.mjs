@@ -41,16 +41,6 @@ logger('array reverse');
 // array.reverse() - Reverses the items in an array
 console.log(populatedArray.reverse()); // prints [ 'C', 'b', 'a', 3, 2, 1 ]
 
-logger('filter to return a new subset array');
-// array.filter retruns a new array of items which match certain criteria.
-let sampleArray = ["cat", "dog", "cat", "dog", "cat", "dog", "dog", "dog"];
-console.log(sampleArray.filter((item) => { return item == "dog" }).length);  // returns the length of a new array, being 5
-
-logger('Map to mutate all elements');
-// array.map retruns a new array of changed items. could be selective or everything
-let numArray = ["cat", "dog", "cat", "dog", "cat", "dog", "dog", "dog"];
-console.log(sampleArray.map((item) => { return "bird" }));  // returns an array of birds
-
 logger('Array sorts');
 // array.sort - sorts an array
 // With no parameters for the sort function, each array element is converted to a string, then compared alphbetically.
@@ -131,31 +121,21 @@ mm.set("matt",1);
 mm.set("lance", "potato");
 mm.set("joe",{safeWord: 'pineapple', fruit: 'apple', implement: 'pen'})
 // check for a key with 'has'
-console.log(mm.has("perpendicular"));  // returns false as doesnt exist in Map
+console.log('item present:', mm.has("perpendicular"));  // returns false as doesnt exist in Map
 // iiterable
-mm.forEach(m => console.log(m));
+mm.forEach(m => console.log('item value in map:', m));
 // get size
-console.log(mm.size);
+console.log('size:', mm.size);
 // get value
-console.log(mm.get("lance"));
+console.log('value of lance:', mm.get("lance"));
+
+console.log('lance key present:',mm.has("lance"));  // true
 // delete key
-console.log(mm.has("lance"));  // true
 mm.delete("lance");
-console.log(mm.has("lance"));   // false
+console.log('lance key present:', mm.has("lance"));   // false
 
-
-logger('For-In');
-
-let person = {
-    surname: "bloggs", 
-    age: 58,
-    carModel: "Holden"
-};
-
-// intterates by key, whereas foreach is by keyvalue
-for (let key in person) {
-    console.log(key, person[key]);
-}
+// Array Iteration Method - foreach, filter, map, entries, every, keys
+//
 
 // for each - itterates by element in array
 //
@@ -164,3 +144,58 @@ logger('itterate array values with foreach');
 fruits.forEach(f => {
     console.log(f);
 });
+
+// Filter
+//
+logger('itterate array and filter to return a new subset array');
+// array.filter retruns a new array of items which match certain criteria.
+let sampleArray = ["cat", "dog", "cat", "dog", "cat", "dog", "dog", "dog"];
+console.log(sampleArray.filter((item) => { return item == "cat" }));  // returns a subset array of cats
+
+// Map
+//
+logger('Itterate array with map, to mutate all elements');
+// array.map retruns a new array of changed items. could be selective or everything
+let numArray = ["cat", "dog", "cat", "dog", "cat", "dog", "dog", "dog"];
+console.log(sampleArray.map((item) => { return "bird" }));  // returns an array of birds
+
+// Entries itterator
+//
+logger('Entries returns an iterator object with key/value pairs from an array position/value');
+
+const cars = ["Commodore", "Civic", "G-Wagon", "Supra"];
+
+// Create an Iterator
+const list = cars.entries();
+
+// List the Entries
+for (let x of list) {
+  console.log(x);
+};
+
+// Keys itterator
+//
+logger('Keys returns an iterator object with key of an array');
+
+// Create an Iterator
+const keyList = cars.keys();
+
+// List the Entries
+for (let x of keyList) {
+  console.log(x, cars[x]);
+};
+
+// Every - executes a function for each array element - returns true if all elements are true, else false
+//
+logger('Every - executes a function for each array element. Returns true if all elements true');
+
+const ages = [32, 33, 16, 40];
+
+// Create a Test Function
+function checkAge(age) {
+  return age > 18;
+}
+
+// Are all ages over 18?
+console.log(ages);
+console.log('All over 18?', ages.every(checkAge));
