@@ -199,3 +199,17 @@ function checkAge(age) {
 // Are all ages over 18?
 console.log(ages);
 console.log('All over 18?', ages.every(checkAge));
+
+// array reduce executes a reducer function for all array elements to return a single value
+//
+logger('array.reduce()');
+
+const numbers = [15.5, 2.3, 1.1, 4.7];
+// calls the reducer fuction and the initial value
+console.log('Reducer value is:', numbers.reduce(getSum, 0));
+
+// reducer function - takes an initialValue (total) and the current value
+function getSum(total, currentValue) {
+  console.log(total, currentValue)
+  return total + Math.round(currentValue);
+}
