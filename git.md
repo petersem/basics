@@ -43,14 +43,53 @@ $ echo "app.rb" >> README.md
 $ git add README.md
 ```
 
-### git push
+### git status
+
+Shows the current state of your project
+
+``` command
+$ git status
+```
+
+### git log
+
+Shows the the history of all commits made in your project
+
+``` command
+$ git log
+```
+
+### git remote
+
+Links your local project to a remote repository like GitHub
+
+``` command
+$ git remote add origin https://github.com/username/projectname.git
+```
+
+### git commit
 
 Commit staged changes with a commit message
 
 ``` command
 $ git add .  
 $ git commit -m "Update files"  
-$ git push origin main
+```
+
+### git push
+
+Push changes to a git repository
+
+``` command
+$ git push origin main/master
+```
+
+### git pull
+
+Pulls the latest changes from the online repository to your local project
+
+``` command
+$ git pull
 ```
 
 ### git branch
@@ -94,6 +133,14 @@ Reset the current branch to the specified commit
 ``` command
 $ git log --oneline  
 $ git reset --hard last-commit-hash
+```
+
+### git clone
+
+Copies an existing repository from GitHub to your local system
+
+``` command
+$ git clone https://github.com/username/project.git
 ```
 
 [Return to Home](https://github.com/petersem/basics)
