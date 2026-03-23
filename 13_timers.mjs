@@ -1,11 +1,9 @@
 // Timers
 import logger from './utilities/logger.mjs'
-
 // in miliseconds - 1 second = 1000 miliseconds
 
 // Runs once after a certain time
 // 
-
 setTimeout(() => {
     logger('Timeout')
     console.log('Complete');
