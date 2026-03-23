@@ -24,15 +24,6 @@ console.log(a, b, MY_CONST);
 logger('typeOf');
 console.log(typeof c);  // prints 'string' to the console.
 
-// array.length - returns the length of an array (strings are simple arrays)
-console.log(MY_CONST.length);  // prints 11
-
-// array.includes - reurns a boolean if a given string is present in another
-console.log(MY_CONST.includes("world"));   // returns true
-
-// string.split - splits a string into an array, delimetered by a given string
-console.log(MY_CONST.split(" "));   // prints ["Hello", "world"]
-
 // string.replace - replaces one string value with another
 console.log(MY_CONST.replace("world", "there"));  // replaces world with there, then prints the new string
 

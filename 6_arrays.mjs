@@ -1,14 +1,33 @@
 // Arrays
 import logger from './utilities/logger.mjs'
 
+// define and initialise
+//
 logger('define and initialise array');
 let newArray = []; // the square brackets indicate this is an array. Nothing inside means an empty array
 console.log(`Empty array is ${newArray.length} elements long`);  // returns 0
 let populatedArray = [1,2,3,"a","b","C"];  //creates a variable and assigns a populated array
 console.log(`Populated array is ${populatedArray.length} elements long`);  // returns // array[n] - returns an array value at a given position (The first position in an array is 0)
 
+// interrogating arrays
+//
+logger('Interrogating arrays')
 var myArray = [1,2,3,4,5];   // define a variable and initialise it with an array
-console.log('4th element is', myArray[3]);   // returns the 4th value in the array, which is 46
+console.log('4th element is', myArray[3]);   // returns the 4th value in the array (0 based), which is 4
+
+// array.length - returns the length of an array (strings are simple arrays)
+const myConst = "Hello there world"
+console.log(myConst.length);  // prints 18
+
+// array.includes - reurns a boolean if a given string is present in another
+console.log(myConst.includes("world"));   // returns true
+
+// Array functions
+//
+logger('Array split')
+
+// string.split - splits a string into an array of word, delimetered by a given string
+console.log(myConst.split(" "));   // prints ["Hello", "world"]
 
 logger('array push / pop');
 newArray.push("hello");  // push adds a value to the end of an array
@@ -62,12 +81,8 @@ function compareNum(a, b) {
 // sort our numbers array using our new compareNum function
 console.log(numbersArray.sort(compareNum));  // prints as logically expected [1, 2, 3, 4, 5, 15, 15, 21, 155]
 
-logger('itterate array values with foreach');
-// for each - itterates by element in array
-fruits.forEach(f => {
-    console.log(f);
-});
-
+// Serealise/Deserialise arrays
+//
 logger('serialise/deseriale array');
 // serialise and deserialise objects
 // Serialise - Turn into a structured string
@@ -84,25 +99,32 @@ logger('array to string with join');
 let petArray = ['Dog', 'Cat', 'Bird'];
 console.log(petArray.join());   // prints a string "Dog,Cat,Bird"
 
+// isArray?
+//
 logger('test if array');
 // arry.isArray(yourArray) - Tests if yourArray is an array. Dont use TypeOf() for arrays as this would return an Object
 console.log(Array.isArray(petArray));  // returns true
 
-logger('emptyt array with length=0');
-// arrayname.length = 0 - Empties an array
+// array.length = 0 - Empties an array
+//
+logger('empty an array with length=0');
+
 petArray.length = 0;
 console.log(petArray);  // returns []
 
+// concatenate arrays
+//
 logger('array concatenate');
 
-// concatenate arrays
 let arr1 = [1,2,3];
 let arr2 = [4,5,6];
 console.log(arr1.concat(arr2)); // merges arr2 into arr1 and prints [ 1, 2, 3, 4, 5, 6 ]
 
-logger('Map object');
-
 // The Map object holds in-memory key-value pairs 
+//
+logger('Map object - not really an array, but similar');
+
+
 let mm = new Map()
 // can add any value type
 mm.set("matt",1);
@@ -134,3 +156,11 @@ let person = {
 for (let key in person) {
     console.log(key, person[key]);
 }
+
+// for each - itterates by element in array
+//
+logger('itterate array values with foreach');
+
+fruits.forEach(f => {
+    console.log(f);
+});
