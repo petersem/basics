@@ -16,10 +16,12 @@ var myArray = [1,2,3,4,5];   // define a variable and initialise it with an arra
 console.log('4th element is', myArray[3]);   // returns the 4th value in the array (0 based), which is 4
 
 // array.length - returns the length of an array (strings are simple arrays)
+//
 const myConst = "Hello there world"
 console.log(myConst.length);  // prints 18
 
 // array.includes - reurns a boolean if a given string is present in another
+//
 console.log(myConst.includes("world"));   // returns true
 
 // Array functions
@@ -27,6 +29,7 @@ console.log(myConst.includes("world"));   // returns true
 logger('Array split')
 
 // string.split - splits a string into an array of word, delimetered by a given string
+//
 console.log(myConst.split(" "));   // prints ["Hello", "world"]
 
 logger('array push / pop');
@@ -39,7 +42,15 @@ console.log(popValue);  // prints 'there';
 
 logger('array reverse');
 // array.reverse() - Reverses the items in an array
+//
 console.log(populatedArray.reverse()); // prints [ 'C', 'b', 'a', 3, 2, 1 ]
+
+logger('flatten array');
+// flatten array array. flat(depth)
+//
+const a = [1,2,[1,2],3,4];
+console.log('As is',a);    
+console.log('Flattened', a.flat(1));
 
 logger('Array sorts');
 // array.sort - sorts an array

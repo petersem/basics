@@ -71,17 +71,18 @@ Various suggesttions and references
 | Implement unit tests (jest) | Meme generator           | Wiki System         |
 | Pre-meeting question sys    | Habbit logger            | Kanban Board        |
 | Spotify now playing display | docker packaging         | Automate CI build   |
-| Password strength checker   | image hosting            |                     |
-| Pastebin clone              | Idempotency manager      |                     |
-| Magic 8 Ball game           | Cheap fuel searcher      |                     |
+| Password strength checker   | image hosting            | IoT dashboard       |
+| Pastebin clone              | Idempotency manager      | AI Forecase weather |
+| Magic 8 Ball game           | Cheap fuel searcher      | Financial Planning  |
 | Mortgage repayment calc     | Interactive quiz         |                     |
 | create github repo for node | Expense tracker          |                     |
 | Random colour palette gen.  | Bookmark saver app       |                     |
 | Currency converter          | Manage long-running APIs |                     |
 | Random colour palette gen.  | Movie Search App         |                     |
-| Custom 404 Page Not Found   |                          |                     |
+| Custom 404 Page Not Found   | Music player             |                     |
 | Countdown timer             |                          |                     |
 | Digital clock               |                          |                     |
+| Pomodoro timer              |                          |                     |
 
 ## Handy APIs
 
