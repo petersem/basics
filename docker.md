@@ -52,8 +52,6 @@ README.md
 - Create and start container(s) in a compose YAML file: `docker compose up -d service_name]`
 - Pull a Docker image from registry: `docker pull repo/imagename[:tag]`
 
-
-
 ## Yaml examples
 
 ### MariaDB (MySQL Equivalent DB)

@@ -1,3 +1,6 @@
+// Variables
+import logger from './utilities/logger.mjs'
+
 // javascript types
 //    number - a number from -infinity to +infinity
 //    string - textual data
@@ -9,24 +12,29 @@
 //    Array - a collection of items, which can be the same or different types
 
 // Defining and initialising variables
+//
+logger('Defining and initialising variables');
 let a;    // assigns the variable a, but not yet setting a value (will be 'undefined')
 let b = 1;   // assigns a variable and sets it value (initialises) to the number 2
-const MY_CONST = "My Constant Value"; // defines and initialises a variable which cannot be changed
+const MY_CONST = "My Constant World"; // defines and initialises a variable which cannot be changed
+console.log(a, b, MY_CONST);
 
 // Typeof - Returns the type of data being stored in a variable 
+//
+logger('typeOf');
 console.log(typeof c);  // prints 'string' to the console.
 
 // array.length - returns the length of an array (strings are simple arrays)
-console.log(c.length);  // prints 11
+console.log(MY_CONST.length);  // prints 11
 
 // array.includes - reurns a boolean if a given string is present in another
-console.log(c.includes("world"));   // returns true
+console.log(MY_CONST.includes("world"));   // returns true
 
 // string.split - splits a string into an array, delimetered by a given string
-console.log(c.split(" "));   // prints ["Hello", "world"]
+console.log(MY_CONST.split(" "));   // prints ["Hello", "world"]
 
 // string.replace - replaces one string value with another
-console.log(c.replace("world", "there"));  // replaces world with there, then prints the new string
+console.log(MY_CONST.replace("world", "there"));  // replaces world with there, then prints the new string
 
 // Number(string) - Tries to convert a string to a number
 let d = "5";  // assigns the string "5" to a variable d
@@ -81,16 +89,48 @@ console.log(++j); // increments j to 2, then prints 2
 // same logic for -- to decrement a number
 
 // Structuring and destructuring variables
+//
+logger('Structuring and destructuring variables');
 let m = 1;
 let p = 10;
-
-console.log([m,p]);  // prints [1, 10]
-
+console.log([m,p]);  // prints [1, 10] as now an array
 [m,p] = [p,m]
+console.log([m,p]);  // prints [10,1] as new array is reversed from original
 
-console.log([m,p]);  // prints [10,1]
+// Truthy and Falsy values - values considered true or false in a boolean context
+//
+logger('Truthy and Falsy falues');
 
+// All values are considered true unless define falsy
+// Falsy, being: false, 0, -0, 0n, "", null, undefined, NaN
 
+// tests: if true, return true, else false
+function isTrue(thing) {
+    if (thing) {
+        console.log(thing, true);
+    } else {
+        console.log(thing, false);
+    }
+}
 
-
-
+isTrue(true);
+isTrue({});
+isTrue([]);
+isTrue(42);
+isTrue("0");
+isTrue("false");
+isTrue(new Date());
+isTrue(-42);
+isTrue(12n);
+isTrue(3.14);
+isTrue(-3.14);
+isTrue(Infinity);
+isTrue(-Infinity);
+isTrue(false);
+isTrue(0);
+isTrue("");
+isTrue(null);
+isTrue(NaN);
+isTrue(undefined);
+isTrue(0n);
+isTrue(-0);

@@ -269,3 +269,17 @@ const capped = haiku
     .join(' ');
 
 console.log(capped);
+
+// Get array depth, then flatten and convert to string
+//
+logger('Get array depth, then flatten and convert to string');
+
+const getArrayDepth = value => Array.isArray(value) ?
+    1 + Math.max(0, ...value.map(getArrayDepth)) :
+    0;
+
+const a = [1,2,[1,[1,2,3,[1,[1,2,3,[1]]]],3],3,4];
+console.log(a);    
+const depth = getArrayDepth(a);
+console.log('Array depth is', depth);
+console.log('Flattened as string is', a.flat(depth).toString());

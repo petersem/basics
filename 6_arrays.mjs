@@ -3,12 +3,12 @@ import logger from './utilities/logger.mjs'
 
 logger('define and initialise array');
 let newArray = []; // the square brackets indicate this is an array. Nothing inside means an empty array
-console.log(newArray.length);  // returns 0
+console.log(`Empty array is ${newArray.length} elements long`);  // returns 0
 let populatedArray = [1,2,3,"a","b","C"];  //creates a variable and assigns a populated array
-console.log(populatedArray.length);  // returns // array[n] - returns an array value at a given position (The first position in an array is 0)
+console.log(`Populated array is ${populatedArray.length} elements long`);  // returns // array[n] - returns an array value at a given position (The first position in an array is 0)
 
 var myArray = [1,2,3,4,5];   // define a variable and initialise it with an array
-console.log(myArray[3]);   // returns the 4th value in the array, which is 46
+console.log('4th element is', myArray[3]);   // returns the 4th value in the array, which is 46
 
 logger('array push / pop');
 newArray.push("hello");  // push adds a value to the end of an array
