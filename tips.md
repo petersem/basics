@@ -19,6 +19,7 @@
   - [Capitalise first letter of words](#capitalise-first-letter-of-words)
   - [Flatten a multi-dimensional array](#flatten-a-multi-dimensional-array)
   - [Chart.js](#chartjs)
+  - [Temperature conversion](#temperature-conversion)
 
 [Return Home](https://github.com/petersem/basics)
 
@@ -426,6 +427,20 @@ const chart = new Chart(
 const pngBuffer = await canvas.toBuffer('png', {matte: 'white'});
 await fsp.writeFile('output.png', pngBuffer);
 chart.destroy();
+```
+
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Temperature conversion
+
+Celcius to Fahrenheit and Fahrenheit to Celcius
+
+``` js
+const celciusToFahrenheit = celcius => Math.round(((celcius * 9/5) + 32) * 10) / 10; // round to 1 decimal place
+const FahrenheitToCelcius = fahrenheit => Math.round(((fahrenheit -32) / (9/5)) * 10) / 10; // round to 1 decimal place
+
+console.log(celciusToFahrenheit(37.8));
+console.log(FahrenheitToCelcius(100));
 ```
 
 **[`^        back to top        ^`](#tips-and-useful-code)**
