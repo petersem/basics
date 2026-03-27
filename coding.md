@@ -30,6 +30,16 @@ Recommendations and practices.
 - Document code appropriately. Classes, functions, and then anything that is worth explaining. Don't add comments for the sake of commenting
 - If you have to code a manual operation more than once in your code, put it in a seperate function of class
 - Optimised code is great for efficiency, but can be bad for readability. Be efficient, but also keep things simple when it makes sense.
+- Good error handling means faster debugging.
+- Efficient database usage keeps things responsive. Watch for:
+  - Connection pool exhaustion
+  - Slow queries blocking requests
+  - Connections not being closed
+- Plan for the failure of external dependencies
+- Clear, structured logs give clarity to your application operations.
+- Timeouts protect your system from cascading failures.
+- Double check configurations across environments. (environment variables and configuration)
+- External calls can overload your application. Include rate limiting and traffic control.
 
 ## Deployment
 

@@ -80,7 +80,7 @@ Various suggesttions and references
 | Currency converter          | Manage long-running APIs |                     |
 | Random colour palette gen.  | Movie Search App         |                     |
 | Custom 404 Page Not Found   | Music player             |                     |
-| Countdown timer             |                          |                     |
+| Countdown timer             | Rock-paper-scissors      |                     |
 | Digital clock               |                          |                     |
 | Pomodoro timer              |                          |                     |
 
