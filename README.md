@@ -24,6 +24,7 @@ Look in the `package.json` to see examples of creating multiple script options, 
 
 ## Other information
 
+- [Tips](https://github.com/petersem/basics/blob/main/tips.md) Useful code samples.
 - [VSCode](https://github.com/petersem/basics/blob/main/vscode.md) extensions, shortcuts and tips.
 - [Learning](https://github.com/petersem/basics/blob/main/learning.md) suggestions and ideas.
 - [NPN](https://github.com/petersem/basics/blob/main/npm.md) commands and packages.

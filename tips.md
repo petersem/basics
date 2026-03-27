@@ -1,8 +1,28 @@
-// Hpt Tips
-import logger from './utilities/logger.mjs'
+# Tips and useful code
 
-logger('Get weekday for a given date');
+- [Tips and useful code](#tips-and-useful-code)
+  - [Get day of week](#get-day-of-week)
+  - [Return a number within a range](#return-a-number-within-a-range)
+  - [Ordinal descriptor for day](#ordinal-descriptor-for-day)
+  - [Get a random UUID](#get-a-random-uuid)
+  - [Read environment variables](#read-environment-variables)
+  - [Asynchronously reading a file with fs/promise](#asynchronously-reading-a-file-with-fspromise)
+  - [Asynchronously reading multiple files with Promise.all()](#asynchronously-reading-multiple-files-with-promiseall)
+  - [Get someone's age](#get-someones-age)
+  - [Events and event emitters](#events-and-event-emitters)
+  - [Serialising and deserialising an object to and from a file](#serialising-and-deserialising-an-object-to-and-from-a-file)
+  - [Itterate object properties](#itterate-object-properties)
+  - [Hash strings](#hash-strings)
+  - [Bubble sort](#bubble-sort)
+  - [Capitalise first letter of words](#capitalise-first-letter-of-words)
+  - [Flatten a multi-dimensional array](#flatten-a-multi-dimensional-array)
+  - [Chart.js](#chartjs)
 
+## Get day of week
+
+Get the day of the week for a given day
+
+``` js
 function getWeekDay(forDate) {
     const days = [
         "Sunday",
@@ -19,15 +39,13 @@ function getWeekDay(forDate) {
 
 console.log(getWeekDay("2026-02-20"));  // get the day for a given date
 console.log(getWeekDay(new Date()));  // get todays day
+```
 
-logger('Returns a number within a range');
-/**
- * Retuns a number within a defined min/max range
- * @param {number} num - input number
- * @param {number} min - minimum range
- * @param {number} max - maximum range
- * @returns - a number that falls into a range
- */
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Return a number within a range
+
+``` js
 function clamp(num, min, max) {
     return Math.min(Math.max(num, min), max);
 }
@@ -35,16 +53,15 @@ function clamp(num, min, max) {
 console.log(clamp(10, 0, 5)); // outside range. closest value is 5
 console.log(clamp(-10, 0, 5)); // outside range. closest value is 0
 console.log(clamp(3, 0, 5)); // in range. Just return 3
-console.log();
+```
 
-logger('Get ordinal descriptor for a given day of the month');
-/**
- * Returns the ordinal descriptor for a given day number.
- * Examples: 1 -> "1st", 2 -> "2nd", 3 -> "3rd", 4 -> "4th"
- *
- * @param {number} day - The day number (1-31)
- * @returns {string} The day with its ordinal suffix
- */
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Ordinal descriptor for day
+
+Get the ordinal descriptor suffix for the day of a month
+
+``` js
 function getDaySuffix(day) {
     // Validate input
     if (!Number.isInteger(day) || day < 1 || day > 31) {
@@ -71,42 +88,44 @@ console.log(getDaySuffix(2));   // "2nd"
 console.log(getDaySuffix(3));   // "3rd"
 console.log(getDaySuffix(4));   // "4th"
 
-const d = new Date();
+const d = new Date(); // get the current day
 const day = d.getDate();  // gets day of the month
-console.log(getDaySuffix(day));   // For today
-console.log();
+console.log(getDaySuffix(day));   // Suffix for today
+```
 
-logger('Get a random UUID');
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Get a random UUID
+
+``` js
 import crypto from 'crypto';
-import { promises, resolve } from 'dns';
-
-/**
- * Get a Unique Identifier value
- * @returns 
- */
-function generateUUID() {
-    return crypto.randomUUID();
-}
 
 // Example usage
-console.log("Generated UUID:", generateUUID());
-console.log();
+console.log("Generated UUID:", crypto.randomUUID());
+```
 
-logger('Reading environment variables');
-// Read environment variables from .env file, but only if not in production mode.
-// must use `node --env-file=.env xxx.mjs`
+**[`^        back to top        ^`](#tips-and-useful-code)**
 
+## Read environment variables
+
+Read environment variables from .env file, if environment is not set at the OS level.
+> must use `node --env-file=.env xxx.mjs`
+
+``` js
 console.log(`Reading from Environment variables: 
     ${process.env.GREETING}
     ${process.env.SECRET_PSW}
     ${process.env.NODE_ENV}
 `);
-console.log();
+```
 
-// --------------------------------------------------------
-// Reading and writing to files
-// 
-import fs from 'fs';
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Asynchronously reading a file with fs/promise
+
+Use fs/promises as this is the modern implementation
+
+``` js
 import fsPromises from 'fs/promises';
 
 async function readFileExample() {
@@ -125,7 +144,16 @@ readFileExample()
     .catch((err) => {
         console.log(err);
     });
+```
 
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Asynchronously reading multiple files with Promise.all()
+
+Wrap multiple fs async reads in a promise.
+
+``` js
+import fsPromise from 'fs/promise';
 
 async function readMultipleFiles() {
     const filesToRead = ['settings.json', 'new.txt']
@@ -144,24 +172,15 @@ readMultipleFiles()
     .catch((err) => {
         console.log(err);
     });
+```
 
-// // Read a file (asynchronous)
-// fs.readFile('simple.txt', 'utf8', (err, data) => {
-//     if (err) return console.error('Error reading file:', err);
-//     logger('Reading files');
-//     console.log('File contents read:', data);
-// });
+**[`^        back to top        ^`](#tips-and-useful-code)**
 
-// // Write to a file
-// fs.writeFile('new.txt', 'Hello Node.js!', (err) => {
-//     if (err) return console.error('Error writing file:', err);
-//     logger('Writing files');
-//     console.log('File written successfully.');
-// });
+## Get someone's age
 
-logger('Getting age from birthday');
-// Get someones age from birthdate
+Get someone's age from their birthdate
 
+``` js
 function getAge(birthDateString) {
     let today = new Date();
     let birthDate = new Date(birthDateString);
@@ -187,26 +206,33 @@ function getAge(birthDateString) {
 }
 
 console.log(getAge("1998-08-13")); // get age
-console.log();
+```
 
+**[`^        back to top        ^`](#tips-and-useful-code)**
 
-// -------------------------------------------------------------------
+## Events and event emitters
+
+``` js
 import EventEmitter from 'events';
 const emitter = new EventEmitter();
 
 emitter.on('greet', (name) => {
-    logger('Events and event emitters'); // Events emitter
     console.log(`Hello, ${name}!`)
 });
 
 // put the event trigger in a timer to make it run after other examples do
 setTimeout(() => emitter.emit('greet', 'Fred'), 14000);
+```
 
+**[`^        back to top        ^`](#tips-and-useful-code)**
 
-// -------------------------------------
-// Creating an object, serialising it, saving it to a file, then reading it back in
-//
+## Serialising and deserialising an object to and from a file
 
+Ideal for reading and writing settings to a configuration file.
+
+> Notice the JSON.stringify option in fs.writefile(). The `, null, 2` option will indent and format the output for the file, rather than it all being on a single line.
+
+``` js
 // create setting object
 let mySettings = {
     user: "baggz",
@@ -215,6 +241,13 @@ let mySettings = {
     darkMode: true,
     age: 57
 }
+
+// serialise setting object and write to file
+fs.writeFile('settings.json', JSON.stringify(mySettings, null, 2), (err) => {   
+    if (err) return console.error('Error writing file:', err);
+    logger('Write object to a file');
+    console.log('Settings written successfully to settings.json.');
+});
 
 // Read the settings file, then deserialise it into a new object
 let mySettings2 = {};
@@ -227,18 +260,20 @@ fs.readFile('settings.json', 'utf8', (err, data) => {
     console.log('Test object read: ' + mySettings2.age);
     console.log();
 });
+```
 
-// serialise setting object and write to file
-fs.writeFile('settings.json', JSON.stringify(mySettings, null, 2), (err) => {   // If you add ,null, 2 to the JSON.stringify() method, it idents the text output
-    if (err) return console.error('Error writing file:', err);
-    logger('Write object to a file');
-    console.log('Settings written successfully to settings.json.');
-});
+**[`^        back to top        ^`](#tips-and-useful-code)**
 
 
-logger('Itterate through properties of an object');
-// itterate through all properties of an object
-// create a fake body object
+
+
+
+## Itterate object properties
+
+Itterate through all properties of an object
+
+``` js
+// create an object
 const fakeBody = {
     jigery: "pokery",
     title: "my title",
@@ -251,26 +286,36 @@ for (const [key, value] of Object.entries(fakeBody)) {
     // safe = false, unsafe = true
     console.log(fakeBody[key], /[$&+,:;=?@#|'<>.^*()%!-]/g.test(fakeBody[key]));
 }
+```
 
+**[`^        back to top        ^`](#tips-and-useful-code)**
 
-logger('Hash strings to compare for changes');
-// hash an object to compare if it has changed
+## Hash strings 
+
+Hash a string to compare if it has changed
+
+``` js
 function hashRequest(thing) {
     const content = JSON.stringify(thing) || '';
     return crypto.createHash('sha256').update(content).digest('hex');
 }
 
-let poop = "cat";
-let fir = hashRequest(poop);
-poop = "dog";
-let sec = hashRequest(poop);
-let thi = hashRequest("dog");
-console.log(fir);
-console.log(sec); // has changes
-console.log(thi); // same as changed object
+let changingString = "cat";
+let firstHash = hashRequest(changingString);
+changingString = "dog";
+let secondHash = hashRequest(changingString);
 
-logger('Doing a bubble sort');
-// Doing a bubble sort - compare-swap-repeat
+console.log(firstHash);
+console.log(secondHash); // Different to firstHash. Has changed
+```
+
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Bubble sort
+
+Doing a bubble sort - compare-swap-repeat
+
+``` js
 const sortArr = [12, 1, 3, 3, 6, 13, 8, 5, 3, 5];
 
 const bubbleSort = (arr) => {
@@ -293,9 +338,15 @@ const bubbleSort = (arr) => {
 
 console.log(sortArr); // pre-sort
 console.log(bubbleSort(sortArr)); // post-sort
+```
 
-logger('capitalise the first letter of each word, with the remaining letters lower case');
+**[`^        back to top        ^`](#tips-and-useful-code)**
 
+## Capitalise first letter of words
+
+Capitalise first letter of each word, with the remaining letters lower case
+
+``` js
 // capitalise the first letter of each word, with the rest lower case
 const haiku = "My code fAiLs I do not knoW why My code works I do not know wHy.";
 console.log(haiku);
@@ -307,11 +358,16 @@ const capped = haiku
     .join(' ');
 
 console.log(capped);
+```
 
-// Get array depth, then flatten and convert to string
-//
-logger('Get array depth, then flatten and convert to string');
+**[`^        back to top        ^`](#tips-and-useful-code)**
 
+
+## Flatten a multi-dimensional array
+
+Get the depth of a multi-dimensional array, flatten it, then convert to string
+
+``` js
 console.time("arrDep1");
 const getArrayDepth = value => Array.isArray(value) ?
     1 + Math.max(0, ...value.map(getArrayDepth)) :
@@ -327,3 +383,45 @@ console.timeEnd("arrDep1");
 console.time("arrDep2");
 //console.log('Flattened2 as string is', a.flat(infinity).toString());
 console.timeEnd("arrDep2");
+```
+
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Chart.js
+
+Use chart.js to create chart images for your data.
+
+``` js
+import {CategoryScale, Chart, LinearScale, LineController, LineElement, PointElement} from 'chart.js';
+import {Canvas} from 'skia-canvas';
+import fsp from 'node:fs/promises';
+
+Chart.register([
+  CategoryScale,
+  LineController,
+  LineElement,
+  LinearScale,
+  PointElement
+]);
+
+const canvas = new Canvas(400, 300);
+const chart = new Chart(
+  canvas, // TypeScript needs "as any" here
+  {
+    type: 'line',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        borderColor: 'red'
+      }]
+    }
+  }
+);
+const pngBuffer = await canvas.toBuffer('png', {matte: 'white'});
+await fsp.writeFile('output.png', pngBuffer);
+chart.destroy();
+```
+
+**[`^        back to top        ^`](#tips-and-useful-code)**
