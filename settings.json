@@ -1,1 +1,7 @@
-{"user":"baggz","firstName":"Fred","surname":"Flintstone","darkMode":true,"age":57}
+{
+  "user": "baggz",
+  "firstName": "Fred",
+  "surname": "Flintstone",
+  "darkMode": true,
+  "age": 57
+}

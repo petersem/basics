@@ -73,6 +73,10 @@ Can be server, client, or both.
 **Controller**
 : Needed to render model data to a view, or partial. Which handles any API calls for CRUD or to external sites, and for managing any dynamic functionality on the web page.
 
+## Array Methods
+
+![arrays](https://raw.githubusercontent.com/petersem/basics/refs/heads/main/misc/arrays.jpg)
+
 ## API Terms
 
 ### Definition

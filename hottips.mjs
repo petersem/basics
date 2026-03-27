@@ -78,6 +78,7 @@ console.log();
 
 logger('Get a random UUID');
 import crypto from 'crypto';
+import { promises, resolve } from 'dns';
 
 /**
  * Get a Unique Identifier value
@@ -106,204 +107,223 @@ console.log();
 // Reading and writing to files
 // 
 import fs from 'fs';
+import fsPromises from 'fs/promises';
 
 async function readFileExample() {
-    let data;
-    await new Promise((resolve) => {
-        data = fs.readFile('settings.json', 'utf8', (err, data) => {
-            setTimeout(() => {
-                resolve(data); // calls resolve
-            }, 3000);
-        });
-    });
-
-    return data;
+    try {
+        const data = await fsPromises.readFile('settings.json', 'utf8');
+        return data;
+    } catch (error) {
+        return JSON.stringify({ error: error });
+    }
 }
 
 readFileExample()
     .then((data) => {
         console.table(data);
+    })
+    .catch((err) => {
+        console.log(err);
     });
 
-// // // Read a file (asynchronous)
-// // fs.readFile('simple.txt', 'utf8', (err, data) => {
-// //     if (err) return console.error('Error reading file:', err);
-// //     logger('Reading files');
-// //     console.log('File contents read:', data);
-// // });
 
-// // // Write to a file
-// // fs.writeFile('new.txt', 'Hello Node.js!', (err) => {
-// //     if (err) return console.error('Error writing file:', err);
-// //     logger('Writing files');
-// //     console.log('File written successfully.');
-// // });
+async function readMultipleFiles() {
+    const filesToRead = ['settings.json', 'new.txt']
+    try {
+        const results = await Promise.all(filesToRead.map((file) => fsPromises.readFile(file, 'utf8')))
+        return results;
+  } catch (err) {
+        return JSON.stringify({ error: err });
+  }
+}
 
-// logger('Getting age from birthday');
-// // Get someones age from birthdate
+readMultipleFiles()
+    .then((data) => {
+        data.forEach(res => console.table(JSON.parse(res)));
+    })
+    .catch((err) => {
+        console.log(err);
+    });
 
-// function getAge(birthDateString) {
-//     let today = new Date();
-//     let birthDate = new Date(birthDateString);
-
-//     // Difference in milliseconds
-//     const diffMs = today.getTime() - birthDate.getTime();
-
-//     // Convert to other units
-//     const diffSeconds = Math.trunc(diffMs / 1000);
-//     const diffMinutes = Math.trunc(diffSeconds / 60);
-//     const diffHours = Math.trunc(diffMinutes / 60);
-//     const diffDays = Math.trunc(diffHours / 24);
-//     const diffYears = Math.trunc(diffDays / 365);
-
-//     return {
-//         years: diffYears,
-//         days: diffDays,
-//         hours: diffHours,
-//         minutes: diffMinutes,
-//         seconds: diffSeconds,
-//         milliseconds: diffMs
-//     };
-// }
-
-// console.log(getAge("1998-08-13")); // get age
-// console.log();
-
-
-// // -------------------------------------------------------------------
-// import EventEmitter from 'events';
-// const emitter = new EventEmitter();
-
-// emitter.on('greet', (name) => {
-//     logger('Events and event emitters'); // Events emitter
-//     console.log(`Hello, ${name}!`)
-// });
-
-// // put the event trigger in a timer to make it run after other examples do
-// setTimeout(() => emitter.emit('greet', 'Fred'), 14000);
-
-
-// // -------------------------------------
-// // Creating an object, serialising it, saving it to a file, then reading it back in
-// //
-
-// // create setting object
-// let mySettings = {
-//     user: "baggz",
-//     firstName: "Fred",
-//     surname: "Flintstone",
-//     darkMode: true,
-//     age: 57
-// }
-
-// // Read the settings file, then deserialise it into a new object
-// let mySettings2 = {};
 // // Read a file (asynchronous)
-// fs.readFile('settings.json', 'utf8', (err, data) => {
+// fs.readFile('simple.txt', 'utf8', (err, data) => {
 //     if (err) return console.error('Error reading file:', err);
-//     mySettings2 = JSON.parse(data);
-//     logger('Reading file contents into an object');
-//     console.log('Setting file contents read into object');
-//     console.log('Test object read: ' + mySettings2.age);
-//     console.log();
+//     logger('Reading files');
+//     console.log('File contents read:', data);
 // });
 
-// // serialise setting object and write to file
-// fs.writeFile('settings.json', JSON.stringify(mySettings), (err) => {
+// // Write to a file
+// fs.writeFile('new.txt', 'Hello Node.js!', (err) => {
 //     if (err) return console.error('Error writing file:', err);
-//     logger('Write object to a file');
-//     console.log('Settings written successfully to settings.json.');
+//     logger('Writing files');
+//     console.log('File written successfully.');
 // });
 
+logger('Getting age from birthday');
+// Get someones age from birthdate
 
-// logger('Itterate through properties of an object');
-// // itterate through all properties of an object
-// // create a fake body object
-// const fakeBody = {
-//     jigery: "pokery",
-//     title: "my title",
-//     age: 180,
-//     badData: "<script>alert('KaKow');</script>"
-// };
+function getAge(birthDateString) {
+    let today = new Date();
+    let birthDate = new Date(birthDateString);
 
-// // Get all the keys for the object, then test the values if unusafe
-// for (const [key, value] of Object.entries(fakeBody)) {
-//     // safe = false, unsafe = true
-//     console.log(fakeBody[key], /[$&+,:;=?@#|'<>.^*()%!-]/g.test(fakeBody[key]));
-// }
+    // Difference in milliseconds
+    const diffMs = today.getTime() - birthDate.getTime();
+
+    // Convert to other units
+    const diffSeconds = Math.trunc(diffMs / 1000);
+    const diffMinutes = Math.trunc(diffSeconds / 60);
+    const diffHours = Math.trunc(diffMinutes / 60);
+    const diffDays = Math.trunc(diffHours / 24);
+    const diffYears = Math.trunc(diffDays / 365);
+
+    return {
+        years: diffYears,
+        days: diffDays,
+        hours: diffHours,
+        minutes: diffMinutes,
+        seconds: diffSeconds,
+        milliseconds: diffMs
+    };
+}
+
+console.log(getAge("1998-08-13")); // get age
+console.log();
 
 
-// logger('Hash strings to compare for changes');
-// // hash an object to compare if it has changed
-// function hashRequest(thing) {
-//     const content = JSON.stringify(thing) || '';
-//     return crypto.createHash('sha256').update(content).digest('hex');
-// }
+// -------------------------------------------------------------------
+import EventEmitter from 'events';
+const emitter = new EventEmitter();
 
-// let poop = "cat";
-// let fir = hashRequest(poop);
-// poop = "dog";
-// let sec = hashRequest(poop);
-// let thi = hashRequest("dog");
-// console.log(fir);
-// console.log(sec); // has changes
-// console.log(thi); // same as changed object
+emitter.on('greet', (name) => {
+    logger('Events and event emitters'); // Events emitter
+    console.log(`Hello, ${name}!`)
+});
 
-// logger('Doing a bubble sort');
-// // Doing a bubble sort - compare-swap-repeat
-// const sortArr = [12, 1, 3, 3, 6, 13, 8, 5, 3, 5];
+// put the event trigger in a timer to make it run after other examples do
+setTimeout(() => emitter.emit('greet', 'Fred'), 14000);
 
-// const bubbleSort = (arr) => {
-//     let swapped;
 
-//     do {
-//         swapped = false;
-//         for (let i = 0; i < arr.length - 1; i++) {
-//             if (arr[i] > arr[i + 1]) {
-//                 let temp = arr[i];
-//                 arr[i] = arr[i + 1];
-//                 arr[i + 1] = temp;
-//                 swapped = true;
-//             }
-//         }
-//     } while (swapped);
+// -------------------------------------
+// Creating an object, serialising it, saving it to a file, then reading it back in
+//
 
-//     return arr;
-// };
+// create setting object
+let mySettings = {
+    user: "baggz",
+    firstName: "Fred",
+    surname: "Flintstone",
+    darkMode: true,
+    age: 57
+}
 
-// console.log(sortArr); // pre-sort
-// console.log(bubbleSort(sortArr)); // post-sort
+// Read the settings file, then deserialise it into a new object
+let mySettings2 = {};
+// Read a file (asynchronous)
+fs.readFile('settings.json', 'utf8', (err, data) => {
+    if (err) return console.error('Error reading file:', err);
+    mySettings2 = JSON.parse(data);
+    logger('Reading file contents into an object');
+    console.log('Setting file contents read into object');
+    console.log('Test object read: ' + mySettings2.age);
+    console.log();
+});
 
-// logger('capitalise the first letter of each word, with the remaining letters lower case');
+// serialise setting object and write to file
+fs.writeFile('settings.json', JSON.stringify(mySettings, null, 2), (err) => {   // If you add ,null, 2 to the JSON.stringify() method, it idents the text output
+    if (err) return console.error('Error writing file:', err);
+    logger('Write object to a file');
+    console.log('Settings written successfully to settings.json.');
+});
 
-// // capitalise the first letter of each word, with the rest lower case
-// const haiku = "My code fAiLs I do not knoW why My code works I do not know wHy.";
-// console.log(haiku);
 
-// const capped = haiku
-//     .toLowerCase()
-//     .split(' ')
-//     .map(word => word[0].toUpperCase() + word.slice(1))
-//     .join(' ');
+logger('Itterate through properties of an object');
+// itterate through all properties of an object
+// create a fake body object
+const fakeBody = {
+    jigery: "pokery",
+    title: "my title",
+    age: 180,
+    badData: "<script>alert('KaKow');</script>"
+};
 
-// console.log(capped);
+// Get all the keys for the object, then test the values if unusafe
+for (const [key, value] of Object.entries(fakeBody)) {
+    // safe = false, unsafe = true
+    console.log(fakeBody[key], /[$&+,:;=?@#|'<>.^*()%!-]/g.test(fakeBody[key]));
+}
 
-// // Get array depth, then flatten and convert to string
-// //
-// logger('Get array depth, then flatten and convert to string');
 
-// console.time("arrDep1");
-// const getArrayDepth = value => Array.isArray(value) ?
-//     1 + Math.max(0, ...value.map(getArrayDepth)) :
-//     0;
+logger('Hash strings to compare for changes');
+// hash an object to compare if it has changed
+function hashRequest(thing) {
+    const content = JSON.stringify(thing) || '';
+    return crypto.createHash('sha256').update(content).digest('hex');
+}
 
-// const a = [1, 2, [1, [1, 2, 3, [1, [1, 2, 3, [1]]]], 3], 3, 4];
-// console.log(a);
-// const depth = getArrayDepth(a);
-// console.log('Array depth is', depth);
-// console.log('Flattened as string is', a.flat(depth).toString());
-// console.timeEnd("arrDep1");
+let poop = "cat";
+let fir = hashRequest(poop);
+poop = "dog";
+let sec = hashRequest(poop);
+let thi = hashRequest("dog");
+console.log(fir);
+console.log(sec); // has changes
+console.log(thi); // same as changed object
 
-// console.time("arrDep2");
-// //console.log('Flattened2 as string is', a.flat(infinity).toString());
-// console.timeEnd("arrDep2");
+logger('Doing a bubble sort');
+// Doing a bubble sort - compare-swap-repeat
+const sortArr = [12, 1, 3, 3, 6, 13, 8, 5, 3, 5];
+
+const bubbleSort = (arr) => {
+    let swapped;
+
+    do {
+        swapped = false;
+        for (let i = 0; i < arr.length - 1; i++) {
+            if (arr[i] > arr[i + 1]) {
+                let temp = arr[i];
+                arr[i] = arr[i + 1];
+                arr[i + 1] = temp;
+                swapped = true;
+            }
+        }
+    } while (swapped);
+
+    return arr;
+};
+
+console.log(sortArr); // pre-sort
+console.log(bubbleSort(sortArr)); // post-sort
+
+logger('capitalise the first letter of each word, with the remaining letters lower case');
+
+// capitalise the first letter of each word, with the rest lower case
+const haiku = "My code fAiLs I do not knoW why My code works I do not know wHy.";
+console.log(haiku);
+
+const capped = haiku
+    .toLowerCase()
+    .split(' ')
+    .map(word => word[0].toUpperCase() + word.slice(1))
+    .join(' ');
+
+console.log(capped);
+
+// Get array depth, then flatten and convert to string
+//
+logger('Get array depth, then flatten and convert to string');
+
+console.time("arrDep1");
+const getArrayDepth = value => Array.isArray(value) ?
+    1 + Math.max(0, ...value.map(getArrayDepth)) :
+    0;
+
+const a = [1, 2, [1, [1, 2, 3, [1, [1, 2, 3, [1]]]], 3], 3, 4];
+console.log(a);
+const depth = getArrayDepth(a);
+console.log('Array depth is', depth);
+console.log('Flattened as string is', a.flat(depth).toString());
+console.timeEnd("arrDep1");
+
+console.time("arrDep2");
+//console.log('Flattened2 as string is', a.flat(infinity).toString());
+console.timeEnd("arrDep2");
