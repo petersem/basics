@@ -1,5 +1,7 @@
 # Tips and useful code
 
+[Return Home](https://github.com/petersem/basics)
+
 - [Tips and useful code](#tips-and-useful-code)
   - [Get day of week](#get-day-of-week)
   - [Return a number within a range](#return-a-number-within-a-range)
@@ -17,6 +19,8 @@
   - [Capitalise first letter of words](#capitalise-first-letter-of-words)
   - [Flatten a multi-dimensional array](#flatten-a-multi-dimensional-array)
   - [Chart.js](#chartjs)
+
+[Return Home](https://github.com/petersem/basics)
 
 ## Get day of week
 
