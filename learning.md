@@ -48,6 +48,7 @@ Various suggesttions and references
 - [Database naming standards](https://dev.to/ovid/database-naming-standards-2061)
 - [W3Schools](https://www.w3schools.com/w3css/) CSS reference
 - [NPM Package Library](https://www.npmjs.com/)
+- [Kaggle](https://www.kaggle.com/datasets) Quality datasets for testing
 
 ## Project ideas for learning
 
@@ -89,5 +90,6 @@ Various suggesttions and references
 - [Spoonacular](https://spoonacular.com/food-api) Food, recipe, and nutrition API
 - [Open Trivia Database](https://opentdb.com/api_config.php) Free triva questions api
 - [Dad jokes](https://icanhazdadjoke.com/) Free dad jokes api
+- [Zen quotes](https://zenquotes.io) Free quotes API
 
 [Return to Home](https://github.com/petersem/basics)

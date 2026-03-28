@@ -20,6 +20,7 @@
   - [Flatten a multi-dimensional array](#flatten-a-multi-dimensional-array)
   - [Chart.js](#chartjs)
   - [Temperature conversion](#temperature-conversion)
+  - [Return unique array elements](#return-unique-array-elements)
 
 [Return Home](https://github.com/petersem/basics)
 
@@ -441,6 +442,16 @@ const FahrenheitToCelcius = fahrenheit => Math.round(((fahrenheit -32) / (9/5)) 
 
 console.log(celciusToFahrenheit(37.8));
 console.log(FahrenheitToCelcius(100));
+```
+
+## Return unique array elements
+
+Using `Set` to get the unique array elements
+
+``` js
+const repeats = ["cat", "dog", "cat", "dog", "cat", "dog", "dog", "dog"];
+const unique = arr => [...new Set(arr)];
+console.log(unique(repeats));
 ```
 
 **[`^        back to top        ^`](#tips-and-useful-code)**

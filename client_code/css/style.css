@@ -2,6 +2,9 @@ body {
    background: gray; 
 }
 
+#cameraFeed {
+    border-radius: 20px;
+}
 
 ul {
     list-style: none;

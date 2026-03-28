@@ -224,3 +224,26 @@ function getSum(total, currentValue) {
   console.log(total, currentValue)
   return total + Math.round(currentValue);
 }
+
+// The Map object holds in-memory key-value pairs 
+//
+logger('Set object - not really an array, but similar - only unique values, all in an object');
+
+let st = new Set();
+
+st.add('apple');
+st.add('pinapple');
+st.add('pen');
+st.add('pen'); // not added as duplicate
+console.log(st);
+
+st.delete('apple'); // delete entry from set
+console.log(st);
+
+st.clear(); // clears entire set
+console.log(st);
+
+st.add('pen');
+console.log(st.has('pen')); // item is preset
+
+console.log(st.size); // get the size of the set
