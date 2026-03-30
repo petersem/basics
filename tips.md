@@ -521,6 +521,4 @@ Copy text to the clipboard (client code only)
 const copyToClipboard = text => navigator.clipboard.writeText(text);
 ```
 
-
-
 **[`^        back to top        ^`](#tips-and-useful-code)**
