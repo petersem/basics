@@ -21,6 +21,10 @@
   - [Chart.js](#chartjs)
   - [Temperature conversion](#temperature-conversion)
   - [Return unique array elements](#return-unique-array-elements)
+  - [Check if an Object is empty](#check-if-an-object-is-empty)
+  - [Generate a random HEX colour](#generate-a-random-hex-colour)
+  - [Debounce a function](#debounce-a-function)
+  - [Copy to clipboard](#copy-to-clipboard)
 
 [Return Home](https://github.com/petersem/basics)
 
@@ -453,5 +457,70 @@ const repeats = ["cat", "dog", "cat", "dog", "cat", "dog", "dog", "dog"];
 const unique = arr => [...new Set(arr)];
 console.log(unique(repeats));
 ```
+
+## Check if an Object is empty 
+
+Object key length is zero
+
+``` js
+const isEmpty = obj => Object.keys(obj).length === 0;
+```
+
+## Generate a random HEX colour 
+
+Using Math.Random()
+
+``` js
+const randomColour = () => `#${ Math.floor( Math.random() * 0xFFFFFF )
+    .toString(16)
+    .padStart(6, '0')}`;
+
+console.log(randomColour());
+```
+
+## Debounce a function
+
+Pause before executing, and reset pause if call again in that initial pause. Reduces the chance that double calls are processed. (Mainly seen in client code for things like searchs as you type)
+
+``` js
+// Debounce function
+function debounce(func, delay) {
+    let timeout;
+    return function (...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => {
+            func.apply(this, args);
+        }, delay);
+    };
+}
+
+// Function to be debounced
+function search(query) {
+    console.log('Searching for:', query);
+}
+
+// Create a debounced version of the search function
+const dSearch = debounce(search, 1000);
+
+// Simulate typing with multiple calls to the debounced function
+dSearch('Hello');
+dSearch('Hello, ');
+dSearch('Hello, World!');  // Only this call will trigger after 1000ms
+```
+
+## Copy to clipboard
+
+Copy text to the clipboard (client code only)
+
+``` html
+<input type="button" value="Copy to clipboard" 
+    onclick='copyToClipboard("I am text to copy")'>
+```
+
+``` js
+const copyToClipboard = text => navigator.clipboard.writeText(text);
+```
+
+
 
 **[`^        back to top        ^`](#tips-and-useful-code)**
