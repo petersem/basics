@@ -95,11 +95,12 @@ console.log(eColours.BLUE); // prints 2
  // assigns a, but not initialised (will be 'undefined')
 let a;   
 
-// assigns a variable and initialises to 2
+// assigns a variable and initialises it
 let b = 1;  
+let name = "Hananna";
 
 // assigns and initialises a variable which cannot be changed
-const MY_CONST = "My Constant World"; 
+const MY_CONST = "This-Is-The-Way"; 
 ```
 
 ## Related functions
