@@ -15,7 +15,6 @@
   "type": "module",
   "main": "1_variables.mjs",
   "scripts": {
-    "var": "cls && node 0_variables.mjs",
     "ops": "cls && node 1_operators.mjs",
     "str": "cls && node 2_strings.mjs",
     "dec": "cls && node 3_decisions.mjs",

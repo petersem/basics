@@ -5,22 +5,11 @@
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/petersem/basics)
 ![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/petersem/basics)
 
-## Code examples
+## Javascript reference
 
-> Code snippets all start with a number
-
-**To run the code examples**
-
-```console
-npm run // to see all the scripts
-npm run scriptname
-```
-
-Look in the `package.json` to see examples of creating multiple script options, as per the above.
-
-> Some code includes references to external packages. Before this will work, ensure you run the following install command from a terminal open to the project folder. *(this is not needed more than once)*
->
-> `npm i`
+- [Variables](https://github.com/petersem/basics/blob/main/variables.md) Details of Javascript variables and variable types.
+- [Operators](https://github.com/petersem/basics/blob/main/operators.md) Lists all the operators
+- 
 
 ## Other information
 
@@ -43,3 +32,21 @@ Look in the `package.json` to see examples of creating multiple script options, 
 [![Star History Chart](https://api.star-history.com/svg?repos=petersem/basics&type=date&legend=top-left)](https://www.star-history.com/#petersem/basics&type=date&legend=top-left)
 
 > Create a GitHub account, then add a watch for this project to be notified of updates.
+
+
+## Code examples
+
+> Code snippets all start with a number
+
+**To run the code examples**
+
+```console
+npm run // to see all the scripts
+npm run scriptname
+```
+
+Look in the `package.json` to see examples of creating multiple script options, as per the above.
+
+> Some code includes references to external packages. Before this will work, ensure you run the following install command from a terminal open to the project folder. *(this is not needed more than once)*
+>
+> `npm i`

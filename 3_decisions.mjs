@@ -50,3 +50,13 @@ const q = "cat";
 
 console.log( r ?? "dog"); // prints dog because r is null or undefined
 console.log( q ?? "dog"); // prints cat as variable already initialised
+
+
+// Optional Chaining - return 'undefined' if a higher-level object is not present, rather than error
+//
+let person = {
+    name: 'Fred',
+    email: 'fred.flintstone@quarry.com'
+}
+
+console.log(person.avatar?.url);  // Use '?' If the avatar property not there, dont get the url, just return undefined
