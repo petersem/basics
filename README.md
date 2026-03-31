@@ -9,7 +9,8 @@
 
 - [Variables](https://github.com/petersem/basics/blob/main/variables.md) Details of Javascript variables and variable types.
 - [Operators](https://github.com/petersem/basics/blob/main/operators.md) Lists all the operators
-- 
+- [Strings](https://github.com/petersem/basics/blob/main/strings.md) Working with strings
+
 
 ## Other information
 
