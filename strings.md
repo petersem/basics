@@ -1,5 +1,16 @@
 # Strings
 
+- [Strings](#strings)
+  - [To upper and lower case](#to-upper-and-lower-case)
+  - [IndexOf](#indexof)
+  - [Substring](#substring)
+  - [Slice](#slice)
+  - [Split](#split)
+  - [Replace](#replace)
+  - [Trim](#trim)
+
+[Return Home](/basics)
+
 ## To upper and lower case
 
 Converts a string to upper or lower case

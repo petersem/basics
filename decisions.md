@@ -10,7 +10,7 @@ There are a nuumber of mechanisms to evaluate criteria and choose what to do. //
   - [nullish coalesence](#nullish-coalesence)
   - [Optional Chaining](#optional-chaining)
 
-[Return Home](https://github.com/petersem/basics)
+[Return Home](/basics)
 
 ## If-then-else
 

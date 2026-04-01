@@ -1,4 +1,5 @@
 # Operators
+
 List the most common operators in Javascript
 
 - [Operators](#operators)
@@ -6,7 +7,7 @@ List the most common operators in Javascript
   - [Arithmatic operators](#arithmatic-operators)
   - [Comparrison operators](#comparrison-operators)
 
-[Return Home](https://github.com/petersem/basics)
+[Return Home](/basics)
 
 ## Assignment operators
 
