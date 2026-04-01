@@ -11,6 +11,7 @@
 - [Operators](operators.md) Lists all the operators
 - [Strings](strings.md) Working with strings
 - [Decisions](decisions.md) How branching logic works
+- [Functions](functions.md) All about functions
 
 ## Other information
 
@@ -25,3 +26,4 @@
 - [Database](database.md) learnings.
 - [Git](git.md) practices and commands.
 - [Architecture](architecture.md) patterns, practices, and recommendations.
+- Unit Testing - coming soon
