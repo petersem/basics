@@ -1,5 +1,7 @@
 # Application architecture
 
+Patterns, practices, and suggestions.
+
 - [Application architecture](#application-architecture)
   - [Design Patterns](#design-patterns)
     - [Singleton](#singleton)
@@ -12,8 +14,6 @@
       - [Local development/prototyping](#local-developmentprototyping)
   
 [Return Home](/basics)
-
-Patterns, practices, and suggestions.
 
 ## Design Patterns 
 
