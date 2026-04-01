@@ -231,5 +231,3 @@ console.log(age); // 32
 ```
 
 **[`^        back to top        ^`](#javascript-variables)**
-
-[Return Home](https://github.com/petersem/basics)
