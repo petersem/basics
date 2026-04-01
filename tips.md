@@ -1,7 +1,5 @@
 # Tips and useful code
 
-[Return Home](https://github.com/petersem/basics)
-
 - [Tips and useful code](#tips-and-useful-code)
   - [Get day of week](#get-day-of-week)
   - [Return a number within a range](#return-a-number-within-a-range)
@@ -26,7 +24,7 @@
   - [Debounce a function](#debounce-a-function)
   - [Copy to clipboard](#copy-to-clipboard)
 
-[Return Home](https://github.com/petersem/basics)
+[Return Home](/)
 
 ## Get day of week
 
