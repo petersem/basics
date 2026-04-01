@@ -7,7 +7,7 @@ There are a nuumber of mechanisms to evaluate criteria and choose what to do. //
   - [Switch statement](#switch-statement)
   - [Ternary operator](#ternary-operator)
   - [Logical OR](#logical-or)
-  - [nullish coalesence](#nullish-coalesence)
+  - [Nulish coalesence](#nulish-coalesence)
   - [Optional Chaining](#optional-chaining)
 
 [Return Home](/basics)
@@ -83,7 +83,7 @@ console.log(port); // uses 9999 as secondPort value initialised.
 
 **[`^        back to top        ^`](#decisions-and-branching-logic)**
 
-## nullish coalesence
+## Nulish coalesence
 
 If a variable is null or undefined, return it, otherwise return something else. ( varToTest ?? returnThisIfFalse)
 
@@ -111,5 +111,3 @@ console.log(person.avatar?.url);  // If avatar property undefined, dont get url,
 ```
 
 **[`^        back to top        ^`](#decisions-and-branching-logic)**
-
-[Return Home](https://github.com/petersem/basics)
