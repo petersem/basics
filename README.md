@@ -12,7 +12,6 @@
 - [Strings](https://github.com/petersem/basics/blob/main/strings.md) Working with strings
 - [Decisions](https://github.com/petersem/basics/blob/main/decisions.md) How branching logic works
 
-
 ## Other information
 
 - [Tips](https://github.com/petersem/basics/blob/main/tips.md) Useful code samples.
