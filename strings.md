@@ -64,7 +64,7 @@ Splits a string by delimeter into an array
 ``` js
 let phrase = "I like big butts, and I cannot lie";
 let words = phrase.split(' ');
-console.log(words);
+console.log(words); // retruns ['I', 'like', 'big', 'butts, ',', 'and', 'I', 'cannot', 'lie']
 ```
 
 ## Replace
@@ -73,7 +73,7 @@ Searches and replaces something in a striing
 
 ``` js
 let phrase = "I like big butts, and I cannot lie";
-console.log(phrase.replace('butts', 'dinners'));
+console.log(phrase.replace('butts', 'dinners'));  // returns "I like big dinners, and I cannot lie"
 ```
 
 ## Trim
