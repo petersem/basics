@@ -28,3 +28,5 @@
 - [Git](git.md) practices and commands.
 - [Architecture](architecture.md) patterns, practices, and recommendations.
 - Unit Testing - coming soon
+- Documenting code - coming soon
+- Setting up an Express app - coming soon
