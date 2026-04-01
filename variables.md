@@ -10,6 +10,7 @@
 | boolean   | true or false.                                    |
 | undefined | A variable that has not been set with a value     |
 | null      | Nothing. not the same as undefined.               |
+| date      | A date/time object, stored in UTC (GMT 0) format  |
 | bigint    | Larger number percision 
 | Object    | A complex data type which can include multiple primitive values (as above) |
 | Array     | A collection of items, which can be the same or different types |
