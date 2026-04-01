@@ -1,6 +1,12 @@
 # Operators
-
 List the most common operators in Javascript
+
+- [Operators](#operators)
+  - [Assignment operators](#assignment-operators)
+  - [Arithmatic operators](#arithmatic-operators)
+  - [Comparrison operators](#comparrison-operators)
+
+[Return Home](https://github.com/petersem/basics)
 
 ## Assignment operators
 
@@ -13,6 +19,8 @@ a /= 2; // same as a = a / 2
 a **= 3; // same as a = a * a * (exponent)
 a %= 2; // same as a = a % 2  (modulus)
 ```
+
+**[`^        back to top        ^`](#operators)**
 
 ## Arithmatic operators
 
@@ -29,6 +37,8 @@ b = --a // decrement by 1 before assignment
 b = a-- // decrement by 1 after assignment
 ```
 
+**[`^        back to top        ^`](#operators)**
+
 ## Comparrison operators
 
 ``` js
@@ -41,3 +51,5 @@ console.log( 2 >= 2 ); // greater than or equal to - true as 2 is equal 2
 console.log( 1 < 2 ); // less than - true as 1 is less than 2
 console.log( 2 <= 2 ); // less than or equal to - true as 2 is equal to 2 
 ```
+
+**[`^        back to top        ^`](#operators)**

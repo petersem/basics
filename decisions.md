@@ -1,6 +1,6 @@
 # Decisions and branching logic
 
-[Return Home](https://github.com/petersem/basics)
+There are a nuumber of mechanisms to evaluate criteria and choose what to do. // being that you dont want to assign a new value to your test variable, use the double == or tripple === as comparison operators,
 
 - [Decisions and branching logic](#decisions-and-branching-logic)
   - [If-then-else](#if-then-else)
@@ -10,7 +10,7 @@
   - [nullish coalesence](#nullish-coalesence)
   - [Optional Chaining](#optional-chaining)
 
-There are a nuumber of mechanisms to evaluate criteria and choose what to do. // being that you dont want to assign a new value to your test variable, use the double == or tripple === as comparison operators,
+[Return Home](https://github.com/petersem/basics)
 
 ## If-then-else
 

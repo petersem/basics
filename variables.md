@@ -1,7 +1,5 @@
 # Javascript Variables
 
-[Return Home](https://github.com/petersem/basics)
-
 - [Javascript Variables](#javascript-variables)
   - [Javascript types](#javascript-types)
     - [Boolean](#boolean)
@@ -18,6 +16,8 @@
     - [Explicit casting](#explicit-casting)
     - [Implicit casting (Coercion)](#implicit-casting-coercion)
   - [Structuring and destructuring variables](#structuring-and-destructuring-variables)
+
+[Return Home](https://github.com/petersem/basics)
 
 ## Javascript types
 
