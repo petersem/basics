@@ -1,4 +1,14 @@
-# Decisions: or branching logic
+# Decisions and branching logic
+
+[Return Home](https://github.com/petersem/basics)
+
+- [Decisions and branching logic](#decisions-and-branching-logic)
+  - [If-then-else](#if-then-else)
+  - [Switch statement](#switch-statement)
+  - [Ternary operator](#ternary-operator)
+  - [Logical OR](#logical-or)
+  - [nullish coalesence](#nullish-coalesence)
+  - [Optional Chaining](#optional-chaining)
 
 There are a nuumber of mechanisms to evaluate criteria and choose what to do. // being that you dont want to assign a new value to your test variable, use the double == or tripple === as comparison operators,
 
@@ -20,6 +30,8 @@ else {
 };
 ```
 
+**[`^        back to top        ^`](#decisions-and-branching-logic)**
+
 ## Switch statement
 
 if condition `matches an option` _do something specific_ `else` _do a default operation_
@@ -40,6 +52,8 @@ switch (myChoice) {
 }
 ```
 
+**[`^        back to top        ^`](#decisions-and-branching-logic)**
+
 ## Ternary operator
 
 If `true` _do this_, `else` _that_. (three parts) - condition ? true part : false part
@@ -49,6 +63,8 @@ let age = 19;
 let text = (age < 18) ? "Minor" : "Adult";
 console.log("Ternary: " + text);  // Will return 'Ternary: Adult'
 ```
+
+**[`^        back to top        ^`](#decisions-and-branching-logic)**
 
 ## Logical OR
 
@@ -65,6 +81,8 @@ port = secondPort || 3000;
 console.log(port); // uses 9999 as secondPort value initialised.
 ```
 
+**[`^        back to top        ^`](#decisions-and-branching-logic)**
+
 ## nullish coalesence
 
 If a variable is null or undefined, return it, otherwise return something else. ( varToTest ?? returnThisIfFalse)
@@ -76,6 +94,8 @@ const q = "cat";
 console.log( r ?? "dog"); // prints dog because r is null or undefined
 console.log( q ?? "dog"); // prints cat as variable already initialised
 ```
+
+**[`^        back to top        ^`](#decisions-and-branching-logic)**
 
 ## Optional Chaining
 
@@ -89,3 +109,7 @@ let person = {
 
 console.log(person.avatar?.url);  // If avatar property undefined, dont get url, just return undefined
 ```
+
+**[`^        back to top        ^`](#decisions-and-branching-logic)**
+
+[Return Home](https://github.com/petersem/basics)
