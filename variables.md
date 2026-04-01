@@ -17,7 +17,7 @@
     - [Implicit casting (Coercion)](#implicit-casting-coercion)
   - [Structuring and destructuring variables](#structuring-and-destructuring-variables)
 
-[Return Home](/)
+[Return Home](/basics)
 
 ## Javascript types
 

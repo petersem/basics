@@ -24,7 +24,7 @@
   - [Debounce a function](#debounce-a-function)
   - [Copy to clipboard](#copy-to-clipboard)
 
-[Return Home](/)
+[Return Home](/basics)
 
 ## Get day of week
 
