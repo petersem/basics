@@ -123,70 +123,98 @@ Can be server, client, or both.
 - Enables communications between software systems
 - Defines structured rules for integration
 
+**[`^        back to top        ^`](#references)**
+
 ### Endpoint
 
 - Represents specific API functionality path
 - Unique URL for accessing resources
+
+**[`^        back to top        ^`](#references)**
 
 ### HTTP API Methods
 
 - Enable standardised CRUD operation handling
 - Define action performed on resources
 
+**[`^        back to top        ^`](#references)**
+
 ### Request
 
 - Client sends structured data payload
 - Includes headers, parameters, and body
+
+**[`^        back to top        ^`](#references)**
 
 ### Response
 
 - Server returns processed result data
 - Contains status code, and payload
 
+**[`^        back to top        ^`](#references)**
+
 ### Status Codes
 
 - Indicate outcome of API request
 - Help identify errors and success
+
+**[`^        back to top        ^`](#references)**
 
 ### Authentication
 
 - Verifies identity of requesting entity
 - Uses token keys or credentials
 
+**[`^        back to top        ^`](#references)**
+
 ### Parameters
 
 - Transfers additional data within requests
 - Support filtering, sorting, and pagination
+
+**[`^        back to top        ^`](#references)**
 
 ### Headers
 
 - Carry metadata about HTTP requests
 - Specify content type and authorisation
 
+**[`^        back to top        ^`](#references)**
+
 ### Authorisation
 
 - Determines user access permission levels
 - Enforces role-based access control (RBAC)
+
+**[`^        back to top        ^`](#references)**
 
 ### Rate Limiting
 
 - Restricts the number of allowed requests
 - Prevents abuse and server overload
 
+**[`^        back to top        ^`](#references)**
+
 ### API Key
 
 - Unique identifier for client access
 - Used for simple authentication mechanisms
+
+**[`^        back to top        ^`](#references)**
 
 ### JSON
 
 - Lightweight structured data exchange format
 - Commonly used in REST APIs
 
+**[`^        back to top        ^`](#references)**
+
 ### Webhook
 
 - Sends automated event triggered callbacks to a URL
 - Enables real-time system updates
+
+**[`^        back to top        ^`](#references)**
 
 ### oAuth
 
