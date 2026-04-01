@@ -68,7 +68,7 @@ console.log("Ternary: " + text);  // Will return 'Ternary: Adult'
 
 ## Logical OR
 
-Return `true` bit or `false` bit.  (returnedValue = thisIfTrue || otherwiseThis)
+Return `true` bit or `false` bit.  (returnedValue = thisIfTrue OR otherwiseThis)
 
 ``` js
 let firstPort;
