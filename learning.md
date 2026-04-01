@@ -1,5 +1,14 @@
 # Learning
 
+- [Learning](#learning)
+  - [Suggest learning](#suggest-learning)
+  - [Useful Books](#useful-books)
+  - [Useful links](#useful-links)
+  - [Project ideas for learning](#project-ideas-for-learning)
+  - [Handy APIs](#handy-apis)
+
+[Return Home](/basics)
+
 Various suggesttions and references
 
 ## Suggest learning
@@ -26,6 +35,8 @@ Various suggesttions and references
 - Swagger (API Documenter)
 - SQL, MariaDB/MySQL, MySQL Workbench
 
+**[`^        back to top        ^`](#learning)**
+
 ## Useful Books
 
 - The Pragmatic Programmer: From Journeyman to Master
@@ -35,6 +46,8 @@ Various suggesttions and references
 - Clean Architecture
 - Software Estimation - Demystifying the black art
 - Agile Software Development, Principles, Patterns, and Practices
+
+**[`^        back to top        ^`](#learning)**
 
 ## Useful links
 
@@ -49,6 +62,8 @@ Various suggesttions and references
 - [W3Schools](https://www.w3schools.com/w3css/) CSS reference
 - [NPM Package Library](https://www.npmjs.com/)
 - [Kaggle](https://www.kaggle.com/datasets) Quality datasets for testing
+
+**[`^        back to top        ^`](#learning)**
 
 ## Project ideas for learning
 
@@ -85,6 +100,8 @@ Various suggesttions and references
 | Digital clock               |                          |                     |
 | Pomodoro timer              |                          |                     |
 
+**[`^        back to top        ^`](#learning)**
+
 ## Handy APIs
 
 - [Spoonacular](https://spoonacular.com/food-api) Food, recipe, and nutrition API
@@ -92,4 +109,4 @@ Various suggesttions and references
 - [Dad jokes](https://icanhazdadjoke.com/) Free dad jokes api
 - [Zen quotes](https://zenquotes.io) Free quotes API
 
-[Return to Home](https://github.com/petersem/basics)
+**[`^        back to top        ^`](#learning)**

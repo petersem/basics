@@ -1,5 +1,13 @@
 # Visual Studio Code
 
+- [Visual Studio Code](#visual-studio-code)
+  - [Cool VS Code Extensions](#cool-vs-code-extensions)
+  - [Shortcut keys](#shortcut-keys)
+  - [Issues](#issues)
+    - [Mouse pointer almost dissapears in coding widows, using dark-mode themes, and when using AMD GPUs](#mouse-pointer-almost-dissapears-in-coding-widows-using-dark-mode-themes-and-when-using-amd-gpus)
+
+[Return Home](/basics)
+
 ## Cool VS Code Extensions
 
 - **GitHub Pull Requests**
@@ -35,6 +43,8 @@ Rest API tester (But, I prefer stand-alone Postman)
 - **Filetree Pro**
 Generate project file trees in markdown
 
+**[`^        back to top        ^`](#visual-studio-code)**
+
 ## Shortcut keys
 
 - `ctrl a k s` Will select all the code in your editor window and then reformat it nicely
@@ -51,6 +61,8 @@ Generate project file trees in markdown
 - `alt-shift` allows selecting multiple lines within the editor to simultaneously change
 - Open settings and search for autosave in the search bar. Set autosave to `afterDelay` and autosavedelay to `3000`. (Saves files after 3 seconds of inactivitiy)
 
+**[`^        back to top        ^`](#visual-studio-code)**
+
 ## Issues
 
 ### Mouse pointer almost dissapears in coding widows, using dark-mode themes, and when using AMD GPUs
@@ -59,11 +71,11 @@ Generate project file trees in markdown
 - Type in `Preferences: Configure Runtime Arguments
 - Disable hardware accelleration
   
-```
+``` settings
 // fix for dark cursor in editor on AMD GPUs
 "disable-hardware-acceleration": true
 ```
 
 - save file and restart VSCode
 
-[Return to Home](https://github.com/petersem/basics)
+**[`^        back to top        ^`](#visual-studio-code)**

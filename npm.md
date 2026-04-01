@@ -2,6 +2,12 @@
 
 Commands and packackes.
 
+- [NPM](#npm)
+  - [Commands](#commands)
+  - [Useful NPM Packages](#useful-npm-packages)
+
+[Return Home](/basics)
+
 ## Commands
 
 - `npm init -y` initialises a node project and auto answers all questions *yes*. (Omit -y to go through questions)
@@ -18,6 +24,8 @@ Commands and packackes.
 > - `^` Allows minor and patch updates
 > - `~` Allows only patch updates
 
+**[`^        back to top        ^`](#npm)**
+
 ## Useful NPM Packages
 
 - Nodemon
@@ -33,4 +41,4 @@ Commands and packackes.
 - Swagger
 - Chart.js
 
-[Return to Home](https://github.com/petersem/basics)
+**[`^        back to top        ^`](#npm)**

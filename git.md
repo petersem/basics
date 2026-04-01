@@ -2,6 +2,26 @@
 
 Git practices and commands
 
+- [GIT](#git)
+  - [Practices](#practices)
+  - [Commands](#commands)
+    - [git init](#git-init)
+    - [git add](#git-add)
+    - [git status](#git-status)
+    - [git log](#git-log)
+    - [git remote](#git-remote)
+    - [git commit](#git-commit)
+    - [git push](#git-push)
+    - [git pull](#git-pull)
+    - [git branch](#git-branch)
+    - [git fetch](#git-fetch)
+    - [git checkout](#git-checkout)
+    - [git merge](#git-merge)
+    - [git reset](#git-reset)
+    - [git clone](#git-clone)
+
+[Return Home](/basics)
+
 ## Practices
 
 - use a .gitignore file to implicity include or exclude files from Git
@@ -21,6 +41,8 @@ Git practices and commands
 
 ```
 
+**[`^        back to top        ^`](#git)**
+
 ## Commands
 
 ### git init
@@ -33,6 +55,8 @@ $ cd railsapp
 $ git init
 ```
 
+**[`^        back to top        ^`](#git)**
+
 ### git add
 
 Adds state changes in the current director for staging
@@ -43,6 +67,8 @@ $ echo "app.rb" >> README.md
 $ git add README.md
 ```
 
+**[`^        back to top        ^`](#git)**
+
 ### git status
 
 Shows the current state of your project
@@ -50,6 +76,8 @@ Shows the current state of your project
 ``` command
 $ git status
 ```
+
+**[`^        back to top        ^`](#git)**
 
 ### git log
 
@@ -59,6 +87,8 @@ Shows the the history of all commits made in your project
 $ git log
 ```
 
+**[`^        back to top        ^`](#git)**
+
 ### git remote
 
 Links your local project to a remote repository like GitHub
@@ -66,6 +96,8 @@ Links your local project to a remote repository like GitHub
 ``` command
 $ git remote add origin https://github.com/username/projectname.git
 ```
+
+**[`^        back to top        ^`](#git)**
 
 ### git commit
 
@@ -76,6 +108,8 @@ $ git add .
 $ git commit -m "Update files"  
 ```
 
+**[`^        back to top        ^`](#git)**
+
 ### git push
 
 Push changes to a git repository
@@ -84,6 +118,8 @@ Push changes to a git repository
 $ git push origin main/master
 ```
 
+**[`^        back to top        ^`](#git)**
+
 ### git pull
 
 Pulls the latest changes from the online repository to your local project
@@ -91,6 +127,8 @@ Pulls the latest changes from the online repository to your local project
 ``` command
 $ git pull
 ```
+
+**[`^        back to top        ^`](#git)**
 
 ### git branch
 
@@ -101,6 +139,8 @@ $ git branch
 $ git branch feature-login
 ```
 
+**[`^        back to top        ^`](#git)**
+
 ### git fetch
 
 Retrieve data from a remote repository without merging chnages
@@ -109,6 +149,8 @@ Retrieve data from a remote repository without merging chnages
 $ git remote add origin <url>
 ```
 
+**[`^        back to top        ^`](#git)**
+
 ### git checkout
 
 Switch to the specified branch
@@ -116,6 +158,8 @@ Switch to the specified branch
 ``` command
 $ git checkout feature-login
 ```
+
+**[`^        back to top        ^`](#git)**
 
 ### git merge
 
@@ -126,6 +170,8 @@ $ git checkout main
 $ git merge feature-login
 ```
 
+**[`^        back to top        ^`](#git)**
+
 ### git reset
 
 Reset the current branch to the specified commit
@@ -135,6 +181,8 @@ $ git log --oneline
 $ git reset --hard last-commit-hash
 ```
 
+**[`^        back to top        ^`](#git)**
+
 ### git clone
 
 Copies an existing repository from GitHub to your local system
@@ -143,4 +191,4 @@ Copies an existing repository from GitHub to your local system
 $ git clone https://github.com/username/project.git
 ```
 
-[Return to Home](https://github.com/petersem/basics)
+**[`^        back to top        ^`](#git)**

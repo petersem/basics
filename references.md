@@ -1,12 +1,41 @@
 # References
 
-Assorted reference informatin
+Assorted reference information
+
+- [References](#references)
+  - [Symantic Versioning](#symantic-versioning)
+  - [Express](#express)
+    - [Definitions](#definitions)
+    - [Express Middleware](#express-middleware)
+  - [HTTP Methods](#http-methods)
+  - [Model - View - Controller (MVC) Pattern](#model---view---controller-mvc-pattern)
+  - [Array Methods](#array-methods)
+  - [API Terms](#api-terms)
+    - [Definition](#definition)
+    - [Endpoint](#endpoint)
+    - [HTTP API Methods](#http-api-methods)
+    - [Request](#request)
+    - [Response](#response)
+    - [Status Codes](#status-codes)
+    - [Authentication](#authentication)
+    - [Parameters](#parameters)
+    - [Headers](#headers)
+    - [Authorisation](#authorisation)
+    - [Rate Limiting](#rate-limiting)
+    - [API Key](#api-key)
+    - [JSON](#json)
+    - [Webhook](#webhook)
+    - [oAuth](#oauth)
+
+[Return Home](/basics)
 
 ## Symantic Versioning
 
 Uses 3 numbers, seperated by a period. e.g. 1.2.4
 
 > Breaking changes . New features . Bug fixes
+
+**[`^        back to top        ^`](#references)**
 
 ## Express
 
@@ -17,6 +46,8 @@ Uses 3 numbers, seperated by a period. e.g. 1.2.4
 - Express-Validators validates routes according to business rules
 - EJS is a templating engine for injecting data into View files
 
+**[`^        back to top        ^`](#references)**
+
 ### Express Middleware
 
 - Express.json(): (Built-in) Parses incoming requests with JSON payloads
@@ -25,6 +56,8 @@ Uses 3 numbers, seperated by a period. e.g. 1.2.4
 - Morgan: HTTP request logger
 - Cors: Enables cross-origin resource sharing
 - Helmet: Secdures express apps by setting HTTP headers
+
+**[`^        back to top        ^`](#references)**
 
 ## HTTP Methods
 
@@ -60,6 +93,8 @@ Uses 3 numbers, seperated by a period. e.g. 1.2.4
 > | 500  | Internal server error                                |
 > | 503  | Service / Server unavailable (e.g maintenance)       |
 
+**[`^        back to top        ^`](#references)**
+
 ## Model - View - Controller (MVC) Pattern
 
 Can be server, client, or both.
@@ -73,9 +108,13 @@ Can be server, client, or both.
 **Controller**
 : Needed to render model data to a view, or partial. Which handles any API calls for CRUD or to external sites, and for managing any dynamic functionality on the web page.
 
+**[`^        back to top        ^`](#references)**
+
 ## Array Methods
 
 ![arrays](https://raw.githubusercontent.com/petersem/basics/refs/heads/main/misc/arrays.jpg)
+
+**[`^        back to top        ^`](#references)**
 
 ## API Terms
 
@@ -154,4 +193,4 @@ Can be server, client, or both.
 - Secure delegated access authorisation framework
 - Issues tokens for controlled access
 
-[Return to Home](https://github.com/petersem/basics)
+**[`^        back to top        ^`](#references)**

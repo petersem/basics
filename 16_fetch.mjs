@@ -1,3 +1,12 @@
+ 
+// - [Strings](#strings)
+
+// [Return Home](/basics)
+
+// **[`^        back to top        ^`](#strings)** -->
+
+
+
 // Fetch
 // 
 import logger from './utilities/logger.mjs'

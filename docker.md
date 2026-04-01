@@ -2,6 +2,14 @@
 
 Various information on Docker
 
+- [Docker](#docker)
+  - [Practices](#practices)
+  - [Commands](#commands)
+  - [Yaml examples](#yaml-examples)
+    - [MariaDB (MySQL Equivalent DB)](#mariadb-mysql-equivalent-db)
+
+[Return Home](/basics)
+
 ## Practices
 
 - use a .dockerignore file to implicity include or exclude files from the docker image build
@@ -32,7 +40,9 @@ README.md
 ```
 
 - In VSCode, use `git create tag` with your version number, then `git push with tag` so that built docker images include tag (version) labelling.
-  
+
+**[`^        back to top        ^`](#docker)**
+
 ## Commands
 
 - Create container: `docker compose up --no-start`
@@ -51,6 +61,8 @@ README.md
 - Stop all containers: `docker stop $(docker ps -a -q)`
 - Create and start container(s) in a compose YAML file: `docker compose up -d service_name]`
 - Pull a Docker image from registry: `docker pull repo/imagename[:tag]`
+
+**[`^        back to top        ^`](#docker)**
 
 ## Yaml examples
 
@@ -76,4 +88,4 @@ services:
     restart: unless-stopped
 ```
 
-[Return to Home](https://github.com/petersem/basics)
+**[`^        back to top        ^`](#docker)**

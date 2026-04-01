@@ -2,6 +2,14 @@
 
 Recommendations and practices.
 
+- [Coding](#coding)
+  - [General](#general)
+  - [Secure Coding](#secure-coding)
+  - [Practices](#practices)
+  - [Deployment](#deployment)
+
+[Return Home](/basics)
+
 ## General
 
 - Don't use `var`, as this is for old browsers
@@ -12,12 +20,16 @@ Recommendations and practices.
 - Return appropriate status codes and error message for API calls
 - Could use the `HE` (NPM JS) library for encoding inputs and escaping output
 
+**[`^        back to top        ^`](#coding)**
+
 ## Secure Coding
 
 - *Always* sanitise inputs at server and client input interfaces
 - *Always* parse outputs. This includes reads and writes from databases and external services, too.
 - *Try* to log important operations fopr security and debugging
 - *Never* output a stack trace in production
+
+**[`^        back to top        ^`](#coding)**
 
 ## Practices
 
@@ -41,8 +53,10 @@ Recommendations and practices.
 - Double check configurations across environments. (environment variables and configuration)
 - External calls can overload your application. Include rate limiting and traffic control.
 
+**[`^        back to top        ^`](#coding)**
+
 ## Deployment
 
 - Everything is in containers today, so create a Dockerfile and package into an image. If you are using GitHub, you can build simple automations to build Docker images and deploy these to Docker Hub.
 
-[Return to Home](https://github.com/petersem/basics)
+**[`^        back to top        ^`](#coding)**
