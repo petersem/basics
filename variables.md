@@ -1,7 +1,25 @@
 # Javascript Variables
 
-## Javascript types
+[Return Home](https://github.com/petersem/basics)
 
+- [Javascript Variables](#javascript-variables)
+  - [Javascript types](#javascript-types)
+    - [Boolean](#boolean)
+      - [True Examples](#true-examples)
+      - [False Examples](#false-examples)
+    - [Objects](#objects)
+    - [Enums](#enums)
+  - [Defining and initialising variables](#defining-and-initialising-variables)
+  - [Related functions](#related-functions)
+    - [TypoOf](#typoof)
+    - [Number](#number)
+    - [ParseInt](#parseint)
+  - [Casting](#casting)
+    - [Explicit casting](#explicit-casting)
+    - [Implicit casting (Coercion)](#implicit-casting-coercion)
+  - [Structuring and destructuring variables](#structuring-and-destructuring-variables)
+
+## Javascript types
 
 |  Type     | Description                                       |
 | --------- | ------------------------------------------------- |
@@ -42,6 +60,8 @@
 - ( 1 == 1 )    // comparative
 ```
 
+**[`^        back to top        ^`](#javascript-variables)**
+
 #### False Examples
 
 ``` js
@@ -56,7 +76,9 @@
 - ( 1 == 2 )    // comparative
 ```
 
-## Objects
+**[`^        back to top        ^`](#javascript-variables)**
+
+### Objects
 
 A complex type which can include multiple other types
 
@@ -70,7 +92,9 @@ let myPets = {
 console.log(myPets.names); // prints the names of the pets
 ```
 
-## Enums
+**[`^        back to top        ^`](#javascript-variables)**
+
+### Enums
 
 Provide a set of choices for a given option. this is to improve the speed of development and limit options to allowed ones only.
 
@@ -85,6 +109,8 @@ const eColours = {
 
 console.log(eColours.BLUE); // prints 2
 ```
+
+**[`^        back to top        ^`](#javascript-variables)**
 
 ## Defining and initialising variables
 
@@ -104,7 +130,11 @@ let name = "Hananna";
 const MY_CONST = "This-Is-The-Way"; 
 ```
 
+**[`^        back to top        ^`](#javascript-variables)**
+
 ## Related functions
+
+### TypoOf
 
 `typeof` - Returns the type of data being stored in a variable
 
@@ -114,6 +144,10 @@ var c = "cat";
 console.log(typeof c);
 ```
 
+**[`^        back to top        ^`](#javascript-variables)**
+
+### Number
+
 `Number(string)` - Tries to convert a string to a number. If there are any non-numeric characts, then NaN is returned.
 
 ``` js 
@@ -121,6 +155,10 @@ console.log(typeof c);
 let d = "5";
 console.log(Number(d));
 ```
+
+**[`^        back to top        ^`](#javascript-variables)**
+
+### ParseInt
 
 `parseInt(string) / parseFloat(string)` - Tries to convert a string to a number. Will process the first valid number and ignore subsequent numbers after string characters
 
@@ -130,6 +168,8 @@ let d = "5 4";
 // prints 5
 console.log(parseInt(d));
 ```
+
+**[`^        back to top        ^`](#javascript-variables)**
 
 ## Casting
 
@@ -146,6 +186,8 @@ myVariable = Number(myVariable);
 console.log(myVariable + 2);  // prints the number 7
 ```
 
+**[`^        back to top        ^`](#javascript-variables)**
+
 ### Implicit casting (Coercion)
 
 Implicit Type Conversion occurs automatically by the JavaScript.
@@ -156,6 +198,8 @@ let myNumber = 5;
 myNumber = myNumber + "1";  
 console.log(myNumber);  // prints the string "51"
 ```
+
+**[`^        back to top        ^`](#javascript-variables)**
 
 ## Structuring and destructuring variables
 
@@ -185,3 +229,7 @@ var {name, age} = {name: 'John', age: 32};
 console.log(name); // John
 console.log(age); // 32
 ```
+
+**[`^        back to top        ^`](#javascript-variables)**
+
+[Return Home](https://github.com/petersem/basics)
