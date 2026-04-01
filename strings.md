@@ -21,6 +21,8 @@ console.log(name.toUpperCase());
 console.log(name.toLowerCase());
 ```
 
+**[`^        back to top        ^`](#strings)**
+
 ## IndexOf
 
 Find the position in a string for another string
@@ -29,6 +31,8 @@ Find the position in a string for another string
 let name = "Hananna";
 console.log(name.indexOf("anna"));
 ```
+
+**[`^        back to top        ^`](#strings)**
 
 ## Substring
 
@@ -46,6 +50,8 @@ console.log(text.substring(5, 3)); // 34 - 1st greater than 2nd, so swapped
 console.log(text.substring(5)); // 56789 - 2nd ommitted, so 1st to end
 console.log(text.substring(-7,20)); // 0123456789 - 1st becomes 0, 2nd becomes 9
 ```
+
+**[`^        back to top        ^`](#strings)**
 
 ## Slice
 
@@ -68,6 +74,8 @@ console.log(text.slice(0,100)); // 67 - start to max string length (if 2nd highe
 console.log(text.slice(-4,-1)); // 67 - End-4 to End-1
 ```
 
+**[`^        back to top        ^`](#strings)**
+
 ## Split
 
 Splits a string by delimeter into an array
@@ -78,6 +86,8 @@ let words = phrase.split(' ');
 console.log(words); // retruns ['I', 'like', 'big', 'butts, ',', 'and', 'I', 'cannot', 'lie']
 ```
 
+**[`^        back to top        ^`](#strings)**
+
 ## Replace
 
 Searches and replaces something in a striing
@@ -86,6 +96,8 @@ Searches and replaces something in a striing
 let phrase = "I like big butts, and I cannot lie";
 console.log(phrase.replace('butts', 'dinners'));  // returns "I like big dinners, and I cannot lie"
 ```
+
+**[`^        back to top        ^`](#strings)**
 
 ## Trim
 
@@ -96,3 +108,5 @@ phrase = "     This is a new phrase       ";
 console.log(phrase);
 console.log(phrase.trim());  // returns "This is a new phrase"
 ```
+
+**[`^        back to top        ^`](#strings)**
