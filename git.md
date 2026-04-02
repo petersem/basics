@@ -4,6 +4,7 @@ Git practices and commands
 
 - [GIT](#git)
   - [Practices](#practices)
+    - [.GitIgnore](#gitignore)
   - [Commands](#commands)
     - [git init](#git-init)
     - [git add](#git-add)
@@ -24,9 +25,12 @@ Git practices and commands
 
 ## Practices
 
-- use a .gitignore file to implicity include or exclude files from Git
-```
-# Exclude the following folders and files from git
+### .GitIgnore
+
+Use a .gitignore file to implicity include or exclude files from Git
+  
+``` bash
+# exclude these
 /node_modules
 /config/*.json
 /dist
@@ -36,7 +40,7 @@ Git practices and commands
 # include this specifically
 !/public/custom/custom.css
 
-# Empty folders with only a .keep file are included.
+# Empty folders with only a .keep file are included. Good to retain folder structure
 !.keep
 
 ```
