@@ -13,8 +13,6 @@ Reusable template objects which you can make many copies of.
 
 [Return Home](/basics)
 
-
-
 ## Creating a class
 
 ``` js
