@@ -446,6 +446,8 @@ console.log(celciusToFahrenheit(37.8));
 console.log(FahrenheitToCelcius(100));
 ```
 
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
 ## Return unique array elements
 
 Using `Set` to get the unique array elements
@@ -456,7 +458,9 @@ const unique = arr => [...new Set(arr)];
 console.log(unique(repeats));
 ```
 
-## Check if an Object is empty 
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Check if an Object is empty
 
 Object key length is zero
 
@@ -464,7 +468,9 @@ Object key length is zero
 const isEmpty = obj => Object.keys(obj).length === 0;
 ```
 
-## Generate a random HEX colour 
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Generate a random HEX colour
 
 Using Math.Random()
 
@@ -475,6 +481,8 @@ const randomColour = () => `#${ Math.floor( Math.random() * 0xFFFFFF )
 
 console.log(randomColour());
 ```
+
+**[`^        back to top        ^`](#tips-and-useful-code)**
 
 ## Debounce a function
 
@@ -505,6 +513,8 @@ dSearch('Hello');
 dSearch('Hello, ');
 dSearch('Hello, World!');  // Only this call will trigger after 1000ms
 ```
+
+**[`^        back to top        ^`](#tips-and-useful-code)**
 
 ## Copy to clipboard
 
