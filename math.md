@@ -27,7 +27,7 @@ console.log('Min: ' + Math.min(...numArray));; // prints 1 - Note that the ... s
 console.log('Min: ' + Math.min(4,66,777,2,-6));; // prints -6
 ```
 
-**[`^        back to top        ^`](#math)** -->
+**[`^        back to top        ^`](#math)**
 
 ### Max
 
@@ -38,7 +38,7 @@ console.log('Max: ' + Math.max(...numArray));; // prints 900
 console.log('Max: ' + Math.max(4,66,777,2,-6));; // prints 777
 ```
 
-**[`^        back to top        ^`](#math)** -->
+**[`^        back to top        ^`](#math)**
 
 ## Truncate
 
@@ -49,7 +49,7 @@ let mt = 5.9;
 console.log('Trunc: ' + Math.trunc(mt));  // returns 5
 ```
 
-**[`^        back to top        ^`](#math)** -->
+**[`^        back to top        ^`](#math)**
 
 ## Floor / Ceiling
 
@@ -62,7 +62,7 @@ let mf = 5.9;
 console.log('Floor: ' + Math.floor(mf));  // returns 5
 ```
 
-**[`^        back to top        ^`](#math)** -->
+**[`^        back to top        ^`](#math)**
 
 ### Ceiling
 
@@ -73,7 +73,7 @@ let mc = 5.1;
 console.log('Ceil: ' + Math.ceil(mc));  // returns 6
 ```
 
-**[`^        back to top        ^`](#math)** -->
+**[`^        back to top        ^`](#math)**
 
 ## Round
 
@@ -84,7 +84,7 @@ let mr = 4.99999;
 console.log('Round: ' + Math.round(mr));  // returns 5
 ```
 
-**[`^        back to top        ^`](#math)** -->
+**[`^        back to top        ^`](#math)**
 
 ## Random
 
@@ -96,4 +96,4 @@ let rnd = 100; // set the max random number
 console.log('Random: ' + (Math.floor(Math.random() * rnd) + 1)); 
 ```
 
-**[`^        back to top        ^`](#math)** -->
+**[`^        back to top        ^`](#math)**
