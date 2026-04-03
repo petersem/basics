@@ -17,12 +17,12 @@
 - [Classes](jsref/classes.md) Object orientated coding
 - [Math](jsref/math.md) operations
 - [Errors](jsref/errors.md) handling
+- [Debugging](jsref/debugging.md) options
 - Dates - coming soon
 - Promises - coming soon
 - Regex coming soon
 - Patterns - coming soon
 - Timers - coming soon
-- Debug - coming soon
 - loops - coming soon
 - Process - coming soon
 - Fetch - coming soon
