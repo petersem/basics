@@ -8,7 +8,6 @@ Using the console
     - [Delimetered output](#delimetered-output)
     - [Literals](#literals)
   - [Clear](#clear)
-  - [Clear](#clear-1)
   - [Table](#table)
   - [Coloured output prefixes](#coloured-output-prefixes)
 
@@ -47,16 +46,6 @@ Outputs to the terminal. Uses `back-ticks` and `${}` syntax
 ``` js
 const b = 'message';
 console.log(`my ${b}`}; // outputs 'my message'
-```
-
-**[`^        back to top        ^`](#console)**
-
-## Clear
-
-Clears the console
-
-``` js
-console.clear()
 ```
 
 **[`^        back to top        ^`](#console)**
