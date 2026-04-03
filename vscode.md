@@ -4,7 +4,7 @@
   - [Cool VS Code Extensions](#cool-vs-code-extensions)
   - [Shortcut keys](#shortcut-keys)
   - [Issues](#issues)
-    - [Mouse pointer almost dissapears in coding widows, using dark-mode themes, and when using AMD GPUs](#mouse-pointer-almost-dissapears-in-coding-widows-using-dark-mode-themes-and-when-using-amd-gpus)
+    - [Mouse pointer dissapears](#mouse-pointer-dissapears)
 
 [Return Home](/basics)
 
@@ -65,7 +65,9 @@ Generate project file trees in markdown
 
 ## Issues
 
-### Mouse pointer almost dissapears in coding widows, using dark-mode themes, and when using AMD GPUs
+### Mouse pointer dissapears
+
+Mouse pointer almost dissapears in coding widows, using dark-mode themes, and when using AMD GPUs
 
 - `ctrl-shift-p` to open the VSCode command palette
 - Type in `Preferences: Configure Runtime Arguments
