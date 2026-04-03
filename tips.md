@@ -7,7 +7,7 @@
   - [Get a random UUID](#get-a-random-uuid)
   - [Read environment variables](#read-environment-variables)
   - [Asynchronously reading a file with fs/promise](#asynchronously-reading-a-file-with-fspromise)
-  - [Asynchronously reading multiple files with Promise.all()](#asynchronously-reading-multiple-files-with-promiseall)
+  - [Asynchronously reading multiple files](#asynchronously-reading-multiple-files)
   - [Get someone's age](#get-someones-age)
   - [Events and event emitters](#events-and-event-emitters)
   - [Serialising and deserialising an object to and from a file](#serialising-and-deserialising-an-object-to-and-from-a-file)
@@ -156,7 +156,7 @@ readFileExample()
 
 **[`^        back to top        ^`](#tips-and-useful-code)**
 
-## Asynchronously reading multiple files with Promise.all()
+## Asynchronously reading multiple files
 
 Wrap multiple fs async reads in a promise.
 
