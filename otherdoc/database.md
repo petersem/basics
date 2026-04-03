@@ -16,6 +16,6 @@ information around databases
 
 ## SQL Joins
 
-![Joins](https://raw.githubusercontent.com/petersem/basics/refs/heads/main/misc/sqljoins.jpg)
+![Joins](https://raw.githubusercontent.com/petersem/basics/refs/heads/main/misc/joins.png)
 
 **[`^        back to top        ^`](#databases)**
