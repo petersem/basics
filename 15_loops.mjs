@@ -34,17 +34,6 @@ do {
 } while (i < 5)
 console.log('do-while done!');
 
-// for-of
-//
-logger('For-of loop');
-
-// Itterates over values
-const colours = ["purple nurple", "toejam teal", "bum brown"];
-for (const col of colours) {
-    console.log(col);
-}
-console.log('for-of done');
-
 // for-in
 //
 logger('For-in loop');
