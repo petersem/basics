@@ -17,7 +17,7 @@
 - [Classes](jsref/classes.md) Object orientated coding
 - [Math](jsref/math.md) operations
 - [Errors](jsref/errors.md) handling
-- [Debugging](jsref/debugging.md) options
+- [Debugging](jsref/debug.md) options
 - [Promises](jsref/promises.md) and long-running operations
 - Dates - coming soon
 - Regex coming soon
