@@ -12,10 +12,11 @@
 - [Strings](strings.md) Working with strings
 - [Decisions](decisions.md) How branching logic works
 - [Functions](functions.md) All about functions
-- [Arrays](arrays.md) Arrays and collections of data
+- [Arrays](arrays.md) and collections of data
 - [Classes](classes.md) Object orientated coding
-- [Classes](math.md) Math operations
-
+- [Math](math.md) operations
+- [Errors](errors.md) handling
+  
 ## Other information
 
 - [Tips](tips.md) Useful code samples.
