@@ -486,7 +486,7 @@ console.log(randomColour());
 
 ## Debounce a function
 
-Pause before executing, and reset pause if call again in that initial pause. Reduces the chance that double calls are processed. (Mainly seen in client code for things like searchs as you type)
+Pause before executing, and reset pause if call again in that initial pause. Reduces the chance that double calls are processed. (Mainly seen in client code for things like search as you type or auto-complete text)
 
 ``` js
 // Debounce function
