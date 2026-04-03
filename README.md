@@ -33,3 +33,4 @@
 - Unit Testing - coming soon
 - Documenting code - coming soon
 - Setting up an Express app - coming soon
+- Typescript reference guide - coming soon
