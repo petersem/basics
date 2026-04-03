@@ -29,17 +29,17 @@
   
 ## Other information
 
-- [Tips](tips.md) Useful code samples.
-- [VSCode](vscode.md) extensions, shortcuts and tips.
-- [Learning](learning.md) suggestions and ideas.
-- [NPN](npm.md) commands and packages.
-- [Coding](coding.md) recommendations and practices.
-- [Reference](references.md) information.
-- [Front-end](frontend.md) HMTL, CSS, and recomendations.
-- [Docker](docker.md) information, commands, and useful YAML.
-- [Database](database.md) learnings.
-- [Git](git.md) practices and commands.
-- [Architecture](architecture.md) patterns, practices, and recommendations.
+- [Tips](otherdoc/tips.md) Useful code samples.
+- [VSCode](otherdoc/vscode.md) extensions, shortcuts and tips.
+- [Learning](otherdoc/learning.md) suggestions and ideas.
+- [NPN](otherdoc/npm.md) commands and packages.
+- [Coding](otherdoc/coding.md) recommendations and practices.
+- [Reference](otherdoc/references.md) information.
+- [Front-end](otherdoc/frontend.md) HMTL, CSS, and recomendations.
+- [Docker](otherdoc/docker.md) information, commands, and useful YAML.
+- [Database](otherdoc/database.md) learnings.
+- [Git](otherdoc/git.md) practices and commands.
+- [Architecture](otherdoc/architecture.md) patterns, practices, and recommendations.
 - Unit Testing - coming soon
 - Documenting code - coming soon
 - Setting up an Express app - coming soon
