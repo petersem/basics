@@ -15,22 +15,7 @@
   "type": "module",
   "main": "1_variables.mjs",
   "scripts": {
-    "ops": "cls && node 1_operators.mjs",
-    "str": "cls && node 2_strings.mjs",
-    "dec": "cls && node 3_decisions.mjs",
-    "func": "cls && node 4_functions.mjs",
-    "class": "cls && node 5_classes.mjs",
-    "arr": "cls && node 6_arrays.mjs",
-    "math": "cls && node 7_math.mjs",
-    "err": "cls && node 8_errors.mjs",
-    "prom": "cls && node 9_promises.mjs",
-    "reg": "cls && node 10_regex.mjs",
-    "patt": "cls && node 11_patterns.mjs",
-    "date": "cls && node 12_dates.mjs",
-    "time": "cls && node 13_timers.mjs",
-    "deb": "cls && node 14_debug.mjs",
-    "loop": "cls && node 15_loops.mjs",
-    "fet": "cls && node 16_fetch.mjs"
+    "dev": "cls && node test.mjs"
   },
   "dependencies": {
     "chart.js": "^4.5.1",

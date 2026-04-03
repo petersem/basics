@@ -10,6 +10,7 @@ Using the console
   - [Clear](#clear)
   - [Clear](#clear-1)
   - [Table](#table)
+  - [Coloured output prefixes](#coloured-output-prefixes)
 
 [Return Home](/basics)
 
@@ -87,19 +88,21 @@ console.table(mySettings);
 
 **[`^        back to top        ^`](#console)**
 
-// Coloured output
-//
-logger('Console formatting')
-// Console Formatting - https://nodejs.org/api/util.html#customizing-utilinspect-colors
+## Coloured output prefixes
+
+Console Formatting - [reference](https://nodejs.org/api/util.html#customizing-utilinspect-colors)
+
+``` js
 import { styleText } from 'node:util';
 import { errorMonitor } from 'node:events';
-const logDanger = styleText(['yellow', 'bgRed', 'bold'], 'Error!');
-const logWarning = styleText(['yellow', 'bgBlack', 'bold'], 'Warning');
-const logInfo = styleText(['white', 'bgBlue', 'bold'], 'Information');
+const danger = styleText(['yellow', 'bgRed', 'bold'], 'Error!');
+const warning = styleText(['yellow', 'bgBlack', 'bold'], 'Warning');
+const info = styleText(['white', 'bgBlue', 'bold'], 'Information');
 
-console.log(logDanger,'oops');
-console.log(logWarning,'uh oh');
-console.log(logInfo,'Well then..');
+console.log(danger,'oops');
+console.log(warning,'uh oh');
+console.log(info,'Well then..');
 console.log();
+```
 
-
+**[`^        back to top        ^`](#console)**
