@@ -3,10 +3,17 @@
 information around databases
 
 - [Databases](#databases)
+  - [Entity relationship diagram (ERD)](#entity-relationship-diagram-erd)
   - [SQL Commands](#sql-commands)
   - [SQL Joins](#sql-joins)
 
 [Return Home](/basics)
+
+## Entity relationship diagram (ERD)
+
+![Commands](https://raw.githubusercontent.com/petersem/basics/refs/heads/main/database/carolines_robots_erd.drawio)
+
+**[`^        back to top        ^`](#databases)**
 
 ## SQL Commands
 
