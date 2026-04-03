@@ -23,6 +23,7 @@
   - [Generate a random HEX colour](#generate-a-random-hex-colour)
   - [Debounce a function](#debounce-a-function)
   - [Copy to clipboard](#copy-to-clipboard)
+  - [Load version number from package.json](#load-version-number-from-packagejson)
 
 [Return Home](/basics)
 
@@ -527,6 +528,17 @@ Copy text to the clipboard (client code only)
 
 ``` js
 const copyToClipboard = text => navigator.clipboard.writeText(text);
+```
+
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Load version number from package.json
+
+The `package.json` is just a JSON file, so we can load it and process it like any other JSON file. This way we can use the version number here to display in an app. You must include the `with {type:'json'}` option when importing JSON. 
+
+``` js
+import pkg from './package.json' with { type: 'json' };
+console.log(pkg.version);
 ```
 
 **[`^        back to top        ^`](#tips-and-useful-code)**
