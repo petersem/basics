@@ -1,5 +1,5 @@
 // Dates
-import logger from './utilities/logger.mjs'
+import logger from '../utilities/logger.mjs'
 
 // Get current date and display in different formats
 // 

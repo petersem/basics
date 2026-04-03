@@ -7,15 +7,25 @@
 
 ## Javascript reference
 
-- [Variables](variables.md) Details of Javascript variables and variable types.
-- [Operators](operators.md) Lists all the operators
-- [Strings](strings.md) Working with strings
-- [Decisions](decisions.md) How branching logic works
-- [Functions](functions.md) All about functions
-- [Arrays](arrays.md) and collections of data
-- [Classes](classes.md) Object orientated coding
-- [Math](math.md) operations
-- [Errors](errors.md) handling
+- [Console](jsref/console.md) Using the console.
+- [Variables](jsref/variables.md) Details of Javascript variables and variable types.
+- [Operators](jsref/operators.md) Lists all the operators
+- [Strings](jsref/strings.md) Working with strings
+- [Decisions](jsref/decisions.md) How branching logic works
+- [Functions](jsref/functions.md) All about functions
+- [Arrays](jsref/arrays.md) and collections of data
+- [Classes](jsref/classes.md) Object orientated coding
+- [Math](jsref/math.md) operations
+- [Errors](jsref/errors.md) handling
+- Dates - coming soon
+- Promises - coming soon
+- Regex coming soon
+- Patterns - coming soon
+- Timers - coming soon
+- Debug - coming soon
+- loops - coming soon
+- Process - coming soon
+- Fetch - coming soon
   
 ## Other information
 

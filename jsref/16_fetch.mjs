@@ -9,7 +9,7 @@
 
 // Fetch
 // 
-import logger from './utilities/logger.mjs'
+import logger from '../utilities/logger.mjs'
 
 // Retrieve data
 //

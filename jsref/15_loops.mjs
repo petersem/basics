@@ -1,5 +1,5 @@
 // Loops
-import logger from './utilities/logger.mjs'
+import logger from '../utilities/logger.mjs'
 
 // for loop
 //
