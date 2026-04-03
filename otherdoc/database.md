@@ -11,7 +11,7 @@ information around databases
 
 ## Entity relationship diagram (ERD)
 
-![Commands](https://raw.githubusercontent.com/petersem/basics/refs/heads/main/misc/erd.png)
+![ERD](https://raw.githubusercontent.com/petersem/basics/refs/heads/main/misc/erd.jpg)
 
 **[`^        back to top        ^`](#databases)**
 
