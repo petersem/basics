@@ -6,7 +6,7 @@ Math unctionality in js
   - [Min / Max](#min--max)
     - [Min](#min)
     - [Max](#max)
-  - [Trunc](#trunc)
+  - [Truncate](#truncate)
   - [Floor / Ceiling](#floor--ceiling)
     - [Floor](#floor)
     - [Ceiling](#ceiling)
@@ -40,7 +40,7 @@ console.log('Max: ' + Math.max(4,66,777,2,-6));; // prints 777
 
 **[`^        back to top        ^`](#math)** -->
 
-## Trunc
+## Truncate
 
 Math.trunc(number) removes any fractions and only returns an integer. No rounding
 
