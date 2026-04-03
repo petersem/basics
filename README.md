@@ -14,6 +14,7 @@
 - [Functions](functions.md) All about functions
 - [Arrays](arrays.md) Arrays and collections of data
 - [Classes](classes.md) Object orientated coding
+- [Classes](math.md) Math operations
 
 ## Other information
 
