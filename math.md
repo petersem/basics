@@ -95,3 +95,5 @@ let rnd = 100; // set the max random number
 // return a number between 1 and 100
 console.log('Random: ' + (Math.floor(Math.random() * rnd) + 1)); 
 ```
+
+**[`^        back to top        ^`](#math)** -->
