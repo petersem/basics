@@ -3,7 +3,7 @@
 
 // [Return Home](/basics)
 
-// **[`^        back to top        ^`](#strings)** -->
+// **[`^        back to top        ^`](#strings)**
 
 
 

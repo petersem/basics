@@ -18,8 +18,8 @@
 - [Math](jsref/math.md) operations
 - [Errors](jsref/errors.md) handling
 - [Debugging](jsref/debugging.md) options
+- [Promises](jsref/promises.md) and long-running operations
 - Dates - coming soon
-- Promises - coming soon
 - Regex coming soon
 - Patterns - coming soon
 - Timers - coming soon
