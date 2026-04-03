@@ -6,7 +6,7 @@ A set of defined functionality that can be called with or with parameters
 - [Functions](#functions)
   - [Using the function keywork](#using-the-function-keywork)
   - [Anonymous functions](#anonymous-functions)
-  - [arrow functions](#arrow-functions)
+  - [Arrow functions](#arrow-functions)
   - [Optional function values](#optional-function-values)
   - [Spread function ...](#spread-function-)
 
@@ -36,14 +36,21 @@ console.log(addUp(4,5)); // prints 9
 
 **[`^        back to top        ^`](#functions)**
 
-## arrow functions
+## Arrow functions
 
 ``` js
-const result = (num1, num2) => {
+const result1 = (num1, num2) => {
     return num1 + num2;
     };
-console.log(result(5,2));  // returns 7
+console.log(result1(3,4));
+
+// or
+
+const result2 = (num1, num2) => num1 + num2;
+console.log(result2(1,2));
 ```
+
+> If you do not encapsulate the code after the `=>` in `{}` then you do not have to say `return`, as this is implied. If you use `{}`, you must use `return`. (`{}` is needed if the code is multi-line.)
 
 **[`^        back to top        ^`](#functions)**
 
