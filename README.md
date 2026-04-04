@@ -17,13 +17,13 @@
 - [Arrays](jsref/arrays.md) and collections of data
 - [Classes](jsref/classes.md) Object orientated coding
 - [Math](jsref/math.md) operations
-- [Errors](jsref/errors.md) handling
+- [Error](jsref/errors.md) handling
 - [Debugging](jsref/debug.md) options
 - [Promises](jsref/promises.md) and long-running operations
 - [Dates](jsref/dates.md) in Javascript.
-- [Regex](jsref/regex.md) using in Javascript
-- Patterns - coming soon
-- [Timers](jsref/timers.md) How to use
+- [Regex](jsref/regex.md) and using in Javascript
+- [Patterns](jsref/patterns.md) - Various design patterns
+- [Timers](jsref/timers.md) - How to use
 - Process - coming soon
 - Fetch - coming soon
   

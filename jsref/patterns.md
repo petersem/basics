@@ -3,6 +3,9 @@
 - [Patterns](#patterns)
   - [Override default parameters](#override-default-parameters)
   - [Singleton](#singleton)
+  - [Abstract Factory](#abstract-factory)
+  - [Builder](#builder)
+  - [Prototype](#prototype)
 
 [Return Home](/basics)
 
@@ -76,9 +79,11 @@ d.test(); // usually would be 0, but is 5 as from the existing class instance
 
 **[`^        back to top        ^`](#patterns)**
 
-// ABSTRACT FACTORY PATTERN
-//
-logger('Abstract factory pattern');
+## Abstract Factory
+
+Create a specific class on-demand
+
+``` js
 // concrete class
 class Alien {
     constructor (name, phrase) {
@@ -122,10 +127,15 @@ const dave = speciesFactory.createEntity("human")
 
 ali.move();
 dave.move();
+```
 
-// BUILDER PATTERN
-//
-logger('Builder pattern');
+**[`^        back to top        ^`](#patterns)**
+
+## Builder
+
+Add functions to classes, on-demand
+
+``` js
 // base class
 class Bug {
     name;
@@ -162,12 +172,15 @@ console.log('Before ability added to bug2', Object.getOwnPropertyNames(bug2));
 addSpeechAbility(bug2)
 console.log('After ability added to bug2', Object.getOwnPropertyNames(bug2));
 bug2.saySmthg() // output: "Lance walks the walk and talks the talk!"
+```
 
+**[`^        back to top        ^`](#patterns)**
 
-// PROTOTYPE PATTERN
-//
-logger('Prototype pattern');
+## Prototype
 
+Inherit functions from a prototype class
+
+``` js
 // We declare our prototype object with two methods
 const enemy = {
     attack: () => console.log("Zip Zap Zoop.. you're covered in poop!"),
@@ -191,3 +204,6 @@ console.log(weekling.phrase) // Your debugger doesn't work with me!
 weekling.attack(); // Zip zap zoop..
 weekling.flyAway(); // Flyyyy like an eagle!
 weekling.sayMyName(); // Original function still present
+```
+
+**[`^        back to top        ^`](#patterns)**
