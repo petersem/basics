@@ -23,7 +23,7 @@
 - [Dates](jsref/dates.md) in Javascript.
 - [Regex](jsref/regex.md) using in Javascript
 - Patterns - coming soon
-- Timers - coming soon
+- [Timers](jsref/timers.md) How to use
 - Process - coming soon
 - Fetch - coming soon
   

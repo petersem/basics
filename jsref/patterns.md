@@ -1,11 +1,16 @@
-// Patterns
-import logger from '../utilities/logger.mjs'
+# Patterns
 
+- [Patterns](#patterns)
+  - [Override default parameters](#override-default-parameters)
+  - [Singleton](#singleton)
 
-// OVERRIDE DEFAULT PARAMETERS
-//
-logger('Overridable, default options');
-// ** Call a function or method with default options, and optional overrides.
+[Return Home](/basics)
+
+## Override default parameters
+
+Call a function or method with default options, and optional overrides.
+
+``` js
 // set some default options which can be overriden with second function param
 const defaultOptions = {
     a: 'dog',
@@ -28,13 +33,17 @@ spreadFunction({
     b: 'Potato',
     d: 17
 });  // Prints defaults with overriden options - { a: 'cat', b: 'potato', c: 86400000, d: 17 }]
+```
 
+**[`^        back to top        ^`](#patterns)**
 
-// SINGLETON PATTERN
-//
-logger('Signleton pattern');
-// create a class that can only be instantiated once
-// eg for a database or api that only allows one connection
+## Singleton
+
+Create a class that can only be instantiated once.
+
+> Perfect for a database or API which only allows one connection
+
+``` js
 class Singleton {
     static #instanceOf;
     static #createKey;
@@ -63,6 +72,9 @@ c.test();
 var d = new Singleton();
 console.log('Class instance d test with no value');
 d.test(); // usually would be 0, but is 5 as from the existing class instance
+```
+
+**[`^        back to top        ^`](#patterns)**
 
 // ABSTRACT FACTORY PATTERN
 //
