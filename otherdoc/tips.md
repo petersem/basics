@@ -24,6 +24,8 @@
   - [Debounce a function](#debounce-a-function)
   - [Copy to clipboard](#copy-to-clipboard)
   - [Load version number from package.json](#load-version-number-from-packagejson)
+  - [AU Phone number match](#au-phone-number-match)
+  - [Email validity](#email-validity)
 
 [Return Home](/basics)
 
@@ -539,6 +541,47 @@ The `package.json` is just a JSON file, so we can load it and process it like an
 ``` js
 import pkg from './package.json' with { type: 'json' };
 console.log(pkg.version);
+```
+
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## AU Phone number match
+
+``` js
+// match phone number format (AUS)
+let ausPhoneNumbers = [
+    "8217 5530",
+    "82175530",
+    "(08) 8217 5530",
+    "+61 413 332 333",
+    "0413332333",
+    "08 8217 5530"
+];
+
+ausPhoneNumbers.forEach(num => {
+    console.log(num, num.match(/^(\s\+?\(61\)|\(\+?61\)|\+?61|\(0[1-9]\)|0[1-9])?( ?-?[0-9]){7,9}$/gm));
+});
+```
+
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Email validity
+
+``` js
+let emails = [
+    "austin_powers@hmss.gov.co",
+    "doctor.evil@secret.lair.com",
+    "ron.burgandy@news.com",
+    "bad_actor@@oonka-woonka",
+    "matt.p.8675309@gmail.com",
+    "elbo.pm@dick.wad.au",
+    "please-explain@right.now.au"
+];
+
+// test email validity
+emails.forEach(email => {
+    console.log(email, /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z0-9]{2,}$/.test(email));
+});
 ```
 
 **[`^        back to top        ^`](#tips-and-useful-code)**
