@@ -26,10 +26,10 @@
 - [Timers](jsref/timers.md) - How to use
 - Process - coming soon
 - Fetch - coming soon
-  
+- [Tips](jsref/tips.md) Useful code samples.
+
 ## Other information
 
-- [Tips](otherdoc/tips.md) Useful code samples.
 - [VSCode](otherdoc/vscode.md) extensions, shortcuts and tips.
 - [Learning](otherdoc/learning.md) suggestions and ideas.
 - [NPN](otherdoc/npm.md) commands and packages.
