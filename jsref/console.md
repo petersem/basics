@@ -121,7 +121,6 @@ const info = styleText(['white', 'bgBlue', 'bold'], 'Information');
 console.log(danger,'oops');
 console.log(warning,'uh oh');
 console.log(info,'Well then..');
-console.log();
 ```
 
 **[`^        back to top        ^`](#console)**
