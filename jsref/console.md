@@ -77,9 +77,10 @@ console.groupEnd();
 
 ## Output timer
 
-Time operations
+Elapsed time operations
 
-``` js console.time("step-1");  // start timer
+``` js
+console.time("step-1");  // start timer
 console.timeLog("step-1");  // current progress of timer
 setTimeout(() => {
     console.log('Timer is complete');
