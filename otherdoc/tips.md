@@ -26,6 +26,7 @@
   - [Load version number from package.json](#load-version-number-from-packagejson)
   - [AU Phone number match](#au-phone-number-match)
   - [Email validity](#email-validity)
+  - [Password validity check](#password-validity-check)
 
 [Return Home](/basics)
 
@@ -582,6 +583,28 @@ let emails = [
 emails.forEach(email => {
     console.log(email, /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z0-9]{2,}$/.test(email));
 });
+```
+
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Password validity check
+
+``` js
+let password = "Abcd123!";
+
+checkPswComplexity(password);
+
+function checkPswComplexity(password) {
+    let hasUpperCase = /[A-Z]/.test(password);  // upper case
+    let hasLowerCase = /[a-z]/.test(password);  // lower case
+    let hasNumbers = /\d/.test(password);  // has numbers
+    let hasNonalphas = /\W/.test(password);  // has symbols
+    if (password.length >= 8 && hasUpperCase && hasLowerCase && hasNumbers && hasNonalphas) { // check all true
+        console.log("Good password");
+    } else {
+        console.log("Bad password");
+    }
+}
 ```
 
 **[`^        back to top        ^`](#tips-and-useful-code)**
