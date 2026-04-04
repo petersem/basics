@@ -10,14 +10,10 @@
 
 ## Cool VS Code Extensions
 
-- **GitHub Pull Requests**
-For integrating Git version control into VSCode.
-- **CodeSnap-plus**
-Creates snapshot images for select code
-- **Dev Containers**
-Lets you use a Docker container as a full-featured development environment.
-- **Docker**
-Makes it easy to build, manage, and deploy containerized applications
+- [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) For integrating Git version control into VSCode.
+- [CodeSnap-plus](https://marketplace.visualstudio.com/items?itemName=huibizhang.codesnap-plus) Creates snapshot images for selected code
+- [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) Lets you use a Docker container as a full-featured development environment.
+- [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) Makes it easy to build, manage, and deploy containerized applications
 - **EJS Language Support**
 Syntax highlighting for EJS files
 - **JSDoc**
