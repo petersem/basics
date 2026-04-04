@@ -12,7 +12,7 @@
 - [Operators](jsref/operators.md) Lists all the operators
 - [Strings](jsref/strings.md) Working with strings
 - [Decisions](jsref/decisions.md) How branching logic works
-- loops - coming soon
+- [loops](jsref/loops.md) All about loops in Javascript.
 - [Functions](jsref/functions.md) All about functions
 - [Arrays](jsref/arrays.md) and collections of data
 - [Classes](jsref/classes.md) Object orientated coding
