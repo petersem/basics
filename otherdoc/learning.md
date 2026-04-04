@@ -97,7 +97,7 @@ Various suggesttions and references
 | Random colour palette gen.  | Movie Search App         |                     |
 | Custom 404 Page Not Found   | Music player             |                     |
 | Countdown timer             | Rock-paper-scissors      |                     |
-| Digital clock               |                          |                     |
+| Digital clock               | Battleships game         |                     |
 | Pomodoro timer              |                          |                     |
 
 **[`^        back to top        ^`](#learning)**
