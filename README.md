@@ -19,7 +19,7 @@
 - [Errors](jsref/errors.md) handling
 - [Debugging](jsref/debug.md) options
 - [Promises](jsref/promises.md) and long-running operations
-- Dates - coming soon
+- [Dates](jsref/dates.md) in Javascript.
 - Regex coming soon
 - Patterns - coming soon
 - Timers - coming soon
