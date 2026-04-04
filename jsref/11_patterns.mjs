@@ -27,7 +27,7 @@ spreadFunction({
     a: 'cat',
     b: 'Potato',
     d: 17
-});  // Prints defaults with overriden options - { a: 'cat', b: [ 'bird' ], c: 86400000, d: 17 }]
+});  // Prints defaults with overriden options - { a: 'cat', b: 'potato', c: 86400000, d: 17 }]
 
 
 // SINGLETON PATTERN
