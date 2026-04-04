@@ -24,7 +24,6 @@ Outputs to the terminal
 ``` js
 console.log('my message');
 console.log('my' + ' other message');
-
 ```
 
 **[`^        back to top        ^`](#console)**
