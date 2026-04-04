@@ -1,24 +1,53 @@
-// Regular Expressions
-// (patern/modifier)
+# Regex
 
-// used often with text.search|replace|match()  
+Regular expression (patern/modifier)
 
+- [Regex](#regex)
+  - [Search](#search)
+  - [Replace](#replace)
+  - [Match](#match)
+  - [Pattern matches](#pattern-matches)
+  - [Name validity check](#name-validity-check)
+  - [Check for invalid characters](#check-for-invalid-characters)
 
+[Return Home](/basics)
+
+## Search
+
+``` js
 // /i case insensitive search
 let text = "Visit W3Schools";
 let n = text.search(/w3schools/i);
 console.log(n);  // returns 6
+```
 
+**[`^        back to top        ^`](#regex)**
+
+## Replace
+
+``` js
 // case insensitive replace
 let textR = "Visit Microsoft!";
 let result = textR.replace(/Microsoft/i, "W3Schools");
 console.log(result);  // returns "Visit W3Schools"
+```
 
+**[`^        back to top        ^`](#regex)**
+
+## Match
+
+``` js
 // matches if a string present and returns array of search, position found, and search string
 let text3 = "Visit W3schools";
 let n2 = text3.match(/W3schools/);
 console.log(n2); // retruns ['W3Schools', index: 6, input: 'Visit W3Schools']
+```
 
+**[`^        back to top        ^`](#regex)**
+
+## Pattern matches
+
+``` js
 // /[a-z]/g matches any lower case letter
 console.log(text.match(/[a-z]/g));  // prints ['i', 's', 'i', 't', 'c', 'h', 'o', 'o', 'l', 's']
 
@@ -47,70 +76,36 @@ console.log(srcStr.match(/\W/g));  // prints ['#']
 
 // /\s/g matches spaces and newlines
 console.log(text.match(/\s/g));  // prints [' ']
+```
 
+**[`^        back to top        ^`](#regex)**
+
+## Name validity check
+
+``` js
 let names = [
     "Matt",
     "Ava",
-    "Susan",
-    "Billy-Bob",
+    "susan",
+    "Billy-8ob",
     "Avo Cardo"
 ];
 
 names.forEach(name => {
-    console.log(name, name.match(/^[A-Z]{1}[a-zA-Z\-\ ]{1,40}$/gm))
+    console.log(name + ":", name.match(/^[A-Z]{1}[a-zA-Z\-\ ]{1,40}$/gm)?.join() ?? false)
 });
+```
 
-// match phone number format (AUS)
-let ausPhoneNumbers = [
-    "8217 5530",
-    "82175530",
-    "(08) 8217 5530",
-    "+61 413 332 333",
-    "0413332333",
-    "08 8217 5530"
-];
+**[`^        back to top        ^`](#regex)**
 
-ausPhoneNumbers.forEach(num => {
-    console.log(num, num.match(/^(\s\+?\(61\)|\(\+?61\)|\+?61|\(0[1-9]\)|0[1-9])?( ?-?[0-9]){7,9}$/gm));
-});
+## Check for invalid characters
 
-let emails = [
-    "austin_powers@hmss.gov.co",
-    "doctor.evil@secret.lair.com",
-    "ron.burgandy@news.com",
-    "bad_actor@@oonka-woonka",
-    "matt.p.8675309@gmail.com",
-    "elbo.pm@dick.wad.au",
-    "please-explain@right.now.au"
-];
-
-// test email validity
-emails.forEach(email => {
-    console.log(email, /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z0-9]{2,}$/.test(email));
-});
-
-
+``` js
 // If any web unsafe characters are present, then replace with an empty string
 let badText = "<script>alert('malicious js payload');</script>";
 console.log(badText);
 badText = badText.replace(/[$&+,:;=?@#|'<>.^*()%!-]/g,"");
 console.log(badText);
+```
 
-// use RegExp.test to return a boolean if matched
-console.log(/[a-z]/g.test("ABCa")); // matches on lower case a and returns true
-
-let password = "Abcd123!";
-
-checkPswComplexity(password);
-
-function checkPswComplexity(password) {
-    let hasUpperCase = /[A-Z]/.test(password);  // upper case
-    let hasLowerCase = /[a-z]/.test(password);  // lower case
-    let hasNumbers = /\d/.test(password);  // has numbers
-    let hasNonalphas = /\W/.test(password);  // has symbols
-    if (password.length >= 8 && hasUpperCase && hasLowerCase && hasNumbers && hasNonalphas) { // check all true
-        console.log("Good password");
-    } else {
-        console.log("Bad password");
-    }
-}
+**[`^        back to top        ^`](#regex)**

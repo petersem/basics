@@ -12,6 +12,7 @@
 - [Operators](jsref/operators.md) Lists all the operators
 - [Strings](jsref/strings.md) Working with strings
 - [Decisions](jsref/decisions.md) How branching logic works
+- loops - coming soon
 - [Functions](jsref/functions.md) All about functions
 - [Arrays](jsref/arrays.md) and collections of data
 - [Classes](jsref/classes.md) Object orientated coding
@@ -20,10 +21,9 @@
 - [Debugging](jsref/debug.md) options
 - [Promises](jsref/promises.md) and long-running operations
 - [Dates](jsref/dates.md) in Javascript.
-- Regex coming soon
+- [Regex](jsref/regex.md) using in Javascript
 - Patterns - coming soon
 - Timers - coming soon
-- loops - coming soon
 - Process - coming soon
 - Fetch - coming soon
   
