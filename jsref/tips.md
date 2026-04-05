@@ -27,6 +27,7 @@
   - [AU Phone number match](#au-phone-number-match)
   - [Email validity](#email-validity)
   - [Password validity check](#password-validity-check)
+  - [Throttling](#throttling)
 
 [Return Home](/basics)
 
@@ -605,6 +606,56 @@ function checkPswComplexity(password) {
         console.log("Bad password");
     }
 }
+```
+
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Throttling
+
+When you only want a function to run once per time period, regardless of how many times it is called. 
+
+``` js
+// setup throttle function
+function throttle(fn, delay) {
+  let lastCall = 0;
+
+  return function (...args) {
+    const now = Date.now();
+    if (now - lastCall >= delay) {
+      lastCall = now;
+      fn.apply(this, args);
+    } else {
+        console.log('Throttle call not run');
+    }
+  };
+}
+
+// setup function we only want to run periodically
+function cat(sound) {
+    console.log('Cat goes ' + sound);
+    return;
+};
+
+// connect function to throttle to throttle test, and pass in time to throttle
+const throt = throttle(cat,2000);
+
+
+// call throttled fuction 3 times - pass param for throttle function
+throt('woof'); // runs the first time
+throt('tweet'); // doesn't run as within 2 seconds of first call
+throt('Meow'); // doesn't run as within 2 seconds of first call
+
+// wait 5 seconds
+setTimeout(() => {
+    throt('Mooooo')  // runs as past 2 second throttle time
+},5000);
+```
+
+``` console
+Cat goes woof
+Throttle call not run
+Throttle call not run
+Cat goes Mooooo
 ```
 
 **[`^        back to top        ^`](#tips-and-useful-code)**
