@@ -11,7 +11,10 @@ Unit tests can be automated into the build pipeline so that they are run on chec
   - [Install Jest](#install-jest)
   - [Setup](#setup)
   - [Creating test files](#creating-test-files)
+  - [Running tests](#running-tests)
   - [Creating tests](#creating-tests)
+    - [Discrete tests](#discrete-tests)
+    - [Grouping output](#grouping-output)
   
 [Return Home](/basics)
 
@@ -61,7 +64,12 @@ calc.mjs
 - mult(num1, num2)
 - div(num1, num2)
 
-Create a `calc.test.mjs` file under `tests` folder. On the first line of this file import your calc.mjs file that you will be testing.
+Create a `calc.test.mjs` file under `tests` folder. 
+
+> Each `*.test.mjs` file is considered a `test suite` which can have many included tests.
+
+On the first line of this file, import your calc.mjs file that you will be testing.
+
 
 ``` js
 import { add, mult, sub, div } from '/src/calc.mjs';
@@ -69,11 +77,74 @@ import { add, mult, sub, div } from '/src/calc.mjs';
 
 **[`^        back to top        ^`](#unit-testing)**
 
+## Running tests
+
+Now that you have a `test` script set up in `package.json`, you can run the test suites by running this command.
+
+``` bash
+npm run test
+```
+
+Right now, you won't see much as you haven't written any tests yet. But you will see a display that shows you test coverage. Coverage shows you a report for what code you have and do not have test cases written for. 
+
+> You should aim for 100% coverage
+
+| File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s |
+| ---       |---------|----------|---------|---------|-------------------|
+| All files |      75 |       75 |      75 |      75 |                   |
+| calc.mjs  |      75 |       75 |      75 |      75 | 57-60             |
+
+More detailed coverage reports are created in the `/coverage` folder.
+
+**[`^        back to top        ^`](#unit-testing)**
+
 ## Creating tests
 
+### Discrete tests
+
+Create tests use `expect` and `matches` to test values in different ways.
+
+Calls the add function with two parameters and `expects` the return value `toBe` a specific result.
+
+``` js
+test('adds two positive numbers', () => {
+  expect(add(2, 3)).toBe(5);
+});
+```
+
+**[`^        back to top        ^`](#unit-testing)**
+
+### Grouping output
+
+Better yet, you can group tests under a `describe` tag, so you logical groupings in the output.
+
+``` js
+describe('Add function', () => {
+  test('adds two positive numbers', () => {
+    expect(add(2, 3)).toBe(5);
+  });
+
+  test('adds two negative numbers', () => {
+    expect(add(-2, -3)).toBe(-5);
+  });
+});
+```
+
+Yields this in the output.
+
+``` console
+ PASS  tests/calc.test.mjs
+  Add function                                                                           
+    √ adds two positive numbers (1 ms)                                                                              
+    √ adds two negative numbers (1 ms)
+```  
+
+**[`^        back to top        ^`](#unit-testing)**
 
 
 
+**[`^        back to top        ^`](#unit-testing)**
 
+**[`^        back to top        ^`](#unit-testing)**
 
 **[`^        back to top        ^`](#unit-testing)**
