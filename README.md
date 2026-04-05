@@ -39,7 +39,7 @@
 - [Docker](otherdoc/docker.md) information, commands, and useful YAML.
 - [Database](otherdoc/database.md) learnings.
 - [Git](otherdoc/git.md) practices and commands.
-- [Architecture](otherdoc/architecture.md) patterns, practices, and recommendations.
+- [Architecture](otherdoc/architecture.md) recommendations.
 - Unit Testing - coming soon
 - Documenting code - coming soon
 - Setting up an Express app - coming soon

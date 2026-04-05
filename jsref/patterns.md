@@ -3,6 +3,7 @@
 - [Patterns](#patterns)
   - [Override default parameters](#override-default-parameters)
   - [Singleton](#singleton)
+  - [Concrete Class](#concrete-class)
   - [Abstract Factory](#abstract-factory)
   - [Builder](#builder)
   - [Prototype](#prototype)
@@ -42,7 +43,7 @@ spreadFunction({
 
 ## Singleton
 
-Create a class that can only be instantiated once.
+When you invoke a class with the `new ClassName` statement, you are creating a specific instance of a class, which is has unique properties and methods to any other instance. The singleton pattern only allows a single instance of a class to be created. This is useful when you have to access services or databases which only allow allow single connections.
 
 > Perfect for a database or API which only allows one connection
 
@@ -79,9 +80,33 @@ d.test(); // usually would be 0, but is 5 as from the existing class instance
 
 **[`^        back to top        ^`](#patterns)**
 
+## Concrete Class
+
+A class which is fully implemented and can be instantiated using the `new` keyword.
+
+``` js
+// concrete class
+class Alien {
+    constructor (name, phrase) {
+        this.name = name
+        this.phrase = phrase
+        this.species = "alien"
+    }
+    move = () => console.log(this.species, "Swish!")
+    sayPhrase = () => console.log(this.phrase)
+}
+
+const zod = new Alien("Kryptonian", "Kneel before Zod!")
+
+```
+
+**[`^        back to top        ^`](#patterns)**
+
 ## Abstract Factory
 
-Create a specific class on-demand
+Allows us to produce families of related objects without specifying concrete classes. It's useful in situations where we need to create objects that share only some properties and methods.
+
+The way it works is by presenting an abstract factory the client interacts with for the desired concrete class. That abstract factory calls the corresponding concrete factory given the corresponding logic. And that concrete factory is the one that returns the end object.
 
 ``` js
 // concrete class
@@ -133,7 +158,9 @@ dave.move();
 
 ## Builder
 
-Add functions to classes, on-demand
+Is used to create objects in "steps". Normally we will have functions or methods that add certain properties or methods to our object.
+
+The cool thing about this pattern is that we separate the creation of properties and methods into different entities.
 
 ``` js
 // base class
@@ -178,7 +205,7 @@ bug2.saySmthg() // output: "Lance walks the walk and talks the talk!"
 
 ## Prototype
 
-Inherit functions from a prototype class
+The Prototype pattern allows you to create an object using another object as a blueprint, inheriting its properties and methods.
 
 ``` js
 // We declare our prototype object with two methods
