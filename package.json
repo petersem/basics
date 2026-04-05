@@ -13,17 +13,15 @@
   "license": "ISC",
   "author": "Matt Petersen",
   "type": "module",
-  "main": "1_variables.mjs",
+  "main": "src/examples.mjs",
   "scripts": {
-    "dev": "cls && node test.mjs"
-  },
-  "dependencies": {
-    "chart.js": "^4.5.1",
-    "crypto": "^1.0.1",
-    "skia-canvas": "^3.0.8"
+    "test": "cls && node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+    "dev": "cls && node src/examples.mjs"
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "dotenv": "^17.3.1",
+    "jest": "^30.3.0",
     "nodemon": "^3.1.14"
   }
 }
