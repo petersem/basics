@@ -1,4 +1,5 @@
-output.png
 /node_modules
 /coverage
+/docs
 test.mjs
+example.mjs

@@ -16,7 +16,8 @@
   "main": "src/examples.mjs",
   "scripts": {
     "test": "cls && node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
-    "dev": "cls && node src/examples.mjs"
+    "dev": "cls && node src/examples.mjs",
+    "doc": "cls && jsdoc -c .\\jsdoc.conf.json"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",

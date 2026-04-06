@@ -41,7 +41,8 @@
 - [Git](otherdoc/git.md) practices and commands.
 - [Architecture](otherdoc/architecture.md) recommendations.
 - [Unit testing](otherdoc/unittesting.md) install, setup, create, and run.
-- Documenting code - JSDoc and Swagger - coming soon
+- [Documenting code](otherdoc/jsdoc.md) Self documenting code, with JSDoc.
+- Documenting apis - Swagger - coming soon
 - Setting up an Express app - coming soon
 - Typescript reference guide - coming soon
 - Devops pipelines - coming soon

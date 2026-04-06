@@ -1,5 +1,5 @@
 /**
- * Add
+ * Add - Addition function 
  * @param {number} num1 
  * @param {number} num2 
  * @returns {number} The sum of num1 and num2
@@ -12,7 +12,7 @@ export function add(num1, num2) {
 }
 
 /**
- * Mult
+ * Mult - Multiply function 
  * @param {number} num1 
  * @param {number} num2 
  * @returns {number} The product of num1 and num2
