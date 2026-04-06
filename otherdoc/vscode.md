@@ -14,30 +14,17 @@
 - [CodeSnap-plus](https://marketplace.visualstudio.com/items?itemName=huibizhang.codesnap-plus) Creates snapshot images for selected code
 - [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) Lets you use a Docker container as a full-featured development environment.
 - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) Makes it easy to build, manage, and deploy containerized applications
-- **EJS Language Support**
-Syntax highlighting for EJS files
-- **JSDoc**
-Documentation generator for JavaScript, TypeScript and Typescript/JavaScript
-- **Live Server**
-Launch a local development server with live reload feature for static & dynamic pages
-- **Markdown All in One**
-All you need for Markdown support and previews
-- **Path Intellisense**
-Plugin that autocompletes filenames
-- **Remote - SSH**
-lets you use any remote machine with a SSH server as your development environment
-- **WakaTime for Visual Studio Code**
-For metrics, insights, and time tracking automatically generated from your programming activity
-- **YAML**
-Provides comprehensive YAML Language support
-- **Prettier - Code formatter**
-Is an opinionated code formatter
-- **ESLint**
-Integrates ESLint JavaScript into VS Code
-- **Thunder Client**
-Rest API tester (But, I prefer stand-alone Postman)
-- **Filetree Pro**
-Generate project file trees in markdown
+- [EJS Language Support](https://marketplace.visualstudio.com/items?itemName=DigitalBrainstem.javascript-ejs-support) Syntax highlighting for EJS files
+- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) Launch a local development server with live reload feature for static & dynamic pages
+- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) All you need for Markdown support and previews
+- [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) Plugin that autocompletes filenames
+- [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) lets you use any remote machine with a SSH server as your development environment
+- [WakaTime for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime) For metrics, insights, and time tracking automatically generated from your programming activity
+- [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) Provides comprehensive YAML Language support
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) Is an opinionated code formatter
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) Integrates ESLint JavaScript into VS Code
+- [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) Rest API tester (But, I prefer stand-alone Postman)
+- [Filetree Pro](https://marketplace.visualstudio.com/items?itemName=0xTanzim.filetree-pro) Generate project file trees in markdown
 
 **[`^        back to top        ^`](#visual-studio-code)**
 
