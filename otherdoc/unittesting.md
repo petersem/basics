@@ -15,6 +15,14 @@ Unit tests can be automated into the build pipeline so that they are run on chec
   - [Creating tests](#creating-tests)
     - [Discrete tests](#discrete-tests)
     - [Grouping output](#grouping-output)
+  - [Matchers](#matchers)
+    - [toBe(n)](#toben)
+    - [toEqual](#toequal)
+    - [Truthiness](#truthiness)
+    - [Numbers](#numbers)
+    - [toMatch (or not.toMatch)](#tomatch-or-nottomatch)
+    - [Arrays and iterables](#arrays-and-iterables)
+    - [Exceptions](#exceptions)
   
 [Return Home](/basics)
 
@@ -141,10 +149,82 @@ Yields this in the output.
 
 **[`^        back to top        ^`](#unit-testing)**
 
+## Matchers
 
+Jest uses `matchers` to test in different ways. There is an expectation (`expect`) of something to match something.
+
+### toBe(n)
+
+Matchs on `exact` equality
+
+``` js
+expect(2+2).toBe(4);
+```
+
+> Can also use `expect.not.toBe()`
 
 **[`^        back to top        ^`](#unit-testing)**
 
+### toEqual
+
+Matches by `value` (including implicit values)
+
+``` js
+expect(1).toEqual(true);
+```
+
+> Can also use `expect.not.toEqual()`
+
 **[`^        back to top        ^`](#unit-testing)**
+
+### Truthiness
+
+- toBeNull
+- toBeUndefined
+- toBeDefined
+- toBeTruthy
+- toBeFalsy
+
+**[`^        back to top        ^`](#unit-testing)**
+
+### Numbers
+
+- toBe
+- toEqual (equivalent to toBe for numbers)
+- toBeGreaterThan
+- toBeGreaterThanorEqual
+- toBeLessThan
+- toBeLessThanOrEqual
+- toBeCloseTo (used for floating point comparison)
+
+**[`^        back to top        ^`](#unit-testing)**
+
+### toMatch (or not.toMatch)
+
+Checks strings again regular expressions
+
+``` js
+expect('Hello world').toMatch('/world/');
+```
+
+**[`^        back to top        ^`](#unit-testing)**
+
+### Arrays and iterables
+
+``` js
+expect(shoppingList).toContain('milk');
+```
+
+**[`^        back to top        ^`](#unit-testing)**
+
+### Exceptions
+
+To test for expected errors.
+
+``` js
+expect(() => aFunction().toThrow());
+expect(() => aFunction().toThrow('/specific/))
+expect(() => aFunction().toThrow('A specific error'))
+```
 
 **[`^        back to top        ^`](#unit-testing)**
