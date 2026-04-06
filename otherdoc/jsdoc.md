@@ -17,7 +17,7 @@ Documenting you code with labels
 Install with the following command:
 
 ``` bash
-npm i jsdoc -g
+npm i jsdoc --save-dev
 ```
 
 **[`^        back to top        ^`](#jsdoc)**
@@ -53,7 +53,7 @@ Create a `jsdoc.conf.json` file in the root of your project, then populate it wi
 
 Edit your `package.json` file and add the following to the scripts section:
 
-`"doc": "cls && jsdoc -c .\\jsdoc.conf.json"`
+`"doc": "cls && node ./node_modules/jsdoc/jsdoc.js -c ./jsdoc.conf.json"`
 
 You can now create JSDocs with `npm run doc`
 
