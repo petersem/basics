@@ -43,5 +43,6 @@ Commands and packackes.
 - [Swagger](https://www.npmjs.com/package/swagger) Provides tools for designing and building Swagger-compliant APIs
 - [Chart.js](https://www.npmjs.com/package/chart.js) JavaScript charting for designers & developers
 - [JSDoc](https://www.npmjs.com/package/jsdoc) An API documentation generator for JavaScript.
+- [Tree2Folder](https://www.npmjs.com/package/tree2folder) Create files and folders from a simple ASCII tree diagram
 
 **[`^        back to top        ^`](#npm)**
