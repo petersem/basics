@@ -16,13 +16,18 @@
   "main": "src/examples.mjs",
   "scripts": {
     "test": "cls && node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
-    "dev": "cls && node --env-file=.env src/examples.mjs",
-    "doc": "cls && node ./node_modules/jsdoc/jsdoc.js -c ./jsdoc.conf.json"
+    "dev": "cls && nodemon --env-file=.env src/examples.mjs",
+    "doc": "cls && node ./node_modules/jsdoc/jsdoc.js -c ./jsdoc.conf.json",
+    "dem": "cls && nodemon demo.mjs"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "jest": "^30.3.0",
     "jsdoc": "^4.0.5",
     "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   }
 }
