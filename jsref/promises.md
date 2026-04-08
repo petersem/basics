@@ -8,6 +8,7 @@ Promises are used to wait for data, then act on it. Otherwise JS will just conti
   - [Async function with promise](#async-function-with-promise)
   - [Then-Catch](#then-catch)
   - [Async functions](#async-functions)
+  - [Incompatibilities](#incompatibilities)
 
 [Return Home](/basics)
 
@@ -121,6 +122,55 @@ fetch('https://icanhazdadjoke.com/', {
   .catch((error) => {
     console.log('ERROR:', error);
   });
+```
+
+**[`^        back to top        ^`](#promises)**
+
+## Incompatibilities
+
+`For-each` is not compatible with async. Everthing will run non-blocking in for-each. Use  `for-of` instead. Eg:
+
+``` js
+const myArray = [1,2,3,4,5,6,7,8,9];
+
+async function processArrayAsync(arr) {
+    // arr.forEach(async (item) => { // does not support async operations
+    for(const item of arr) {
+        await someAsyncOperation(item);
+        console.log(`Processed: ${item}`);
+    };
+}
+
+function someAsyncOperation(item) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve();
+        },parseInt(item) * 500);
+    });
+}
+
+processArrayAsync(myArray)
+    .then(() => {
+        console.log('All items processed');
+    })
+    .catch((error) => {
+        console.log(`Error: ${error}`);
+    });
+```
+
+Output
+
+``` console
+Processed: 1
+Processed: 2
+Processed: 3
+Processed: 4
+Processed: 5
+Processed: 6
+Processed: 7
+Processed: 8
+Processed: 9
+All items processed
 ```
 
 **[`^        back to top        ^`](#promises)**
