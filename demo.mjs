@@ -6,13 +6,14 @@ async function processArrayAsync(arr) {
         await someAsyncOperation(item);
         console.log(`Processed: ${item}`);
     };
+    return 'array processed';
 }
 
 function someAsyncOperation(item) {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve();
-        },parseInt(item) * 500);
+        },parseInt(item) * 250);
     });
 }
 
@@ -23,3 +24,18 @@ processArrayAsync(myArray)
     .catch((error) => {
         console.log(`Error: ${error}`);
     });
+
+async function processParallel() {
+    const promise1 = Promise.resolve(3);
+    const promise2 = 42;
+    const promise3 = new Promise((resolve) => {
+        setTimeout(resolve,4000, 'foo');
+    });
+
+    Promise.all([promise1,promise2,promise3])
+        .then((values) => {
+            console.log(values);
+        });
+}
+
+processParallel();
