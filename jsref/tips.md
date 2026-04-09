@@ -28,6 +28,7 @@
   - [Email validity](#email-validity)
   - [Password validity check](#password-validity-check)
   - [Throttling](#throttling)
+  - [Express middleware parameter wrapper](#express-middleware-parameter-wrapper)
 
 [Return Home](/basics)
 
@@ -656,6 +657,38 @@ Cat goes woof
 Throttle call not run
 Throttle call not run
 Cat goes Mooooo
+```
+
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Express middleware parameter wrapper
+
+Pass optional parameters to custom express middleware. eg `app.use(customMiddleware(customParam));`
+
+``` js
+// wrapper pattern to pass a variable in before the middleware is called. 
+export const customMiddleware = function (action = "blah") {
+    console.log(`Custom middleware: Activated - Mode: ${action}`);
+
+    return (req, res, next) => {
+        if (req.body != undefined) {
+            switch (action.toLowerCase()) {
+                // do something
+                case "blah":
+                    return res.setHeader('Content-Type', 'application/json').status(400).json({ message: something, status: "xxx" });
+                    break;
+                // if a bogus option was passed, show an error
+                default:
+                    res.status(500);
+                    console.log(`Middleware (Mode: ${action}) You have NOT SELECTED A VALID OPTION - no action taken !!!`);
+                    res.setHeader('Content-Type', 'application/json').status(500).json(`{message: middleware triggered, but using invalid option '${action}' - No action taken }`);
+                    return;
+                    break;
+            }
+        }
+    }
+    next();
+}
 ```
 
 **[`^        back to top        ^`](#tips-and-useful-code)**
