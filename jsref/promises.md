@@ -9,6 +9,7 @@ Promises are used to wait for data, then act on it. Otherwise JS will just conti
   - [Then-Catch](#then-catch)
   - [Async functions](#async-functions)
   - [Incompatibilities](#incompatibilities)
+  - [Parallel and wait for all](#parallel-and-wait-for-all)
 
 [Return Home](/basics)
 
@@ -171,6 +172,29 @@ Processed: 7
 Processed: 8
 Processed: 9
 All items processed
+```
+
+**[`^        back to top        ^`](#promises)**
+
+## Parallel and wait for all
+
+Wait for all async functions to complete before returning
+
+``` js
+async function processParallel() {
+    const promise1 = Promise.resolve(3);
+    const promise2 = 42;
+    const promise3 = new Promise((resolve) => {
+        setTimeout(resolve,4000, 'foo');
+    });
+
+    Promise.all([promise1,promise2,promise3])
+        .then((values) => {
+            console.log(values);
+        });
+}
+
+processParallel();
 ```
 
 **[`^        back to top        ^`](#promises)**
