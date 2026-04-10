@@ -9,6 +9,7 @@ A set of defined functionality that can be called with or with parameters
   - [Arrow functions](#arrow-functions)
   - [Optional function values](#optional-function-values)
   - [Spread function ...](#spread-function-)
+  - [Generator function](#generator-function)
 
 [Return Home](/basics)
 
@@ -83,6 +84,32 @@ spreadFunction({
     a: 'cat',
     b: 17
 });
+```
+
+**[`^        back to top        ^`](#functions)**
+
+
+## Generator function
+
+The function* declaration creates a binding of a new generator function to a given name. A generator function can be exited and later re-entered, with its context (variable bindings) saved across re-entrances. Fast and low memory infinite counter.
+
+``` js
+// generator function - retains context
+function* infiniteCounter(prefix = 'id') {
+    let cnt = 1;
+    while (true) {
+        yield `${prefix}-${cnt++}`;
+    }
+}
+
+const userId = infiniteCounter('user');
+const pageId = infiniteCounter('page');
+
+console.log(userId.next().value);
+console.log(userId.next().value);
+console.log(pageId.next().value);
+console.log(userId.next().value);
+console.log(userId.next().value);
 ```
 
 **[`^        back to top        ^`](#functions)**
