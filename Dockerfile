@@ -1,0 +1,8 @@
+FROM node:25-alpine 
+WORKDIR /app
+COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
+RUN npm install --production --silent && mv node_modules ../
+COPY . .
+ENV NODE_ENV=production
+EXPOSE 3000
+CMD ["node", "./src/server.mjs"]

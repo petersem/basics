@@ -16,7 +16,7 @@
   "main": "src/examples.mjs",
   "scripts": {
     "test": "cls && node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
-    "dev": "cls && nodemon --env-file=.env src/examples.mjs",
+    "dev": "cls && nodemon --env-file=.env src/server.mjs",
     "doc": "cls && node ./node_modules/jsdoc/jsdoc.js -c ./jsdoc.conf.json",
     "dem": "cls && nodemon demo.mjs"
   },

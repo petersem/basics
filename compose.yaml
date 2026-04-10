@@ -1,0 +1,11 @@
+services:
+  basics:
+    image: basics
+    container_name: basics
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      TZ: "Australia/Brisbane"
+    ports:
+      - 3000:3000
