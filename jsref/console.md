@@ -161,7 +161,7 @@ Trace: add func
 
 ## Count
 
-Outputs logs the numbers of time that a particulatr call to count() has been called.
+Logs the numbers of times that a particulatr call to count('x') has been called.
 
 ``` js
 
