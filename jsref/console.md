@@ -161,7 +161,7 @@ Trace: add func
 
 ## Count
 
-Logs the numbers of times that a particulatr call to count('x') has been called.
+Logs the numbers of times that a particulatr call to count('x') has been made.
 
 ``` js
 
