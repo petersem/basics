@@ -13,6 +13,7 @@ Using the console
   - [Table](#table)
   - [Coloured output prefixes](#coloured-output-prefixes)
   - [Trace](#trace)
+  - [Count](#count)
 
 [Return Home](/basics)
 
@@ -153,6 +154,42 @@ Trace: add func
     at ModuleJob.run (node:internal/modules/esm/module_job:437:25)
     at async node:internal/modules/esm/loader:639:26
     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+21
+```
+
+**[`^        back to top        ^`](#console)**
+
+## Count
+
+Outputs logs the numbers of time that a particulatr call to count() has been called.
+
+``` js
+
+function add(...intValues) {
+    console.count('add'); // add count called
+    return intValues.reduce(getSum, 0);
+}
+
+// reducer function - takes an initialValue (total) and the current value
+function getSum(total, currentValue) {
+    console.count('reducer'); // reducer count called
+    return total + Math.round(currentValue);
+}
+
+console.log(add(1,2,3,4,5,6));
+```
+
+Output shows the incrementing counts.
+
+``` console
+PS C:\code\basics> node demo.mjs
+add: 1
+reducer: 1
+reducer: 2
+reducer: 3
+reducer: 4
+reducer: 5
+reducer: 6
 21
 ```
 
