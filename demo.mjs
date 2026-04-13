@@ -66,3 +66,15 @@ console.log(userId.next().value);
 console.log(pageId.next().value);
 console.log(userId.next().value);
 console.log(pageId.next().value);
+
+function add(...intValues) {
+    console.trace('add func');
+    return intValues.reduce(getSum, 0);
+}
+
+// reducer function - takes an initialValue (total) and the current value
+function getSum(total, currentValue) {
+    return total + Math.round(currentValue);
+}
+
+console.log(add(1,2,3,4,5,6));

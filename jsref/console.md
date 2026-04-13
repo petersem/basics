@@ -12,6 +12,7 @@ Using the console
   - [Output timer](#output-timer)
   - [Table](#table)
   - [Coloured output prefixes](#coloured-output-prefixes)
+  - [Trace](#trace)
 
 [Return Home](/basics)
 
@@ -101,8 +102,8 @@ const mySettings = {
     uniqueId: "27832-38927-a86d9-a7f56"
 }
 
-// console.table() - prints objects and arrays in a table format
-console.table(mySettings);
+// Prints objects and arrays in a table format
+console.table(mySettings); 
 ```
 
 **[`^        back to top        ^`](#console)**
@@ -121,6 +122,38 @@ const info = styleText(['white', 'bgBlue', 'bold'], 'Information');
 console.log(danger,'oops');
 console.log(warning,'uh oh');
 console.log(info,'Well then..');
+```
+
+**[`^        back to top        ^`](#console)**
+
+## Trace
+
+Outputs trace information that shows the execution path to trace command
+
+``` js
+function add(...intValues) {
+    console.trace('add func'); // trace called
+    return intValues.reduce(getSum, 0);
+}
+
+// reducer add function
+function getSum(total, currentValue) {
+    return total + Math.round(currentValue);
+}
+
+console.log(add(1,2,3,4,5,6));
+```
+
+Trace shows the optional string value, the function, call, and module information.
+
+``` console
+Trace: add func
+    at add (file:///C:/code/basics/demo.mjs:71:13)
+    at file:///C:/code/basics/demo.mjs:80:13
+    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)
+    at async node:internal/modules/esm/loader:639:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+21
 ```
 
 **[`^        back to top        ^`](#console)**
