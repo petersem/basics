@@ -44,6 +44,6 @@
 - [Documenting code](otherdoc/jsdoc.md) Self documenting code, with JSDoc.
 - Documenting apis - Swagger - coming soon
 - Setting up an Express app - coming soon
-- Typescript reference guide - coming soon
+- [Typescript](otherdoc/typescript.md) reference guide
 - Devops pipelines - coming soon
 - Dev containers - coming soon
