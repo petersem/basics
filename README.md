@@ -45,5 +45,5 @@
 - Documenting apis - Swagger - coming soon
 - Setting up an Express app - coming soon
 - [Typescript](otherdoc/typescript.md) reference guide
-- Devops pipelines - coming soon
+- Devops GitHub pipelines - coming soon
 - Dev containers - coming soon
