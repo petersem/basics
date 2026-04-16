@@ -18,3 +18,56 @@ import { Car, eColor, eEngine } from "./car.js";
 
 const myCar = new Car(eColor.RED,eEngine.ELECTRIC,2,5,'holden','shaggin wagon')
 console.log(myCar.showMe())
+
+
+// standard syntax
+let firstName: string
+
+for (let index:number = 0; index < 10; index++) {
+    console.log(`item ${index}`);
+}
+
+// custom types
+type increasement = "wanged" | "dewanged";
+let i: increasement = "dewanged";
+
+// enums
+enum poop {
+    NUMBER1,
+    NUMBER2,
+    NUMBER3
+}
+const bp: poop = poop.NUMBER2
+
+// interfaces
+interface iEnemy {
+    race: string
+    attack: number
+    defence: number
+}
+
+// classes
+class Wang implements iEnemy {
+    race: string 
+    attack: number
+    private _defence: number = 1
+
+    // getter
+    get defence() {
+        return this._defence
+    }
+
+    // setter
+    set defence(def: number) {
+        if(def < 1 || def > 10) throw new Error("Defence must be 1 to 10")
+        this._defence = def
+    }
+
+    public constructor(attack:number, defence: number) {
+        this.race = "Wangmonger"
+        this.attack = attack
+        this.defence = defence       
+    }
+}
+
+const myEnemy = new Wang(10,10)

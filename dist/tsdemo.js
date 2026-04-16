@@ -12,4 +12,40 @@ console.log(add(addNums));
 import { Car, eColor, eEngine } from "./car.js";
 const myCar = new Car(eColor.RED, eEngine.ELECTRIC, 2, 5, 'holden', 'shaggin wagon');
 console.log(myCar.showMe());
+// standard syntax
+let firstName;
+for (let index = 0; index < 10; index++) {
+    console.log(`item ${index}`);
+}
+let i = "dewanged";
+// enums
+var poop;
+(function (poop) {
+    poop[poop["NUMBER1"] = 0] = "NUMBER1";
+    poop[poop["NUMBER2"] = 1] = "NUMBER2";
+    poop[poop["NUMBER3"] = 2] = "NUMBER3";
+})(poop || (poop = {}));
+const bp = poop.NUMBER2;
+// classes
+class Wang {
+    race;
+    attack;
+    _defence = 1;
+    // getter
+    get defence() {
+        return this._defence;
+    }
+    // setter
+    set defence(def) {
+        if (def < 1 || def > 10)
+            throw new Error("Defence must be 1 to 10");
+        this._defence = def;
+    }
+    constructor(attack, defence) {
+        this.race = "Wangmonger";
+        this.attack = attack;
+        this.defence = defence;
+    }
+}
+const myEnemy = new Wang(10, 10);
 //# sourceMappingURL=tsdemo.js.map
