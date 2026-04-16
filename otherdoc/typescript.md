@@ -7,7 +7,7 @@
   - [Installation](#installation)
   - [Setup](#setup)
 
-[Return Home](/)
+[Return Home](/basics)
 
 ## Features
 
