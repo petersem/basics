@@ -3,6 +3,9 @@
 Git practices and commands
 
 - [GIT](#git)
+  - [General](#general)
+    - [About](#about)
+    - [Install](#install)
   - [Practices](#practices)
     - [.GitIgnore](#gitignore)
   - [Commands](#commands)
@@ -22,6 +25,33 @@ Git practices and commands
     - [git clone](#git-clone)
 
 [Return Home](/basics)
+
+## General
+
+### About
+
+[Git](https://github.com/petersem/basics/raw/refs/heads/main/misc/Version-Control.pptx) presentation
+
+**[`^        back to top        ^`](#git)**
+
+### Install
+
+[Install Git](https://github.com/git-for-windows/git/releases/download/v2.53.0.windows.3/Git-2.53.0.3-64-bit.exe)
+
+[Create a GitHub account](https://github.com)
+
+Configure Git for use with GitHub
+
+``` bash
+git config --global user.name "Your GitHub Username"
+git config --global user.email “Your GitHub your.email@example.com"
+```
+
+Install GitHub [extension for VSCode](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+
+
+**[`^        back to top        ^`](#git)**
+
 
 ## Practices
 
