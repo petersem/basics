@@ -7,6 +7,7 @@ Git practices and commands
     - [About](#about)
     - [Install](#install)
   - [Practices](#practices)
+    - [Commmit messages](#commmit-messages)
     - [.GitIgnore](#gitignore)
   - [Commands](#commands)
     - [git init](#git-init)
@@ -54,6 +55,22 @@ Install GitHub [extension for VSCode](https://marketplace.visualstudio.com/items
 
 
 ## Practices
+
+### Commmit messages
+
+Good commit messages tell the clear story oof your changes. Use an imperative mood for messages. Treat them like they are describing a command. This aligns with how Git describes commits. 
+
+Conventions for commit messages
+
+- `feat: message` add a new feature
+- `fix: message` patches a bug in the code
+- `docs: message` updates for documentation
+- `refactor: message` improve code without functional changes
+- `chore: message` build tasks and maintenance
+
+> Limit commit message to 50 characters. Be specific and direct.
+
+**[`^        back to top        ^`](#git)**
 
 ### .GitIgnore
 
