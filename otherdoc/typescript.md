@@ -32,18 +32,13 @@ Global package install for typescript, and tsc-watch monitor.
 
 ``` bash
 npm i -g typescript
-npm install --save-dev @types/node
+npm install -g @types/node
+npm install -g tsc-watch
 ```
 
 **[`^        back to top        ^`](#typescript)**
 
 ## Setup
-
-From your Node project folder, install the Node types definitions.
-
-``` bash
-npm install --save-dev @types/node
-```
 
 Create a `tsconfig.json` file by running `tsc -init`
 
@@ -145,7 +140,7 @@ class Wang implements iEnemy {
     }
 }
 
-const myEnemy = new Wang(10,10)
+const myEnemy = new Wang(5,10)
 
 ```
 

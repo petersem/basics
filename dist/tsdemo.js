@@ -47,5 +47,5 @@ class Wang {
         this.defence = defence;
     }
 }
-const myEnemy = new Wang(10, 10);
+const myEnemy = new Wang(5, 11);
 //# sourceMappingURL=tsdemo.js.map

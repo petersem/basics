@@ -70,4 +70,4 @@ class Wang implements iEnemy {
     }
 }
 
-const myEnemy = new Wang(10,10)
+const myEnemy = new Wang(5,11)
