@@ -1,3 +1,5 @@
+const license="sdsdksd834734ksdlsj2#@$"
+
 /**
  * Add - Addition function 
  * @param {number} num1 
