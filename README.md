@@ -4,6 +4,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/petersem/basics)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/petersem/basics)
 ![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/petersem/basics)
+![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/:user/:repo/:branch)
 
 ## Javascript reference
 
