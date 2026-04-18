@@ -77,19 +77,19 @@ jobs:
           ' coverage/coverage-summary.json)
 
           # SAFE UNCOVERED (no em-dash, no unicode, no markdown triggers)
-          UNCOVERED=$(jq -r '
-            to_entries
-            | map(
-                .key as $file
-                | .value as $cov
-                | ($cov.lines.pct // 0) as $lines
-                | ($cov.functions.pct // 0) as $funcs
-                | ($cov.branches.pct // 0) as $branches
-                | select($lines < 100 or $funcs < 100 or $branches < 100)
-                | "\($file)\n  Lines: \($lines)%\n  Functions: \($funcs)%\n  Branches: \($branches)%"
-              )
-            | join("\n\n")
-          ' coverage/coverage-final.json)
+          # UNCOVERED=$(jq -r '
+          #   to_entries
+          #   | map(
+          #       .key as $file
+          #       | .value as $cov
+          #       | ($cov.lines.pct // 0) as $lines
+          #       | ($cov.functions.pct // 0) as $funcs
+          #       | ($cov.branches.pct // 0) as $branches
+          #       | select($lines < 100 or $funcs < 100 or $branches < 100)
+          #       | "\($file)\n  Lines: \($lines)%\n  Functions: \($funcs)%\n  Branches: \($branches)%"
+          #     )
+          #   | join("\n\n")
+          # ' coverage/coverage-final.json)
 
           # SAFE UNCOVERED LINES (no em-dash, no unicode, no markdown triggers)
           UNCOVERED_LINES=$(jq -r '
@@ -143,10 +143,10 @@ jobs:
             echo "$COVERAGE"
             echo '```'
 
-            echo "**Uncovered**"
-            echo '```'
-            echo "$UNCOVERED"
-            echo '```'
+            # echo "**Uncovered**"
+            # echo '```'
+            # echo "$UNCOVERED"
+            # echo '```'
 
             echo "**Lines Not Covered**"
             echo '```'
