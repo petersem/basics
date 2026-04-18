@@ -61,7 +61,7 @@ describe('div function', () => {
   });
 
   test('divides one positive and one negative number', () => {
-    expect(div(10, -5)).toBe(-6);
+    expect(div(10, -5)).toBe(-2);
   });
 
   test('throws error if arguments are not numbers', () => {
