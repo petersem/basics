@@ -51,6 +51,25 @@ describe('mult function', () => {
 
 });
 
+describe('div function', () => {
+  test('divides one number by another', () => {
+    expect(div(6, 3)).toBe(2);
+  });
+
+  test('divides one negative number by another negative number', () => {
+    expect(div(-10, -5)).toBe(2);
+  });
+
+  test('divides one positive and one negative number', () => {
+    expect(div(10, -5)).toBe(-6);
+  });
+
+  test('throws error if arguments are not numbers', () => {
+    expect(() => div(2, '3')).toThrow('Both arguments must be numbers');
+  });
+
+});
+
 
 describe('sub function', () => {
   test('subtracts two positive numbers', () => {
