@@ -11,7 +11,7 @@ GitHub workflows for then automation of build, test, and deployment of your code
 
 ## Docker 
 
-Docker build and push images, with tag info for versioning
+Docker build and push images, with tag info for versioning. For this to run, you must create a TAG called vx.x.x and then do a git push with tags
 
 ``` yaml
 name: "Docker publish"
