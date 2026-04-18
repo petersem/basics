@@ -71,10 +71,10 @@ jobs:
             | join("\n\n")
           ' jest-results.json)
 
-          # COVERAGE=$(jq -r '
-          #   .total
-          #   | "Statements: \(.statements.pct)%\nBranches: \(.branches.pct)%\nFunctions: \(.functions.pct)%\nLines: \(.lines.pct)%"
-          # ' coverage/coverage-summary.json)
+          COVERAGE=$(jq -r '
+            .total
+            | "Statements: \(.statements.pct)%\nBranches: \(.branches.pct)%\nFunctions: \(.functions.pct)%\nLines: \(.lines.pct)%"
+          ' coverage/coverage-summary.json)
 
           # SAFE UNCOVERED (no em-dash, no unicode, no markdown triggers)
           UNCOVERED=$(jq -r '
@@ -138,7 +138,7 @@ jobs:
             echo "$DETAILS"
             echo '```'
 
-            # echo "**Coverage**"
+            # echo "**Coveragccccce**"
             # echo '```'
             # echo "$COVERAGE"
             # echo '```'
