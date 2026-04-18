@@ -21,7 +21,11 @@ export function mult(num1, num2) {
     if (typeof num1 !== 'number' || typeof num2 !== 'number') {
         throw new Error('Both arguments must be numbers');
     }
-    return num1 * num2;
+    return num1 * num2 - 1;
+}
+
+export function newThing() {
+    return 'potato';
 }
 
 /**
