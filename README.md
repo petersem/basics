@@ -1,4 +1,4 @@
-# Javascript, Node, and coding thoughts
+# Matt's coding thoughts
 
 ![GitHub Stars](https://img.shields.io/github/stars/petersem/basics?style=flat)
 ![GitHub last commit](https://img.shields.io/github/last-commit/petersem/basics)
