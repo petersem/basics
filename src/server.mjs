@@ -4,6 +4,7 @@ import itemRoute from './routes/item.mjs';
 import swaggerUi from 'swagger-ui-express';
 import { swaggerSpec } from './swagger.config.mjs';
 import { fileURLToPath } from "url";
+import helmet from 'helmet';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -15,6 +16,7 @@ const PORT = process.env.PORT || 3000;
 console.log(`Environment: ${process.env?.NODE_ENV}`);
 
 const app = express();  // setup express app
+app.use(helmet());
 
 app.set("view engine", "ejs");  // use ejs for the view engine
 app.set("views", path.join(__dirname, "views"));
