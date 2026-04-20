@@ -3,6 +3,7 @@
 - [Visual Studio Code](#visual-studio-code)
   - [Cool VS Code Extensions](#cool-vs-code-extensions)
   - [Shortcut keys](#shortcut-keys)
+  - [Useful settings](#useful-settings)
   - [Issues](#issues)
     - [Mouse pointer dissapears](#mouse-pointer-dissapears)
 
@@ -25,6 +26,7 @@
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) Integrates ESLint JavaScript into VS Code
 - [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) Rest API tester (But, I prefer stand-alone Postman)
 - [Filetree Pro](https://marketplace.visualstudio.com/items?itemName=0xTanzim.filetree-pro) Generate project file trees in markdown
+- [VSCode Icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons) Use custom icons in VSCode
 
 **[`^        back to top        ^`](#visual-studio-code)**
 
@@ -42,6 +44,14 @@
 - `f2` rename symbol
 - `ctrl ,` opens VSCode settings
 - `alt-shift` allows selecting multiple lines within the editor to simultaneously change
+
+**[`^        back to top        ^`](#visual-studio-code)**
+
+## Useful settings
+
+Access via the settings page `ctrl ,`
+
+- Search `compact` and _uncheck_ `Explorer: Compact Folders` to have folders use a tree view, rather than compact view.
 - Open settings and search for autosave in the search bar. Set autosave to `afterDelay` and autosavedelay to `3000`. (Saves files after 3 seconds of inactivitiy)
 
 **[`^        back to top        ^`](#visual-studio-code)**
