@@ -29,6 +29,9 @@
   - [Password validity check](#password-validity-check)
   - [Throttling](#throttling)
   - [Express middleware parameter wrapper](#express-middleware-parameter-wrapper)
+  - [Imports barrel pattern](#imports-barrel-pattern)
+    - [Before](#before)
+    - [After](#after)
 
 [Return Home](/basics)
 
@@ -692,3 +695,36 @@ export const customMiddleware = function (action = "blah") {
 ```
 
 **[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Imports barrel pattern
+
+Aggregates similar module imports into one file, to make code easier to read. 
+
+### Before 
+
+All imports are listed in the page, which can make the page harder to read
+
+``` js
+import itemRoute from './routes/item.mjs';
+import fooRoute from './routes/foo.mjs';
+import barRoute from './routes/bar.mjs';
+```
+
+### After
+
+A new file called `routes.mjs` is created in the routes folder, exporting the above three modules.
+
+``` js
+export itemRoute from './routes/item.mjs';
+export fooRoute from './routes/foo.mjs';
+export barRoute from './routes/bar.mjs';
+```
+
+Then a single import is done for everything in the main code page
+
+``` js
+import { itemRoute, fooRoute, barRoute } from './routes/routes.mjs`;
+```
+
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
