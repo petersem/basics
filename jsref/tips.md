@@ -715,9 +715,9 @@ import barRoute from './routes/bar.mjs';
 A new file called `routes.mjs` is created in the routes folder, exporting the above three modules.
 
 ``` js
-export itemRoute from './routes/item.mjs';
-export fooRoute from './routes/foo.mjs';
-export barRoute from './routes/bar.mjs';
+export itemRoute from './item.mjs';
+export fooRoute from './foo.mjs';
+export barRoute from './bar.mjs';
 ```
 
 Then a single import is done for everything in the main code page
