@@ -71,6 +71,16 @@ A static function can be called _without_ instantiating a class.
 console.log(Dog.mysteryNoise());
 ```
 
+You can also have a static block in the code.
+
+```
+export class x {
+    static {
+        console.log('running');
+    }
+}
+```
+
 **[`^        back to top        ^`](#classes)**
 
 ## Instantiate 

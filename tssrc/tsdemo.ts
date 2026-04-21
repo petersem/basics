@@ -44,12 +44,16 @@ interface iEnemy {
     race: string
     attack: number
     defence: number
+    specialAbility: string
+
+    invoke(): string
 }
 
 // classes
 class Wang implements iEnemy {
     race: string 
     attack: number
+    specialAbility: string
     private _defence: number = 1
 
     // getter
@@ -63,11 +67,42 @@ class Wang implements iEnemy {
         this._defence = def
     }
 
-    public constructor(attack:number, defence: number) {
-        this.race = "Wangmonger"
+    public constructor(attack:number, defence: number, ability: string) {
+        this.race = "Wang"
         this.attack = attack
         this.defence = defence       
+        this.specialAbility = ability
+    }
+
+    invoke(): string {
+        return `${this.race} invokes the ${this.specialAbility} attack`;        
     }
 }
 
-const myEnemy = new Wang(5,11)
+const myEnemy = new Wang(5,10, 'increasement')
+
+
+import chalk from 'chalk';
+
+const log = console.log;
+const red = chalk.bold.red
+const ora = chalk.bold.hex('#f09e06');
+const gre = chalk.bold.greenBright;
+const bgW = chalk.bgWhite;
+const blu = chalk.bold.blue;
+const uCy = chalk.underline.cyanBright;
+
+log(gre('this is'), ora('a test'), red('of coloured'), bgW.blue('text'), uCy('and underlines'))
+
+// ES2015 template literal
+log(`
+CPU: ${chalk.red('90%')}
+RAM: ${chalk.green('40%')}
+DISK: ${chalk.yellow('70%')}
+`);
+
+// Use RGB colors in terminal emulators that support it.
+log(chalk.rgb(123, 45, 67).underline('Underlined reddish color'));
+log(chalk.hex('#DEADED').bold('Bold gray!'));
+
+log(chalk.bgHex('#a200d3')(myEnemy.invoke()))
