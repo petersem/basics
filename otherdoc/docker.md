@@ -5,6 +5,9 @@ Various information on Docker
 - [Docker](#docker)
   - [Practices](#practices)
   - [Commands](#commands)
+  - [Multi-stage builds](#multi-stage-builds)
+    - [Single stage build 1.7gb](#single-stage-build-17gb)
+    - [Multi-stage build 295mb image](#multi-stage-build-295mb-image)
   - [Yaml examples](#yaml-examples)
     - [MariaDB (MySQL Equivalent DB)](#mariadb-mysql-equivalent-db)
 
@@ -63,6 +66,56 @@ README.md
 - Pull a Docker image from registry: `docker pull repo/imagename[:tag]`
 
 **[`^        back to top        ^`](#docker)**
+
+## Multi-stage builds
+
+Dramitically reduces the size of your Docker image. Do you think that storage is cheap, so it doesn't matter if a Docker image is big. So no big deal?
+WRONG!
+It's not the storage, but the time to deploy. This results in longer deployment times, scaling issues, and potential outages.
+Use multi-stage builds and alpine.
+
+### Single stage build 1.7gb
+
+``` yaml
+FROM node:25 
+WORKDIR /app
+COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
+RUN npm install --production --silent && mv node_modules ../
+COPY . .
+ENV NODE_ENV=production
+EXPOSE 3000
+CMD ["node", "./src/server.mjs"]
+```
+
+### Multi-stage build 295mb image
+
+``` yaml
+# Stage 1: Base Node
+FROM node:25-alpine AS base
+WORKDIR /app
+
+# Stage 2: Dependencies
+FROM base AS dependencies
+COPY package*.json ./
+RUN npm install --omit=dev --only=production
+
+# Stage 3: Copy files/Build
+FROM dependencies AS build
+WORKDIR /app
+COPY src /app
+# Build react/vue/angualr bundle static files
+# RUN npm run build
+
+# STAGE 4: Release with Alpine
+FROM build AS release
+WORKDIR /app
+COPY --from=dependencies /app/package.json ./
+RUN npm install --omit=dev --only=production
+COPY --from=build /app ./
+ENV NODE_ENV=production
+EXPOSE 3000
+CMD ["node","server.mjs"]
+```
 
 ## Yaml examples
 
