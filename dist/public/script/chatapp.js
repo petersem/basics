@@ -19,8 +19,3 @@ socket.on("message", (data) => {
     li.textContent = data
     document.querySelector('ul').appendChild(li)
 })
-
-socket.on("id", (data) => {
-    console.log(`Your ID is ${data}`);
-});
-
