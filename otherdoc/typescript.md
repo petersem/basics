@@ -98,8 +98,8 @@ for (let index:number = 0; index < 10; index++) {
 }
 
 // custom types
-type increasement = "wanged" | "dewanged";
-let i: increasement = "dewanged";
+type mood = "happy" | "sad";
+let i: mood = "happy";
 
 // enums
 enum poop {
@@ -117,7 +117,7 @@ interface iEnemy {
 }
 
 // classes
-class Wang implements iEnemy {
+class Dragon implements iEnemy {
     race: string 
     attack: number
     private _defence: number = 1
@@ -134,13 +134,13 @@ class Wang implements iEnemy {
     }
 
     public constructor(attack:number, defence: number) {
-        this.race = "Wangmonger"
+        this.race = "Hydra"
         this.attack = attack
         this.defence = defence       
     }
 }
 
-const myEnemy = new Wang(5,10)
+const myEnemy = new Dragon(5,10)
 
 ```
 
