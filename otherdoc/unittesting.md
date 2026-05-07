@@ -10,6 +10,7 @@ Unit tests can be automated into the build pipeline so that they are run on chec
   - [Jest](#jest)
   - [Install Jest](#install-jest)
   - [Setup](#setup)
+  - [Configure Jest for ES6 Modules](#configure-jest-for-es6-modules)
   - [Creating test files](#creating-test-files)
   - [Running tests](#running-tests)
   - [Creating tests](#creating-tests)
@@ -57,6 +58,23 @@ In your `.gitignore` file, add a line to exclude the test coverage folder. (some
 
 ``` bash
 /coverage
+```
+
+**[`^        back to top        ^`](#unit-testing)**
+
+## Configure Jest for ES6 Modules
+
+Create a file called `jest.config.mjs` in the top level of your project folder, then populate it as follows:
+
+``` js
+export default {
+  testEnvironment: "node",
+  transform: {},
+  testMatch: [
+    "**/__tests__/**/*.?([mc])[jt]s?(x)",
+    "**/?(*.)+(spec|test).?([mc])[jt]s?(x)"
+  ]
+};
 ```
 
 **[`^        back to top        ^`](#unit-testing)**
@@ -223,7 +241,7 @@ To test for expected errors.
 
 ``` js
 expect(() => aFunction().toThrow());
-expect(() => aFunction().toThrow('/specific/))
+expect(() => aFunction().toThrow('/specific/'))
 expect(() => aFunction().toThrow('A specific error'))
 ```
 
