@@ -33,13 +33,15 @@
 | Object    | A complex data type which can include multiple primitive values (as above) |
 | Array     | A collection of items, which can be the same or different types |
 
+**[`^        back to top        ^`](#javascript-variables)**
+
 ### Boolean
 
-> Can also be represented as 1 and 0 respectively.
-> 
-> All values are considered true unless defined falsy
-> 
-> Falsy, being: false, 0, -0, 0n, "", null, undefined, NaN
+Can also be represented as 1 and 0 respectively.
+ 
+All values are considered true unless defined falsy
+ 
+Falsy, being: false, 0, -0, 0n, "", null, undefined, NaN
 
 #### True Examples
 
