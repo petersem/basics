@@ -19,6 +19,12 @@ interface iCar {
     startCar(): String;
     showMe(): Object;
 }
+/**
+ * CTOR details the parameters required to create new car object
+ * @class Car
+ * @classdesc A basic car class to describe and operate a car
+ * @param {eColor} - the selected and allowed colour
+ */
 export declare class Car implements iCar {
     color: eColor;
     engine: eEngine;
@@ -31,6 +37,10 @@ export declare class Car implements iCar {
     set seats(seats: number);
     get seats(): number;
     constructor(color: eColor, engine: eEngine, doors: number, seats: number, brand: string, nickName?: string);
+    /**
+     * startCar - starts the car object
+     * @returns a string with details of the car that started
+     */
     startCar(): string;
     showMe(): object;
 }

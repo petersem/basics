@@ -11,6 +11,13 @@ export var eEngine;
     eEngine["V8"] = "lump lump";
     eEngine["ELECTRIC"] = "Weeeeeeeeeee";
 })(eEngine || (eEngine = {}));
+// color: eColor, engine: eEngine, doors: number, seats: number, brand: string, nickName = "")
+/**
+ * CTOR details the parameters required to create new car object
+ * @class Car
+ * @classdesc A basic car class to describe and operate a car
+ * @param {eColor} - the selected and allowed colour
+ */
 export class Car {
     color;
     engine;
@@ -46,6 +53,10 @@ export class Car {
         this.brand = brand;
         this.nickName = nickName;
     }
+    /**
+     * startCar - starts the car object
+     * @returns a string with details of the car that started
+     */
     startCar() {
         return `${this.color} ${this.brand} goes ${this.engine}`;
     }

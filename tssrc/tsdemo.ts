@@ -91,8 +91,9 @@ const gre = chalk.bold.greenBright;
 const bgW = chalk.bgWhite;
 const blu = chalk.bold.blue;
 const uCy = chalk.underline.cyanBright;
+const uRed = chalk.underline.red;
 
-log(gre('this is'), ora('a test'), red('of coloured'), bgW.blue('text'), uCy('and underlines'))
+log(gre('this is'), ora('a test'), red('of coloured'), bgW.blue('text'), blu('and'), uRed('underlines'))
 
 // ES2015 template literal
 log(`
@@ -105,4 +106,4 @@ DISK: ${chalk.yellow('70%')}
 log(chalk.rgb(123, 45, 67).underline('Underlined reddish color'));
 log(chalk.hex('#DEADED').bold('Bold gray!'));
 
-log(chalk.bgHex('#a200d3')(myEnemy.invoke()))
+log(chalk.bgHex('#a200d3')('wow! look at this'))
