@@ -32,6 +32,14 @@
   - [Imports barrel pattern](#imports-barrel-pattern)
     - [Before](#before)
     - [After](#after)
+  - [Get unique array elements](#get-unique-array-elements)
+  - [Is number even](#is-number-even)
+  - [Get unique array elements](#get-unique-array-elements-1)
+  - [Get unique array elements](#get-unique-array-elements-2)
+  - [Get unique array elements](#get-unique-array-elements-3)
+  - [Get unique array elements](#get-unique-array-elements-4)
+  - [Get unique array elements](#get-unique-array-elements-5)
+  - [Get unique array elements](#get-unique-array-elements-6)
 
 [Return Home](/basics)
 
@@ -728,3 +736,54 @@ import { itemRoute, fooRoute, barRoute } from './routes/routes.mjs`;
 
 **[`^        back to top        ^`](#tips-and-useful-code)**
 
+## Get unique array elements
+
+``` js
+const uniqueArray = arr => [...new set(arr)];
+```
+
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Is number even
+
+``` js
+const isEven = num => num % 2 === 0;
+``` 
+
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Get unique array elements
+
+Aggregates similar module imports into one file, to make code easier to read. 
+
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Get unique array elements
+
+Aggregates similar module imports into one file, to make code easier to read. 
+
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Get unique array elements
+
+Aggregates similar module imports into one file, to make code easier to read. 
+
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Get unique array elements
+
+Aggregates similar module imports into one file, to make code easier to read. 
+
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Get unique array elements
+
+Aggregates similar module imports into one file, to make code easier to read. 
+
+**[`^        back to top        ^`](#tips-and-useful-code)**
+
+## Get unique array elements
+
+Aggregates similar module imports into one file, to make code easier to read. 
+
+**[`^        back to top        ^`](#tips-and-useful-code)**
