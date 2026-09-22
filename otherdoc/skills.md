@@ -49,8 +49,11 @@
 | Worker processes | Async job queues | Logging |
 | Thread pools | Horizontal scaling | Monitoring |
 | Background jobs | Vertical scaling | Error handling |
-| Linux fundamentals | Systemd & processes | Shell scripting |
-| Linux permissions | Networking tools (curl, netstat) | Package managers (apt, yum) |
+| DDL (CREATE, ALTER, DROP) | Stored procedures | Linux fundamentals |
+| Triggers | Function-based logic | Shell scripting |
+|  |  | Systemd & processes |
+|  |  | Networking tools (curl, netstat) |
+|  |  | Package managers (apt, yum) |
 
 
 # Shared / Full‑Stack Essentials
