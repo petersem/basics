@@ -16,13 +16,13 @@ Skills to being a better developer
 | HTML | React | Rendering pipeline |
 | CSS | SSR basics | Reflow vs repaint |
 | JavaScript | Form handling | Event loop |
-| TypeScript | Solid | Web APIs |
+| TypeScript | SPA routing | Web APIs |
 | Accessibility | React Query | CORS |
 | Semantics | Tailwind | Typography |
 | CSS animations | Styled Components | Color contrast |
 | Responsive design | Component-driven design | Interaction patterns |
 | CSS variables | State management basics | Accessibility (ARIA) |
-| CSS layout | SPA routing | UI patterns |
+| CSS layout | | UI patterns |
 | CSS specificity | | UX fundamentals |
 | Sass |  | Image optimization |
 | CSS Modules |  | Preloading/prefetching |
@@ -92,5 +92,6 @@ Skills to being a better developer
 | ITIL | | |
 | JSDoc | | |
 | Terraform | | |
+| S.O.L.I.D principles | | |
 
 [Return Home](/basics)
