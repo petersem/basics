@@ -1,10 +1,21 @@
-# Frontend Development
+# Skills
+
+Skills to being a better developer
+
+- [Skills](#skills)
+  - [Frontend Development](#frontend-development)
+  - [Backend Development](#backend-development)
+  - [Shared / Full‑Stack Essentials](#shared--fullstack-essentials)
+
+[Return Home](/basics)
+
+## Frontend Development
 
 | **Languages & Core** | **Frameworks & State** | **Browser & UI/UX** |
 |----------------------|------------------------|----------------------|
 | HTML | React | Rendering pipeline |
-| CSS | Vue | Reflow vs repaint |
-| JavaScript | Svelte | Event loop |
+| CSS | SSR basics | Reflow vs repaint |
+| JavaScript | Form handling | Event loop |
 | TypeScript | Solid | Web APIs |
 | Accessibility | React Query | CORS |
 | Semantics | Tailwind | Typography |
@@ -12,8 +23,8 @@
 | Responsive design | Component-driven design | Interaction patterns |
 | CSS variables | State management basics | Accessibility (ARIA) |
 | CSS layout | SPA routing | UI patterns |
-| CSS specificity | Form handling | UX fundamentals |
-| Sass | SSR basics | Image optimization |
+| CSS specificity | | UX fundamentals |
+| Sass |  | Image optimization |
 | CSS Modules |  | Preloading/prefetching |
 | DOM manipulation |  | Lighthouse audits |
 | Events |  | Lazy loading |
@@ -21,8 +32,9 @@
 | Fetch API |  | Service Workers (PWAs) |
 | ES modules |  | Web Workers |
 
+[Return Home](/basics)
 
-# Backend Development
+## Backend Development
 
 | **Core Concepts** | **Databases & Architecture** | **Security, DevOps & Linux** |
 |-------------------|------------------------------|-------------------------------|
@@ -55,8 +67,9 @@
 |  |  | Networking tools (curl, netstat) |
 |  |  | Package managers (apt, yum) |
 
+[Return Home](/basics)
 
-# Shared / Full‑Stack Essentials
+## Shared / Full‑Stack Essentials
 
 | **General Skills** | **Networking, Cloud & Linux** | **Data & Tooling** |
 |--------------------|-------------------------------|---------------------|
@@ -75,3 +88,9 @@
 | Monitoring | Load balancing basics | Performance monitoring |
 | Error handling | Caching fundamentals | API tools (Swagger, Postman) |
 | Linux CLI | File permissions | System monitoring (htop, dstat) |
+| Software Estimation | | |
+| ITIL | | |
+| JSDoc | | |
+| Terraform | | |
+
+[Return Home](/basics)

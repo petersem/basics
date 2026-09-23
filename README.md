@@ -47,4 +47,5 @@
 - Setting up an Express app - coming soon
 - [Typescript](otherdoc/typescript.md) reference guide
 - [Devops GitHub pipelines](otherdoc/devops.md) to automate build, test, and deployments
+- [Skills](otherdoc/skills.md) to be a better developer
 - Dev containers - coming soon
