@@ -34,12 +34,12 @@
     - [After](#after)
   - [Get unique array elements](#get-unique-array-elements)
   - [Is number even](#is-number-even)
+  - [Human readable code and output](#human-readable-code-and-output)
   - [Get unique array elements](#get-unique-array-elements-1)
   - [Get unique array elements](#get-unique-array-elements-2)
   - [Get unique array elements](#get-unique-array-elements-3)
   - [Get unique array elements](#get-unique-array-elements-4)
   - [Get unique array elements](#get-unique-array-elements-5)
-  - [Get unique array elements](#get-unique-array-elements-6)
 
 [Return Home](/basics)
 
@@ -752,9 +752,16 @@ const isEven = num => num % 2 === 0;
 
 **[`^        back to top        ^`](#tips-and-useful-code)**
 
-## Get unique array elements
+## Human readable code and output
 
-Aggregates similar module imports into one file, to make code easier to read. 
+Javascript ignores underscores in integers or floating point numbers. If you want to have comma seperators in the output, use `.toLocalString()`
+
+```
+const num1 = 500_000_000;
+const num2 = 20_000;
+const ans = num1 + num2;
+console.log(and.toLocalString());
+```
 
 **[`^        back to top        ^`](#tips-and-useful-code)**
 

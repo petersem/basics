@@ -88,11 +88,12 @@ Skills to being a better developer
 | Monitoring | Load balancing basics | Performance monitoring |
 | Error handling | Caching fundamentals | API tools (Swagger, Postman) |
 | Linux CLI | File permissions | System monitoring (htop, dstat) |
-| Software Estimation | | |
+| Software Estimation | Proxmox | |
 | ITIL | | |
 | JSDoc | | |
 | Terraform | | |
 | S.O.L.I.D principles | | |
 | Docker Dev Containers | | |
+| Scrum / Kanban | | |
 
 [Return Home](/basics)
